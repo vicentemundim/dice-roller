@@ -12,7 +12,18 @@
 //
 //= require jquery
 //= require jquery_ujs
-//= require underscore
-//= require backbone
+//= require angular
+//= require angular-mocks
 //= require dice-roller/all
 //= require_tree .
+
+var exampleApp = angular.module('exampleApp', ['diceRoller'])
+
+exampleApp.controller('D10Ctrl', function ($scope, Dice) {
+  console.log($scope, Dice)
+
+  $scope.dice = Dice
+  $scope.$watch('dice.face', function (value, oldValue) {
+    console.log('face changed: ', value, oldValue)
+  })
+})

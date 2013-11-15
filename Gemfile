@@ -6,5 +6,8 @@ source "http://rubygems.org"
 gemspec
 
 gem "jquery-rails"
-gem "backbone-on-rails"
+gem "angularjs-rails"
 gem "jasmine"
+
+gem "sass-rails"
+gem "compass-rails"

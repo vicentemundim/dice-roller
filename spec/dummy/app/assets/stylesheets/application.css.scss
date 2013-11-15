@@ -8,6 +8,22 @@
  * You're free to add application-wide styles to this file and they'll appear at the top of the
  * compiled file, but it's generally better to create a new file per style scope.
  *
+ *= require dice-roller
  *= require_self
  *= require_tree .
  */
+
+body.example-body {
+  background: #333;
+}
+
+button {
+  display: block;
+  margin: auto;
+  width: 100px;
+  font-size: 20px;
+
+  border-radius: 4px;
+  background-color: #fafafa;
+  cursor: pointer;
+}

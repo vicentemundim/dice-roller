@@ -1,1 +1,1 @@
-//= include dice-roller/die
+//= include dice-roller/dice-roller
