@@ -13,3 +13,11 @@ Bundler::GemHelper.install_tasks
 task :jasmine => 'app:jasmine'
 
 task :default => 'app:jasmine:ci'
+
+task :travis do
+  ["rake app:jasmine:ci"].each do |cmd|
+    puts "Starting to run #{cmd}..."
+    system("export DISPLAY=:99.0 && bundle exec #{cmd}")
+    raise "#{cmd} failed!" unless $?.exitstatus == 0
+  end
+end

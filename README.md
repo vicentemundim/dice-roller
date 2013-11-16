@@ -2,7 +2,9 @@
 
 DiceRoller is an AngularJS component that adds a `<dice-roller>` directive.
 
-In order to use it, you need to inject it as a dependency for you app or controller:
+## Usage
+
+You'll need to inject it as a dependency for you app or controller:
 
     angular.module('myApp', ['diceRoller'])
 
@@ -13,6 +15,8 @@ Then you just add a directive in you HTML:
 It will generate a 3d 10-sided dice that rolls when clicked. For now there are only 10 and 20 sides dices implemented.
 
 Check out usage examples in the `spec/dummy` application.
+
+It is made as a Rails engine to ease setup for Rails applications.
 
 ## Installing
 
