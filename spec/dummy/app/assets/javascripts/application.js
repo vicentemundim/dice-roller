@@ -17,12 +17,19 @@
 //= require dice-roller/all
 //= require_tree .
 
-var exampleApp = angular.module('exampleApp', ['diceRoller'])
+var exampleApp = angular.module('exampleApp', ['diceRoller']),
+    d10, d10Scope
 
-exampleApp.controller('D10Ctrl', function ($scope, Dice) {
-  console.log($scope, Dice)
+exampleApp.controller('D10Ctrl', function ($scope, DiceRollerManager) {
+  var dice = DiceRollerManager.dice({ sides: 10, name: 'd10' })
 
-  $scope.dice = Dice
+  d10Scope = $scope
+  d10 = $scope.dice = dice
+
+  $scope.$watch('dice.rolling', function (value, oldValue) {
+    console.log('rolling changed: ', value, oldValue)
+  })
+
   $scope.$watch('dice.face', function (value, oldValue) {
     console.log('face changed: ', value, oldValue)
   })

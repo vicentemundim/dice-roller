@@ -64,7 +64,7 @@ $rotateX: $angle;
       @include animation(roll $animationDuration linear);
     }
 
-    @for $i from 0 through 9 {
+    @for $i from 1 through 10 {
       &[data-face="#{$i}"] {
         @if $i % 2 == 0 {
           $angleMultiplier: $i / 2;
@@ -74,7 +74,9 @@ $rotateX: $angle;
           @include transform(rotateX(-180deg - $angle) rotateY(-$sideAngle * $angleMultiplier));
         }
       }
+    }
 
+    @for $i from 0 through 9 {
       .face.face-#{$i} {
 
         @if $i % 2 == 0 {
