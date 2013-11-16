@@ -1,5 +1,29 @@
-<div ng-app="exampleApp" ng-controller="D10Ctrl">
-  <button ng-click="dice.roll()">Roll</button>
+<div ng-app="exampleApp">
+  <div ng-controller="D10Ctrl">
+    <button ng-click="dice.roll()">Roll</button>
 
-  <dice-roller sides="10"></dice-roller>
+    <dice-roller sides="10"></dice-roller>
+    <dice-roller sides="10" class="dice-roller-large"></dice-roller>
+  </div>
+
+  <div ng-controller="OtherD10Ctrl">
+    <button ng-click="dice.roll()">Roll</button>
+
+    <dice-roller sides="10" name="other-d10" class="dice-roller-yellow dice-roller-small"></dice-roller>
+    <dice-roller sides="10" name="other-d10" class="dice-roller-white dice-roller-mini"></dice-roller>
+  </div>
+
+  <div ng-controller="D20Ctrl">
+    <button ng-click="dice.roll()">Roll</button>
+
+    <dice-roller sides="20" class="dice-roller-red"></dice-roller>
+    <dice-roller sides="20" class="dice-roller-red dice-roller-large"></dice-roller>
+  </div>
+
+  <div ng-controller="OtherD20Ctrl">
+    <button ng-click="dice.roll()">Roll</button>
+
+    <dice-roller sides="20" name="other-d20" class="dice-roller-blue dice-roller-small"></dice-roller>
+    <dice-roller sides="20" name="other-d20" class="dice-roller-black dice-roller-mini"></dice-roller>
+  </div>
 </div>

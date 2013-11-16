@@ -18,10 +18,11 @@
 //= require_tree .
 
 var exampleApp = angular.module('exampleApp', ['diceRoller']),
-    d10, d10Scope
+    d10, d10Scope, otherD10, otherD10Scope,
+    d20, d20Scope, otherD20, otherD20Scope
 
 exampleApp.controller('D10Ctrl', function ($scope, DiceRollerManager) {
-  var dice = DiceRollerManager.dice({ sides: 10, name: 'd10' })
+  var dice = DiceRollerManager.dice({ sides: 10 })
 
   d10Scope = $scope
   d10 = $scope.dice = dice
@@ -32,5 +33,50 @@ exampleApp.controller('D10Ctrl', function ($scope, DiceRollerManager) {
 
   $scope.$watch('dice.face', function (value, oldValue) {
     console.log('face changed: ', value, oldValue)
+  })
+})
+
+exampleApp.controller('OtherD10Ctrl', function ($scope, DiceRollerManager) {
+  var dice = DiceRollerManager.dice({ sides: 10, name: 'other-d10' })
+
+  otherD10Scope = $scope
+  otherD10 = $scope.dice = dice
+
+  $scope.$watch('dice.rolling', function (value, oldValue) {
+    console.log('other d10 rolling changed: ', value, oldValue)
+  })
+
+  $scope.$watch('dice.face', function (value, oldValue) {
+    console.log('other d10 face changed: ', value, oldValue)
+  })
+})
+
+exampleApp.controller('D20Ctrl', function ($scope, DiceRollerManager) {
+  var dice = DiceRollerManager.dice({ sides: 20 })
+
+  d20Scope = $scope
+  d20 = $scope.dice = dice
+
+  $scope.$watch('dice.rolling', function (value, oldValue) {
+    console.log('d20 rolling changed: ', value, oldValue)
+  })
+
+  $scope.$watch('dice.face', function (value, oldValue) {
+    console.log('d20 face changed: ', value, oldValue)
+  })
+})
+
+exampleApp.controller('OtherD20Ctrl', function ($scope, DiceRollerManager) {
+  var dice = DiceRollerManager.dice({ sides: 20, name: 'other-d20' })
+
+  otherD20Scope = $scope
+  otherD20 = $scope.dice = dice
+
+  $scope.$watch('dice.rolling', function (value, oldValue) {
+    console.log('other d20 rolling changed: ', value, oldValue)
+  })
+
+  $scope.$watch('dice.face', function (value, oldValue) {
+    console.log('other d20 face changed: ', value, oldValue)
   })
 })
