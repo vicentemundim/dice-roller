@@ -9,8 +9,8 @@ Gem::Specification.new do |s|
   s.version     = DiceRoller::VERSION
   s.authors     = ["Vicente Mundim"]
   s.email       = ["vicente.mundim@gmail.com"]
-  s.summary     = "A javascript dice roller component."
-  s.description = "A javascript dice roller component."
+  s.summary     = "A javascript dice roller component made in AngularJS."
+  s.description = "A javascript dice roller component made in AngularJS."
 
   s.files = Dir["{app,config,db,lib}/**/*"] + ["MIT-LICENSE", "Rakefile", "README.md"]
 
