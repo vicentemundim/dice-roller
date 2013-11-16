@@ -1,5 +1,7 @@
 # DiceRoller
 
+[![Build Status](https://travis-ci.org/vicentemundim/dice-roller.png?branch=master)](https://travis-ci.org/vicentemundim/dice-roller)
+
 DiceRoller is an AngularJS component that adds a `<dice-roller>` directive.
 
 ## Usage
