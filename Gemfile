@@ -7,7 +7,7 @@ gemspec
 
 gem "jquery-rails"
 gem "angularjs-rails"
-gem "jasmine"
+gem "jasmine", '~> 2.0.0.rc5'
 
 gem "sass-rails"
 gem "compass-rails"

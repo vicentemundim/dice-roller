@@ -10,7 +10,7 @@ describe("dice-roller directive", function() {
 
     dice = { roll: function () {}, generateFaces: function () { return [0, 1, 2, 3, 4, 5, 6, 7, 8, 9] } }
     spyOn(dice, 'roll')
-    spyOn(diceRollerManager, 'dice').andReturn(dice)
+    spyOn(diceRollerManager, 'dice').and.returnValue(dice)
   }))
 
   beforeEach(function () {

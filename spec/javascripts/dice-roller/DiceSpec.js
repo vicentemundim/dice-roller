@@ -29,7 +29,7 @@ describe("dice-roller dice", function() {
       })
 
       it("randomizes its face after a timeout, and sets it to not rolling", function () {
-        spyOn(dice, 'randomizeFace').andReturn(2)
+        spyOn(dice, 'randomizeFace').and.returnValue(2)
 
         dice.roll()
 
@@ -88,7 +88,7 @@ describe("dice-roller dice", function() {
       })
 
       it("randomizes its face after a timeout, and sets it to not rolling", function () {
-        spyOn(dice, 'randomizeFace').andReturn(18)
+        spyOn(dice, 'randomizeFace').and.returnValue(18)
 
         dice.roll()
 
@@ -100,14 +100,14 @@ describe("dice-roller dice", function() {
 
       describe("when it is already rolling", function() {
         it("won't randomize face more than once", function () {
-          spyOn(dice, 'randomizeFace').andReturn(18)
+          spyOn(dice, 'randomizeFace').and.returnValue(18)
 
           dice.roll()
           dice.roll()
 
           $timeout.flush()
 
-          expect(dice.randomizeFace.calls.length).toEqual(1)
+          expect(dice.randomizeFace.calls.count()).toEqual(1)
         })
       })
     })
