@@ -13,16 +13,14 @@ describe("dice-roller directive", function() {
     spyOn(diceRollerManager, 'dice').and.returnValue(dice)
   }))
 
-  beforeEach(function () {
-    $('#jasmine_content').html(element)
-  })
-
   function createDie(sides, name) {
     name = name || ''
 
     element = angular.element(
       "<div><dice-roller sides='" + sides + "' name='" + name + "'></dice-roller></div>"
     )
+
+    $('#jasmine_content').html(element)
 
     $compile(element)(scope);
     scope.$digest();
@@ -101,6 +99,20 @@ describe("dice-roller directive", function() {
       dice.disabled = false
       scope.$digest()
       expect(diceRoller.find('.d10').attr('class')).not.toMatch("disabled")
+    })
+  })
+
+  describe("when dice is discarded", function() {
+    it("adds a discarded class to the dice", function() {
+      diceRoller = createDie(10)
+
+      dice.discarded = true
+      scope.$digest()
+      expect(diceRoller.find('.d10').attr('class')).toMatch("discarded")
+
+      dice.discarded = false
+      scope.$digest()
+      expect(diceRoller.find('.d10').attr('class')).not.toMatch("discarded")
     })
   })
 

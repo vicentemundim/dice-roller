@@ -15,11 +15,24 @@
           this.rolling = true
 
           $timeout(function () {
-            self.rolling = false
-
             self.face = self.randomizeFace()
+            self.rolling = false
+            self.disable()
           }, 1000)
         }
+      },
+
+      disable: function () {
+        this.disabled = true
+      },
+
+      enable: function () {
+        this.disabled = this.discarded = false
+        this.face = undefined
+      },
+
+      discard: function () {
+        this.discarded = true
       },
 
       randomizeFace: function () {

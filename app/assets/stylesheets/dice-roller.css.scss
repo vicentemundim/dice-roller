@@ -25,7 +25,7 @@ $miniContainerWidth:     50px;
   $transitionDuration: 0.5s;
   $animationDuration:  1s;
 
-  @include transition(transform $transitionDuration ease-out);
+  @include transition(transform $transitionDuration ease-out, opacity $transitionDuration ease-out);
 
   &.reset {
     @include transition(transform 0.1s ease-out);
@@ -240,8 +240,14 @@ $miniContainerWidth:     50px;
     @include transform-style;
     cursor: pointer;
 
+    opacity: 0.7;
+
     &.disabled {
-      opacity: 0.7;
+      opacity: 1;
+    }
+
+    &.discarded {
+      opacity: 0.2;
     }
 
     .face {

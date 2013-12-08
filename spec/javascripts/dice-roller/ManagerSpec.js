@@ -1,11 +1,12 @@
 describe("dice-roller manager", function() {
-  var manager, dice, Dice
+  var manager, dice, diceGroup, Dice, DiceGroup
 
   beforeEach(module('diceRoller'))
 
-  beforeEach(inject(function (DiceRollerManager, DiceRollerDice) {
+  beforeEach(inject(function (DiceRollerManager, DiceRollerDice, DiceRollerDiceGroup) {
     manager = DiceRollerManager
     Dice = DiceRollerDice
+    DiceGroup = DiceRollerDiceGroup
   }))
 
   it("starts with an empty list of dices", function () {

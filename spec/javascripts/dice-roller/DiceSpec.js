@@ -38,6 +38,43 @@ describe("dice-roller dice", function() {
         expect(dice.rolling).toBeFalsy()
         expect(dice.face).toEqual(2)
       })
+
+      it("disables the dice", function() {
+        dice.roll()
+        $timeout.flush()
+        expect(dice.disabled).toBeTruthy()
+      })
+
+      describe("when it is already rolling", function() {
+        it("won't randomize face more than once", function () {
+          spyOn(dice, 'randomizeFace').and.returnValue(3)
+
+          dice.roll()
+          dice.roll()
+
+          $timeout.flush()
+
+          expect(dice.randomizeFace.calls.count()).toEqual(1)
+        })
+      })
+
+      describe("when it is disabled", function() {
+        beforeEach(function() {
+          // when dice is disabled it will not create a timeout,
+          // so in order to effectively test it we always make sure that we have
+          // one timeout set
+          $timeout(function () {}, 0)
+        })
+
+        it("won't roll", function () {
+          dice.disabled = true
+          dice.roll()
+
+          $timeout.flush()
+
+          expect(dice.face).toBeUndefined()
+        })
+      })
     })
 
     describe("randomizeFace", function () {
@@ -62,6 +99,50 @@ describe("dice-roller dice", function() {
     describe("generateFaces", function () {
       it("should return faces from 0 to 9", function () {
         expect(dice.generateFaces()).toEqual([0, 1, 2, 3, 4, 5, 6, 7, 8, 9])
+      })
+    })
+
+    describe("enable", function() {
+      beforeEach(function () {
+        dice.discard = dice.discard = true
+        dice.face = 3
+      })
+
+      it("sets disabled to false", function() {
+        dice.enable()
+        expect(dice.disabled).toBeFalsy()
+      })
+
+      it("sets discard to false", function() {
+        dice.enable()
+        expect(dice.discarded).toBeFalsy()
+      })
+
+      it("sets face to undefined", function() {
+        dice.enable()
+        expect(dice.face).toBeUndefined()
+      })
+    })
+
+    describe("disable", function() {
+      beforeEach(function () {
+        dice.disabled = false
+      })
+
+      it("sets disabled to true", function() {
+        dice.disable()
+        expect(dice.disabled).toBeTruthy()
+      })
+    })
+
+    describe("discard", function() {
+      beforeEach(function () {
+        dice.discarded = false
+      })
+
+      it("sets discarded to true", function() {
+        dice.discard()
+        expect(dice.discarded).toBeTruthy()
       })
     })
   })
@@ -96,6 +177,12 @@ describe("dice-roller dice", function() {
 
         expect(dice.rolling).toBeFalsy()
         expect(dice.face).toEqual(18)
+      })
+
+      it("disables the dice", function() {
+        dice.roll()
+        $timeout.flush()
+        expect(dice.disabled).toBeTruthy()
       })
 
       describe("when it is already rolling", function() {
@@ -152,6 +239,28 @@ describe("dice-roller dice", function() {
     describe("generateFaces", function () {
       it("should return faces from 1 to 20", function () {
         expect(dice.generateFaces()).toEqual([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20])
+      })
+    })
+
+    describe("enable", function() {
+      beforeEach(function () {
+        dice.disabled = true
+      })
+
+      it("sets disabled to false", function() {
+        dice.enable()
+        expect(dice.disabled).toBeFalsy()
+      })
+    })
+
+    describe("disable", function() {
+      beforeEach(function () {
+        dice.disabled = false
+      })
+
+      it("sets disabled to true", function() {
+        dice.disable()
+        expect(dice.disabled).toBeTruthy()
       })
     })
   })
