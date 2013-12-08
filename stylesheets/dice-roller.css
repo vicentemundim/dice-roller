@@ -1,0 +1,2475 @@
+@-moz-keyframes roll {
+  /* line 19, /Users/vicentemundim/Projects/dice-roller/app/assets/stylesheets/dice-roller.css.scss */
+  25% {
+    -webkit-transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+    -moz-transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+    -ms-transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+    -o-transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+    transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+  }
+
+  /* line 20, /Users/vicentemundim/Projects/dice-roller/app/assets/stylesheets/dice-roller.css.scss */
+  50% {
+    -webkit-transform: rotateX(120deg) rotateY(240deg) rotateZ(0deg);
+    -moz-transform: rotateX(120deg) rotateY(240deg) rotateZ(0deg);
+    -ms-transform: rotateX(120deg) rotateY(240deg) rotateZ(0deg);
+    -o-transform: rotateX(120deg) rotateY(240deg) rotateZ(0deg);
+    transform: rotateX(120deg) rotateY(240deg) rotateZ(0deg);
+  }
+
+  /* line 21, /Users/vicentemundim/Projects/dice-roller/app/assets/stylesheets/dice-roller.css.scss */
+  75% {
+    -webkit-transform: rotateX(240deg) rotateY(480deg) rotateZ(0deg);
+    -moz-transform: rotateX(240deg) rotateY(480deg) rotateZ(0deg);
+    -ms-transform: rotateX(240deg) rotateY(480deg) rotateZ(0deg);
+    -o-transform: rotateX(240deg) rotateY(480deg) rotateZ(0deg);
+    transform: rotateX(240deg) rotateY(480deg) rotateZ(0deg);
+  }
+}
+
+@-webkit-keyframes roll {
+  /* line 19, /Users/vicentemundim/Projects/dice-roller/app/assets/stylesheets/dice-roller.css.scss */
+  25% {
+    -webkit-transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+    -moz-transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+    -ms-transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+    -o-transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+    transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+  }
+
+  /* line 20, /Users/vicentemundim/Projects/dice-roller/app/assets/stylesheets/dice-roller.css.scss */
+  50% {
+    -webkit-transform: rotateX(120deg) rotateY(240deg) rotateZ(0deg);
+    -moz-transform: rotateX(120deg) rotateY(240deg) rotateZ(0deg);
+    -ms-transform: rotateX(120deg) rotateY(240deg) rotateZ(0deg);
+    -o-transform: rotateX(120deg) rotateY(240deg) rotateZ(0deg);
+    transform: rotateX(120deg) rotateY(240deg) rotateZ(0deg);
+  }
+
+  /* line 21, /Users/vicentemundim/Projects/dice-roller/app/assets/stylesheets/dice-roller.css.scss */
+  75% {
+    -webkit-transform: rotateX(240deg) rotateY(480deg) rotateZ(0deg);
+    -moz-transform: rotateX(240deg) rotateY(480deg) rotateZ(0deg);
+    -ms-transform: rotateX(240deg) rotateY(480deg) rotateZ(0deg);
+    -o-transform: rotateX(240deg) rotateY(480deg) rotateZ(0deg);
+    transform: rotateX(240deg) rotateY(480deg) rotateZ(0deg);
+  }
+}
+
+@keyframes roll {
+  /* line 19, /Users/vicentemundim/Projects/dice-roller/app/assets/stylesheets/dice-roller.css.scss */
+  25% {
+    -webkit-transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+    -moz-transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+    -ms-transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+    -o-transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+    transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+  }
+
+  /* line 20, /Users/vicentemundim/Projects/dice-roller/app/assets/stylesheets/dice-roller.css.scss */
+  50% {
+    -webkit-transform: rotateX(120deg) rotateY(240deg) rotateZ(0deg);
+    -moz-transform: rotateX(120deg) rotateY(240deg) rotateZ(0deg);
+    -ms-transform: rotateX(120deg) rotateY(240deg) rotateZ(0deg);
+    -o-transform: rotateX(120deg) rotateY(240deg) rotateZ(0deg);
+    transform: rotateX(120deg) rotateY(240deg) rotateZ(0deg);
+  }
+
+  /* line 21, /Users/vicentemundim/Projects/dice-roller/app/assets/stylesheets/dice-roller.css.scss */
+  75% {
+    -webkit-transform: rotateX(240deg) rotateY(480deg) rotateZ(0deg);
+    -moz-transform: rotateX(240deg) rotateY(480deg) rotateZ(0deg);
+    -ms-transform: rotateX(240deg) rotateY(480deg) rotateZ(0deg);
+    -o-transform: rotateX(240deg) rotateY(480deg) rotateZ(0deg);
+    transform: rotateX(240deg) rotateY(480deg) rotateZ(0deg);
+  }
+}
+
+/* line 230, /Users/vicentemundim/Projects/dice-roller/app/assets/stylesheets/dice-roller.css.scss */
+.dice-roller {
+  margin: auto auto;
+  width: 200px;
+  height: 200px;
+  -webkit-perspective: 1500px;
+  -moz-perspective: 1500px;
+  -ms-perspective: 1500px;
+  -o-perspective: 1500px;
+  perspective: 1500px;
+}
+/* line 236, /Users/vicentemundim/Projects/dice-roller/app/assets/stylesheets/dice-roller.css.scss */
+.dice-roller .dice {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  -ms-transform-style: preserve-3d;
+  -o-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  cursor: pointer;
+  opacity: 0.7;
+}
+/* line 245, /Users/vicentemundim/Projects/dice-roller/app/assets/stylesheets/dice-roller.css.scss */
+.dice-roller .dice.disabled {
+  opacity: 1;
+}
+/* line 249, /Users/vicentemundim/Projects/dice-roller/app/assets/stylesheets/dice-roller.css.scss */
+.dice-roller .dice.discarded {
+  opacity: 0.2;
+}
+/* line 253, /Users/vicentemundim/Projects/dice-roller/app/assets/stylesheets/dice-roller.css.scss */
+.dice-roller .dice .face {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  width: 0px;
+  height: 0px;
+  border-bottom-style: solid;
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  -ms-transform-style: preserve-3d;
+  -o-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  -ms-backface-visibility: hidden;
+  -o-backface-visibility: hidden;
+  backface-visibility: hidden;
+  counter-increment: steps 1;
+}
+/* line 267, /Users/vicentemundim/Projects/dice-roller/app/assets/stylesheets/dice-roller.css.scss */
+.dice-roller .dice .face:before {
+  content: counter(steps);
+  position: absolute;
+  text-align: center;
+}
+/* line 273, /Users/vicentemundim/Projects/dice-roller/app/assets/stylesheets/dice-roller.css.scss */
+.dice-roller .dice .face:after {
+  content: "";
+  position: absolute;
+  width: 0px;
+  height: 0px;
+  border-top-style: solid;
+}
+/* line 284, /Users/vicentemundim/Projects/dice-roller/app/assets/stylesheets/dice-roller.css.scss */
+.dice-roller .d10 {
+  -webkit-transform: rotateX(-45deg);
+  -moz-transform: rotateX(-45deg);
+  -ms-transform: rotateX(-45deg);
+  -o-transform: rotateX(-45deg);
+  transform: rotateX(-45deg);
+  -webkit-transition: -webkit-transform 0.5s ease-out, opacity 0.5s ease-out;
+  -moz-transition: -moz-transform 0.5s ease-out, opacity 0.5s ease-out;
+  -o-transition: -o-transform 0.5s ease-out, opacity 0.5s ease-out;
+  transition: transform 0.5s ease-out, opacity 0.5s ease-out;
+}
+/* line 59, /Users/vicentemundim/Projects/dice-roller/app/assets/stylesheets/dice-roller.css.scss */
+.dice-roller .d10[data-face="1"] {
+  -webkit-transform: rotateX(-225deg) rotateY(-72deg);
+  -moz-transform: rotateX(-225deg) rotateY(-72deg);
+  -ms-transform: rotateX(-225deg) rotateY(-72deg);
+  -o-transform: rotateX(-225deg) rotateY(-72deg);
+  transform: rotateX(-225deg) rotateY(-72deg);
+}
+/* line 59, /Users/vicentemundim/Projects/dice-roller/app/assets/stylesheets/dice-roller.css.scss */
+.dice-roller .d10[data-face="2"] {
+  -webkit-transform: rotateX(-45deg) rotateY(72deg);
+  -moz-transform: rotateX(-45deg) rotateY(72deg);
+  -ms-transform: rotateX(-45deg) rotateY(72deg);
+  -o-transform: rotateX(-45deg) rotateY(72deg);
+  transform: rotateX(-45deg) rotateY(72deg);
+}
+/* line 59, /Users/vicentemundim/Projects/dice-roller/app/assets/stylesheets/dice-roller.css.scss */
+.dice-roller .d10[data-face="3"] {
+  -webkit-transform: rotateX(-225deg) rotateY(-144deg);
+  -moz-transform: rotateX(-225deg) rotateY(-144deg);
+  -ms-transform: rotateX(-225deg) rotateY(-144deg);
+  -o-transform: rotateX(-225deg) rotateY(-144deg);
+  transform: rotateX(-225deg) rotateY(-144deg);
+}
+/* line 59, /Users/vicentemundim/Projects/dice-roller/app/assets/stylesheets/dice-roller.css.scss */
+.dice-roller .d10[data-face="4"] {
+  -webkit-transform: rotateX(-45deg) rotateY(144deg);
+  -moz-transform: rotateX(-45deg) rotateY(144deg);
+  -ms-transform: rotateX(-45deg) rotateY(144deg);
+  -o-transform: rotateX(-45deg) rotateY(144deg);
+  transform: rotateX(-45deg) rotateY(144deg);
+}
+/* line 59, /Users/vicentemundim/Projects/dice-roller/app/assets/stylesheets/dice-roller.css.scss */
+.dice-roller .d10[data-face="5"] {
+  -webkit-transform: rotateX(-225deg) rotateY(-216deg);
+  -moz-transform: rotateX(-225deg) rotateY(-216deg);
+  -ms-transform: rotateX(-225deg) rotateY(-216deg);
+  -o-transform: rotateX(-225deg) rotateY(-216deg);
+  transform: rotateX(-225deg) rotateY(-216deg);
+}
+/* line 59, /Users/vicentemundim/Projects/dice-roller/app/assets/stylesheets/dice-roller.css.scss */
+.dice-roller .d10[data-face="6"] {
+  -webkit-transform: rotateX(-45deg) rotateY(216deg);
+  -moz-transform: rotateX(-45deg) rotateY(216deg);
+  -ms-transform: rotateX(-45deg) rotateY(216deg);
+  -o-transform: rotateX(-45deg) rotateY(216deg);
+  transform: rotateX(-45deg) rotateY(216deg);
+}
+/* line 59, /Users/vicentemundim/Projects/dice-roller/app/assets/stylesheets/dice-roller.css.scss */
+.dice-roller .d10[data-face="7"] {
+  -webkit-transform: rotateX(-225deg) rotateY(-288deg);
+  -moz-transform: rotateX(-225deg) rotateY(-288deg);
+  -ms-transform: rotateX(-225deg) rotateY(-288deg);
+  -o-transform: rotateX(-225deg) rotateY(-288deg);
+  transform: rotateX(-225deg) rotateY(-288deg);
+}
+/* line 59, /Users/vicentemundim/Projects/dice-roller/app/assets/stylesheets/dice-roller.css.scss */
+.dice-roller .d10[data-face="8"] {
+  -webkit-transform: rotateX(-45deg) rotateY(288deg);
+  -moz-transform: rotateX(-45deg) rotateY(288deg);
+  -ms-transform: rotateX(-45deg) rotateY(288deg);
+  -o-transform: rotateX(-45deg) rotateY(288deg);
+  transform: rotateX(-45deg) rotateY(288deg);
+}
+/* line 59, /Users/vicentemundim/Projects/dice-roller/app/assets/stylesheets/dice-roller.css.scss */
+.dice-roller .d10[data-face="9"] {
+  -webkit-transform: rotateX(-225deg) rotateY(-360deg);
+  -moz-transform: rotateX(-225deg) rotateY(-360deg);
+  -ms-transform: rotateX(-225deg) rotateY(-360deg);
+  -o-transform: rotateX(-225deg) rotateY(-360deg);
+  transform: rotateX(-225deg) rotateY(-360deg);
+}
+/* line 59, /Users/vicentemundim/Projects/dice-roller/app/assets/stylesheets/dice-roller.css.scss */
+.dice-roller .d10[data-face="10"] {
+  -webkit-transform: rotateX(-45deg) rotateY(360deg);
+  -moz-transform: rotateX(-45deg) rotateY(360deg);
+  -ms-transform: rotateX(-45deg) rotateY(360deg);
+  -o-transform: rotateX(-45deg) rotateY(360deg);
+  transform: rotateX(-45deg) rotateY(360deg);
+}
+/* line 70, /Users/vicentemundim/Projects/dice-roller/app/assets/stylesheets/dice-roller.css.scss */
+.dice-roller .d10 .face {
+  margin: 0 -52px;
+  border-left: 52px solid transparent;
+  border-right: 52px solid transparent;
+  border-bottom-width: 100px;
+}
+/* line 79, /Users/vicentemundim/Projects/dice-roller/app/assets/stylesheets/dice-roller.css.scss */
+.dice-roller .d10 .face:before {
+  top: 25px;
+  left: -52px;
+  font-size: 60px;
+  line-height: 100px;
+  width: 104px;
+  height: 100px;
+}
+/* line 88, /Users/vicentemundim/Projects/dice-roller/app/assets/stylesheets/dice-roller.css.scss */
+.dice-roller .d10 .face:after {
+  bottom: -124px;
+  left: -52px;
+  border-left: 52px solid transparent;
+  border-right: 52px solid transparent;
+  border-top-width: 24px;
+}
+/* line 97, /Users/vicentemundim/Projects/dice-roller/app/assets/stylesheets/dice-roller.css.scss */
+.dice-roller .d10 .face.face-0 {
+  -webkit-transform: rotateY(0deg) translateZ(34px) translateY(6.96px) rotateX(45deg);
+  -moz-transform: rotateY(0deg) translateZ(34px) translateY(6.96px) rotateX(45deg);
+  -ms-transform: rotateY(0deg) translateZ(34px) translateY(6.96px) rotateX(45deg);
+  -o-transform: rotateY(0deg) translateZ(34px) translateY(6.96px) rotateX(45deg);
+  transform: rotateY(0deg) translateZ(34px) translateY(6.96px) rotateX(45deg);
+}
+/* line 97, /Users/vicentemundim/Projects/dice-roller/app/assets/stylesheets/dice-roller.css.scss */
+.dice-roller .d10 .face.face-1 {
+  top: 100px;
+  -webkit-transform: rotateY(72deg) translateZ(-34px) translateY(-6.96px) rotateZ(180deg) rotateY(180deg) rotateX(45deg);
+  -moz-transform: rotateY(72deg) translateZ(-34px) translateY(-6.96px) rotateZ(180deg) rotateY(180deg) rotateX(45deg);
+  -ms-transform: rotateY(72deg) translateZ(-34px) translateY(-6.96px) rotateZ(180deg) rotateY(180deg) rotateX(45deg);
+  -o-transform: rotateY(72deg) translateZ(-34px) translateY(-6.96px) rotateZ(180deg) rotateY(180deg) rotateX(45deg);
+  transform: rotateY(72deg) translateZ(-34px) translateY(-6.96px) rotateZ(180deg) rotateY(180deg) rotateX(45deg);
+}
+/* line 97, /Users/vicentemundim/Projects/dice-roller/app/assets/stylesheets/dice-roller.css.scss */
+.dice-roller .d10 .face.face-2 {
+  -webkit-transform: rotateY(-72deg) translateZ(34px) translateY(6.96px) rotateX(45deg);
+  -moz-transform: rotateY(-72deg) translateZ(34px) translateY(6.96px) rotateX(45deg);
+  -ms-transform: rotateY(-72deg) translateZ(34px) translateY(6.96px) rotateX(45deg);
+  -o-transform: rotateY(-72deg) translateZ(34px) translateY(6.96px) rotateX(45deg);
+  transform: rotateY(-72deg) translateZ(34px) translateY(6.96px) rotateX(45deg);
+}
+/* line 97, /Users/vicentemundim/Projects/dice-roller/app/assets/stylesheets/dice-roller.css.scss */
+.dice-roller .d10 .face.face-3 {
+  top: 100px;
+  -webkit-transform: rotateY(144deg) translateZ(-34px) translateY(-6.96px) rotateZ(180deg) rotateY(180deg) rotateX(45deg);
+  -moz-transform: rotateY(144deg) translateZ(-34px) translateY(-6.96px) rotateZ(180deg) rotateY(180deg) rotateX(45deg);
+  -ms-transform: rotateY(144deg) translateZ(-34px) translateY(-6.96px) rotateZ(180deg) rotateY(180deg) rotateX(45deg);
+  -o-transform: rotateY(144deg) translateZ(-34px) translateY(-6.96px) rotateZ(180deg) rotateY(180deg) rotateX(45deg);
+  transform: rotateY(144deg) translateZ(-34px) translateY(-6.96px) rotateZ(180deg) rotateY(180deg) rotateX(45deg);
+}
+/* line 97, /Users/vicentemundim/Projects/dice-roller/app/assets/stylesheets/dice-roller.css.scss */
+.dice-roller .d10 .face.face-4 {
+  -webkit-transform: rotateY(-144deg) translateZ(34px) translateY(6.96px) rotateX(45deg);
+  -moz-transform: rotateY(-144deg) translateZ(34px) translateY(6.96px) rotateX(45deg);
+  -ms-transform: rotateY(-144deg) translateZ(34px) translateY(6.96px) rotateX(45deg);
+  -o-transform: rotateY(-144deg) translateZ(34px) translateY(6.96px) rotateX(45deg);
+  transform: rotateY(-144deg) translateZ(34px) translateY(6.96px) rotateX(45deg);
+}
+/* line 97, /Users/vicentemundim/Projects/dice-roller/app/assets/stylesheets/dice-roller.css.scss */
+.dice-roller .d10 .face.face-5 {
+  top: 100px;
+  -webkit-transform: rotateY(216deg) translateZ(-34px) translateY(-6.96px) rotateZ(180deg) rotateY(180deg) rotateX(45deg);
+  -moz-transform: rotateY(216deg) translateZ(-34px) translateY(-6.96px) rotateZ(180deg) rotateY(180deg) rotateX(45deg);
+  -ms-transform: rotateY(216deg) translateZ(-34px) translateY(-6.96px) rotateZ(180deg) rotateY(180deg) rotateX(45deg);
+  -o-transform: rotateY(216deg) translateZ(-34px) translateY(-6.96px) rotateZ(180deg) rotateY(180deg) rotateX(45deg);
+  transform: rotateY(216deg) translateZ(-34px) translateY(-6.96px) rotateZ(180deg) rotateY(180deg) rotateX(45deg);
+}
+/* line 97, /Users/vicentemundim/Projects/dice-roller/app/assets/stylesheets/dice-roller.css.scss */
+.dice-roller .d10 .face.face-6 {
+  -webkit-transform: rotateY(-216deg) translateZ(34px) translateY(6.96px) rotateX(45deg);
+  -moz-transform: rotateY(-216deg) translateZ(34px) translateY(6.96px) rotateX(45deg);
+  -ms-transform: rotateY(-216deg) translateZ(34px) translateY(6.96px) rotateX(45deg);
+  -o-transform: rotateY(-216deg) translateZ(34px) translateY(6.96px) rotateX(45deg);
+  transform: rotateY(-216deg) translateZ(34px) translateY(6.96px) rotateX(45deg);
+}
+/* line 97, /Users/vicentemundim/Projects/dice-roller/app/assets/stylesheets/dice-roller.css.scss */
+.dice-roller .d10 .face.face-7 {
+  top: 100px;
+  -webkit-transform: rotateY(288deg) translateZ(-34px) translateY(-6.96px) rotateZ(180deg) rotateY(180deg) rotateX(45deg);
+  -moz-transform: rotateY(288deg) translateZ(-34px) translateY(-6.96px) rotateZ(180deg) rotateY(180deg) rotateX(45deg);
+  -ms-transform: rotateY(288deg) translateZ(-34px) translateY(-6.96px) rotateZ(180deg) rotateY(180deg) rotateX(45deg);
+  -o-transform: rotateY(288deg) translateZ(-34px) translateY(-6.96px) rotateZ(180deg) rotateY(180deg) rotateX(45deg);
+  transform: rotateY(288deg) translateZ(-34px) translateY(-6.96px) rotateZ(180deg) rotateY(180deg) rotateX(45deg);
+}
+/* line 97, /Users/vicentemundim/Projects/dice-roller/app/assets/stylesheets/dice-roller.css.scss */
+.dice-roller .d10 .face.face-8 {
+  -webkit-transform: rotateY(-288deg) translateZ(34px) translateY(6.96px) rotateX(45deg);
+  -moz-transform: rotateY(-288deg) translateZ(34px) translateY(6.96px) rotateX(45deg);
+  -ms-transform: rotateY(-288deg) translateZ(34px) translateY(6.96px) rotateX(45deg);
+  -o-transform: rotateY(-288deg) translateZ(34px) translateY(6.96px) rotateX(45deg);
+  transform: rotateY(-288deg) translateZ(34px) translateY(6.96px) rotateX(45deg);
+}
+/* line 97, /Users/vicentemundim/Projects/dice-roller/app/assets/stylesheets/dice-roller.css.scss */
+.dice-roller .d10 .face.face-9 {
+  top: 100px;
+  -webkit-transform: rotateY(360deg) translateZ(-34px) translateY(-6.96px) rotateZ(180deg) rotateY(180deg) rotateX(45deg);
+  -moz-transform: rotateY(360deg) translateZ(-34px) translateY(-6.96px) rotateZ(180deg) rotateY(180deg) rotateX(45deg);
+  -ms-transform: rotateY(360deg) translateZ(-34px) translateY(-6.96px) rotateZ(180deg) rotateY(180deg) rotateX(45deg);
+  -o-transform: rotateY(360deg) translateZ(-34px) translateY(-6.96px) rotateZ(180deg) rotateY(180deg) rotateX(45deg);
+  transform: rotateY(360deg) translateZ(-34px) translateY(-6.96px) rotateZ(180deg) rotateY(180deg) rotateX(45deg);
+}
+/* line 216, /Users/vicentemundim/Projects/dice-roller/app/assets/stylesheets/dice-roller.css.scss */
+.dice-roller .d10 .face {
+  border-bottom-color: rgba(30, 180, 20, 0.75);
+}
+/* line 219, /Users/vicentemundim/Projects/dice-roller/app/assets/stylesheets/dice-roller.css.scss */
+.dice-roller .d10 .face:before {
+  color: white;
+  text-shadow: 1px 1px 3px black;
+}
+/* line 224, /Users/vicentemundim/Projects/dice-roller/app/assets/stylesheets/dice-roller.css.scss */
+.dice-roller .d10 .face:after {
+  border-top-color: rgba(30, 180, 20, 0.75);
+}
+/* line 30, /Users/vicentemundim/Projects/dice-roller/app/assets/stylesheets/dice-roller.css.scss */
+.dice-roller .d10.reset {
+  -webkit-transition: -webkit-transform 0.1s ease-out;
+  -moz-transition: -moz-transform 0.1s ease-out;
+  -o-transition: -o-transform 0.1s ease-out;
+  transition: transform 0.1s ease-out;
+  -webkit-transform: rotateX(0);
+  -moz-transform: rotateX(0);
+  -ms-transform: rotateX(0);
+  -o-transform: rotateX(0);
+  transform: rotateX(0);
+}
+/* line 35, /Users/vicentemundim/Projects/dice-roller/app/assets/stylesheets/dice-roller.css.scss */
+.dice-roller .d10.rolling {
+  -webkit-animation: roll 1s linear;
+  -moz-animation: roll 1s linear;
+  -ms-animation: roll 1s linear;
+  -o-animation: roll 1s linear;
+  animation: roll 1s linear;
+}
+/* line 290, /Users/vicentemundim/Projects/dice-roller/app/assets/stylesheets/dice-roller.css.scss */
+.dice-roller .d10 .face:first-child {
+  counter-increment: steps 0;
+}
+/* line 296, /Users/vicentemundim/Projects/dice-roller/app/assets/stylesheets/dice-roller.css.scss */
+.dice-roller .d20 {
+  -webkit-transform: rotateX(-53deg);
+  -moz-transform: rotateX(-53deg);
+  -ms-transform: rotateX(-53deg);
+  -o-transform: rotateX(-53deg);
+  transform: rotateX(-53deg);
+  -webkit-transition: -webkit-transform 0.5s ease-out, opacity 0.5s ease-out;
+  -moz-transition: -moz-transform 0.5s ease-out, opacity 0.5s ease-out;
+  -o-transition: -o-transform 0.5s ease-out, opacity 0.5s ease-out;
+  transition: transform 0.5s ease-out, opacity 0.5s ease-out;
+}
+/* line 141, /Users/vicentemundim/Projects/dice-roller/app/assets/stylesheets/dice-roller.css.scss */
+.dice-roller .d20[data-face="1"] {
+  -webkit-transform: rotateX(-53deg) rotateY(0deg);
+  -moz-transform: rotateX(-53deg) rotateY(0deg);
+  -ms-transform: rotateX(-53deg) rotateY(0deg);
+  -o-transform: rotateX(-53deg) rotateY(0deg);
+  transform: rotateX(-53deg) rotateY(0deg);
+}
+/* line 141, /Users/vicentemundim/Projects/dice-roller/app/assets/stylesheets/dice-roller.css.scss */
+.dice-roller .d20[data-face="2"] {
+  -webkit-transform: rotateX(-53deg) rotateY(72deg);
+  -moz-transform: rotateX(-53deg) rotateY(72deg);
+  -ms-transform: rotateX(-53deg) rotateY(72deg);
+  -o-transform: rotateX(-53deg) rotateY(72deg);
+  transform: rotateX(-53deg) rotateY(72deg);
+}
+/* line 141, /Users/vicentemundim/Projects/dice-roller/app/assets/stylesheets/dice-roller.css.scss */
+.dice-roller .d20[data-face="3"] {
+  -webkit-transform: rotateX(-53deg) rotateY(144deg);
+  -moz-transform: rotateX(-53deg) rotateY(144deg);
+  -ms-transform: rotateX(-53deg) rotateY(144deg);
+  -o-transform: rotateX(-53deg) rotateY(144deg);
+  transform: rotateX(-53deg) rotateY(144deg);
+}
+/* line 141, /Users/vicentemundim/Projects/dice-roller/app/assets/stylesheets/dice-roller.css.scss */
+.dice-roller .d20[data-face="4"] {
+  -webkit-transform: rotateX(-53deg) rotateY(216deg);
+  -moz-transform: rotateX(-53deg) rotateY(216deg);
+  -ms-transform: rotateX(-53deg) rotateY(216deg);
+  -o-transform: rotateX(-53deg) rotateY(216deg);
+  transform: rotateX(-53deg) rotateY(216deg);
+}
+/* line 141, /Users/vicentemundim/Projects/dice-roller/app/assets/stylesheets/dice-roller.css.scss */
+.dice-roller .d20[data-face="5"] {
+  -webkit-transform: rotateX(-53deg) rotateY(288deg);
+  -moz-transform: rotateX(-53deg) rotateY(288deg);
+  -ms-transform: rotateX(-53deg) rotateY(288deg);
+  -o-transform: rotateX(-53deg) rotateY(288deg);
+  transform: rotateX(-53deg) rotateY(288deg);
+}
+/* line 148, /Users/vicentemundim/Projects/dice-roller/app/assets/stylesheets/dice-roller.css.scss */
+.dice-roller .d20[data-face="16"] {
+  -webkit-transform: rotateX(127deg) rotateY(-72deg);
+  -moz-transform: rotateX(127deg) rotateY(-72deg);
+  -ms-transform: rotateX(127deg) rotateY(-72deg);
+  -o-transform: rotateX(127deg) rotateY(-72deg);
+  transform: rotateX(127deg) rotateY(-72deg);
+}
+/* line 148, /Users/vicentemundim/Projects/dice-roller/app/assets/stylesheets/dice-roller.css.scss */
+.dice-roller .d20[data-face="17"] {
+  -webkit-transform: rotateX(127deg) rotateY(-144deg);
+  -moz-transform: rotateX(127deg) rotateY(-144deg);
+  -ms-transform: rotateX(127deg) rotateY(-144deg);
+  -o-transform: rotateX(127deg) rotateY(-144deg);
+  transform: rotateX(127deg) rotateY(-144deg);
+}
+/* line 148, /Users/vicentemundim/Projects/dice-roller/app/assets/stylesheets/dice-roller.css.scss */
+.dice-roller .d20[data-face="18"] {
+  -webkit-transform: rotateX(127deg) rotateY(-216deg);
+  -moz-transform: rotateX(127deg) rotateY(-216deg);
+  -ms-transform: rotateX(127deg) rotateY(-216deg);
+  -o-transform: rotateX(127deg) rotateY(-216deg);
+  transform: rotateX(127deg) rotateY(-216deg);
+}
+/* line 148, /Users/vicentemundim/Projects/dice-roller/app/assets/stylesheets/dice-roller.css.scss */
+.dice-roller .d20[data-face="19"] {
+  -webkit-transform: rotateX(127deg) rotateY(-288deg);
+  -moz-transform: rotateX(127deg) rotateY(-288deg);
+  -ms-transform: rotateX(127deg) rotateY(-288deg);
+  -o-transform: rotateX(127deg) rotateY(-288deg);
+  transform: rotateX(127deg) rotateY(-288deg);
+}
+/* line 148, /Users/vicentemundim/Projects/dice-roller/app/assets/stylesheets/dice-roller.css.scss */
+.dice-roller .d20[data-face="20"] {
+  -webkit-transform: rotateX(127deg) rotateY(-360deg);
+  -moz-transform: rotateX(127deg) rotateY(-360deg);
+  -ms-transform: rotateX(127deg) rotateY(-360deg);
+  -o-transform: rotateX(127deg) rotateY(-360deg);
+  transform: rotateX(127deg) rotateY(-360deg);
+}
+/* line 155, /Users/vicentemundim/Projects/dice-roller/app/assets/stylesheets/dice-roller.css.scss */
+.dice-roller .d20[data-face="6"] {
+  -webkit-transform: rotateX(11deg) rotateZ(180deg) rotateY(0deg);
+  -moz-transform: rotateX(11deg) rotateZ(180deg) rotateY(0deg);
+  -ms-transform: rotateX(11deg) rotateZ(180deg) rotateY(0deg);
+  -o-transform: rotateX(11deg) rotateZ(180deg) rotateY(0deg);
+  transform: rotateX(11deg) rotateZ(180deg) rotateY(0deg);
+}
+/* line 155, /Users/vicentemundim/Projects/dice-roller/app/assets/stylesheets/dice-roller.css.scss */
+.dice-roller .d20[data-face="7"] {
+  -webkit-transform: rotateX(11deg) rotateZ(180deg) rotateY(72deg);
+  -moz-transform: rotateX(11deg) rotateZ(180deg) rotateY(72deg);
+  -ms-transform: rotateX(11deg) rotateZ(180deg) rotateY(72deg);
+  -o-transform: rotateX(11deg) rotateZ(180deg) rotateY(72deg);
+  transform: rotateX(11deg) rotateZ(180deg) rotateY(72deg);
+}
+/* line 155, /Users/vicentemundim/Projects/dice-roller/app/assets/stylesheets/dice-roller.css.scss */
+.dice-roller .d20[data-face="8"] {
+  -webkit-transform: rotateX(11deg) rotateZ(180deg) rotateY(144deg);
+  -moz-transform: rotateX(11deg) rotateZ(180deg) rotateY(144deg);
+  -ms-transform: rotateX(11deg) rotateZ(180deg) rotateY(144deg);
+  -o-transform: rotateX(11deg) rotateZ(180deg) rotateY(144deg);
+  transform: rotateX(11deg) rotateZ(180deg) rotateY(144deg);
+}
+/* line 155, /Users/vicentemundim/Projects/dice-roller/app/assets/stylesheets/dice-roller.css.scss */
+.dice-roller .d20[data-face="9"] {
+  -webkit-transform: rotateX(11deg) rotateZ(180deg) rotateY(216deg);
+  -moz-transform: rotateX(11deg) rotateZ(180deg) rotateY(216deg);
+  -ms-transform: rotateX(11deg) rotateZ(180deg) rotateY(216deg);
+  -o-transform: rotateX(11deg) rotateZ(180deg) rotateY(216deg);
+  transform: rotateX(11deg) rotateZ(180deg) rotateY(216deg);
+}
+/* line 155, /Users/vicentemundim/Projects/dice-roller/app/assets/stylesheets/dice-roller.css.scss */
+.dice-roller .d20[data-face="10"] {
+  -webkit-transform: rotateX(11deg) rotateZ(180deg) rotateY(288deg);
+  -moz-transform: rotateX(11deg) rotateZ(180deg) rotateY(288deg);
+  -ms-transform: rotateX(11deg) rotateZ(180deg) rotateY(288deg);
+  -o-transform: rotateX(11deg) rotateZ(180deg) rotateY(288deg);
+  transform: rotateX(11deg) rotateZ(180deg) rotateY(288deg);
+}
+/* line 162, /Users/vicentemundim/Projects/dice-roller/app/assets/stylesheets/dice-roller.css.scss */
+.dice-roller .d20[data-face="11"] {
+  -webkit-transform: rotateX(11deg) rotateY(-252deg);
+  -moz-transform: rotateX(11deg) rotateY(-252deg);
+  -ms-transform: rotateX(11deg) rotateY(-252deg);
+  -o-transform: rotateX(11deg) rotateY(-252deg);
+  transform: rotateX(11deg) rotateY(-252deg);
+}
+/* line 162, /Users/vicentemundim/Projects/dice-roller/app/assets/stylesheets/dice-roller.css.scss */
+.dice-roller .d20[data-face="12"] {
+  -webkit-transform: rotateX(11deg) rotateY(-324deg);
+  -moz-transform: rotateX(11deg) rotateY(-324deg);
+  -ms-transform: rotateX(11deg) rotateY(-324deg);
+  -o-transform: rotateX(11deg) rotateY(-324deg);
+  transform: rotateX(11deg) rotateY(-324deg);
+}
+/* line 162, /Users/vicentemundim/Projects/dice-roller/app/assets/stylesheets/dice-roller.css.scss */
+.dice-roller .d20[data-face="13"] {
+  -webkit-transform: rotateX(11deg) rotateY(-396deg);
+  -moz-transform: rotateX(11deg) rotateY(-396deg);
+  -ms-transform: rotateX(11deg) rotateY(-396deg);
+  -o-transform: rotateX(11deg) rotateY(-396deg);
+  transform: rotateX(11deg) rotateY(-396deg);
+}
+/* line 162, /Users/vicentemundim/Projects/dice-roller/app/assets/stylesheets/dice-roller.css.scss */
+.dice-roller .d20[data-face="14"] {
+  -webkit-transform: rotateX(11deg) rotateY(-468deg);
+  -moz-transform: rotateX(11deg) rotateY(-468deg);
+  -ms-transform: rotateX(11deg) rotateY(-468deg);
+  -o-transform: rotateX(11deg) rotateY(-468deg);
+  transform: rotateX(11deg) rotateY(-468deg);
+}
+/* line 162, /Users/vicentemundim/Projects/dice-roller/app/assets/stylesheets/dice-roller.css.scss */
+.dice-roller .d20[data-face="15"] {
+  -webkit-transform: rotateX(11deg) rotateY(-540deg);
+  -moz-transform: rotateX(11deg) rotateY(-540deg);
+  -ms-transform: rotateX(11deg) rotateY(-540deg);
+  -o-transform: rotateX(11deg) rotateY(-540deg);
+  transform: rotateX(11deg) rotateY(-540deg);
+}
+/* line 168, /Users/vicentemundim/Projects/dice-roller/app/assets/stylesheets/dice-roller.css.scss */
+.dice-roller .d20 .face {
+  margin: 0 -50px;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  border-bottom-width: 86px;
+}
+/* line 176, /Users/vicentemundim/Projects/dice-roller/app/assets/stylesheets/dice-roller.css.scss */
+.dice-roller .d20 .face:before {
+  top: 21.5px;
+  left: -100px;
+  font-size: 43px;
+  line-height: 77.4px;
+  width: 200px;
+  height: 86px;
+}
+/* line 186, /Users/vicentemundim/Projects/dice-roller/app/assets/stylesheets/dice-roller.css.scss */
+.dice-roller .d20 .face.face-1 {
+  -webkit-transform: rotateY(0deg) translateZ(33.5px) translateY(-12.9px) rotateX(53deg);
+  -moz-transform: rotateY(0deg) translateZ(33.5px) translateY(-12.9px) rotateX(53deg);
+  -ms-transform: rotateY(0deg) translateZ(33.5px) translateY(-12.9px) rotateX(53deg);
+  -o-transform: rotateY(0deg) translateZ(33.5px) translateY(-12.9px) rotateX(53deg);
+  transform: rotateY(0deg) translateZ(33.5px) translateY(-12.9px) rotateX(53deg);
+}
+/* line 186, /Users/vicentemundim/Projects/dice-roller/app/assets/stylesheets/dice-roller.css.scss */
+.dice-roller .d20 .face.face-2 {
+  -webkit-transform: rotateY(-72deg) translateZ(33.5px) translateY(-12.9px) rotateX(53deg);
+  -moz-transform: rotateY(-72deg) translateZ(33.5px) translateY(-12.9px) rotateX(53deg);
+  -ms-transform: rotateY(-72deg) translateZ(33.5px) translateY(-12.9px) rotateX(53deg);
+  -o-transform: rotateY(-72deg) translateZ(33.5px) translateY(-12.9px) rotateX(53deg);
+  transform: rotateY(-72deg) translateZ(33.5px) translateY(-12.9px) rotateX(53deg);
+}
+/* line 186, /Users/vicentemundim/Projects/dice-roller/app/assets/stylesheets/dice-roller.css.scss */
+.dice-roller .d20 .face.face-3 {
+  -webkit-transform: rotateY(-144deg) translateZ(33.5px) translateY(-12.9px) rotateX(53deg);
+  -moz-transform: rotateY(-144deg) translateZ(33.5px) translateY(-12.9px) rotateX(53deg);
+  -ms-transform: rotateY(-144deg) translateZ(33.5px) translateY(-12.9px) rotateX(53deg);
+  -o-transform: rotateY(-144deg) translateZ(33.5px) translateY(-12.9px) rotateX(53deg);
+  transform: rotateY(-144deg) translateZ(33.5px) translateY(-12.9px) rotateX(53deg);
+}
+/* line 186, /Users/vicentemundim/Projects/dice-roller/app/assets/stylesheets/dice-roller.css.scss */
+.dice-roller .d20 .face.face-4 {
+  -webkit-transform: rotateY(-216deg) translateZ(33.5px) translateY(-12.9px) rotateX(53deg);
+  -moz-transform: rotateY(-216deg) translateZ(33.5px) translateY(-12.9px) rotateX(53deg);
+  -ms-transform: rotateY(-216deg) translateZ(33.5px) translateY(-12.9px) rotateX(53deg);
+  -o-transform: rotateY(-216deg) translateZ(33.5px) translateY(-12.9px) rotateX(53deg);
+  transform: rotateY(-216deg) translateZ(33.5px) translateY(-12.9px) rotateX(53deg);
+}
+/* line 186, /Users/vicentemundim/Projects/dice-roller/app/assets/stylesheets/dice-roller.css.scss */
+.dice-roller .d20 .face.face-5 {
+  -webkit-transform: rotateY(-288deg) translateZ(33.5px) translateY(-12.9px) rotateX(53deg);
+  -moz-transform: rotateY(-288deg) translateZ(33.5px) translateY(-12.9px) rotateX(53deg);
+  -ms-transform: rotateY(-288deg) translateZ(33.5px) translateY(-12.9px) rotateX(53deg);
+  -o-transform: rotateY(-288deg) translateZ(33.5px) translateY(-12.9px) rotateX(53deg);
+  transform: rotateY(-288deg) translateZ(33.5px) translateY(-12.9px) rotateX(53deg);
+}
+/* line 193, /Users/vicentemundim/Projects/dice-roller/app/assets/stylesheets/dice-roller.css.scss */
+.dice-roller .d20 .face.face-16 {
+  -webkit-transform: rotateY(-108deg) translateZ(33.5px) translateY(121.26px) rotateZ(180deg) rotateX(53deg);
+  -moz-transform: rotateY(-108deg) translateZ(33.5px) translateY(121.26px) rotateZ(180deg) rotateX(53deg);
+  -ms-transform: rotateY(-108deg) translateZ(33.5px) translateY(121.26px) rotateZ(180deg) rotateX(53deg);
+  -o-transform: rotateY(-108deg) translateZ(33.5px) translateY(121.26px) rotateZ(180deg) rotateX(53deg);
+  transform: rotateY(-108deg) translateZ(33.5px) translateY(121.26px) rotateZ(180deg) rotateX(53deg);
+}
+/* line 193, /Users/vicentemundim/Projects/dice-roller/app/assets/stylesheets/dice-roller.css.scss */
+.dice-roller .d20 .face.face-17 {
+  -webkit-transform: rotateY(-36deg) translateZ(33.5px) translateY(121.26px) rotateZ(180deg) rotateX(53deg);
+  -moz-transform: rotateY(-36deg) translateZ(33.5px) translateY(121.26px) rotateZ(180deg) rotateX(53deg);
+  -ms-transform: rotateY(-36deg) translateZ(33.5px) translateY(121.26px) rotateZ(180deg) rotateX(53deg);
+  -o-transform: rotateY(-36deg) translateZ(33.5px) translateY(121.26px) rotateZ(180deg) rotateX(53deg);
+  transform: rotateY(-36deg) translateZ(33.5px) translateY(121.26px) rotateZ(180deg) rotateX(53deg);
+}
+/* line 193, /Users/vicentemundim/Projects/dice-roller/app/assets/stylesheets/dice-roller.css.scss */
+.dice-roller .d20 .face.face-18 {
+  -webkit-transform: rotateY(36deg) translateZ(33.5px) translateY(121.26px) rotateZ(180deg) rotateX(53deg);
+  -moz-transform: rotateY(36deg) translateZ(33.5px) translateY(121.26px) rotateZ(180deg) rotateX(53deg);
+  -ms-transform: rotateY(36deg) translateZ(33.5px) translateY(121.26px) rotateZ(180deg) rotateX(53deg);
+  -o-transform: rotateY(36deg) translateZ(33.5px) translateY(121.26px) rotateZ(180deg) rotateX(53deg);
+  transform: rotateY(36deg) translateZ(33.5px) translateY(121.26px) rotateZ(180deg) rotateX(53deg);
+}
+/* line 193, /Users/vicentemundim/Projects/dice-roller/app/assets/stylesheets/dice-roller.css.scss */
+.dice-roller .d20 .face.face-19 {
+  -webkit-transform: rotateY(108deg) translateZ(33.5px) translateY(121.26px) rotateZ(180deg) rotateX(53deg);
+  -moz-transform: rotateY(108deg) translateZ(33.5px) translateY(121.26px) rotateZ(180deg) rotateX(53deg);
+  -ms-transform: rotateY(108deg) translateZ(33.5px) translateY(121.26px) rotateZ(180deg) rotateX(53deg);
+  -o-transform: rotateY(108deg) translateZ(33.5px) translateY(121.26px) rotateZ(180deg) rotateX(53deg);
+  transform: rotateY(108deg) translateZ(33.5px) translateY(121.26px) rotateZ(180deg) rotateX(53deg);
+}
+/* line 193, /Users/vicentemundim/Projects/dice-roller/app/assets/stylesheets/dice-roller.css.scss */
+.dice-roller .d20 .face.face-20 {
+  -webkit-transform: rotateY(180deg) translateZ(33.5px) translateY(121.26px) rotateZ(180deg) rotateX(53deg);
+  -moz-transform: rotateY(180deg) translateZ(33.5px) translateY(121.26px) rotateZ(180deg) rotateX(53deg);
+  -ms-transform: rotateY(180deg) translateZ(33.5px) translateY(121.26px) rotateZ(180deg) rotateX(53deg);
+  -o-transform: rotateY(180deg) translateZ(33.5px) translateY(121.26px) rotateZ(180deg) rotateX(53deg);
+  transform: rotateY(180deg) translateZ(33.5px) translateY(121.26px) rotateZ(180deg) rotateX(53deg);
+}
+/* line 200, /Users/vicentemundim/Projects/dice-roller/app/assets/stylesheets/dice-roller.css.scss */
+.dice-roller .d20 .face.face-6 {
+  -webkit-transform: rotateY(360deg) translateZ(75px) translateY(54.18px) rotateZ(180deg) rotateX(-11deg);
+  -moz-transform: rotateY(360deg) translateZ(75px) translateY(54.18px) rotateZ(180deg) rotateX(-11deg);
+  -ms-transform: rotateY(360deg) translateZ(75px) translateY(54.18px) rotateZ(180deg) rotateX(-11deg);
+  -o-transform: rotateY(360deg) translateZ(75px) translateY(54.18px) rotateZ(180deg) rotateX(-11deg);
+  transform: rotateY(360deg) translateZ(75px) translateY(54.18px) rotateZ(180deg) rotateX(-11deg);
+}
+/* line 200, /Users/vicentemundim/Projects/dice-roller/app/assets/stylesheets/dice-roller.css.scss */
+.dice-roller .d20 .face.face-7 {
+  -webkit-transform: rotateY(288deg) translateZ(75px) translateY(54.18px) rotateZ(180deg) rotateX(-11deg);
+  -moz-transform: rotateY(288deg) translateZ(75px) translateY(54.18px) rotateZ(180deg) rotateX(-11deg);
+  -ms-transform: rotateY(288deg) translateZ(75px) translateY(54.18px) rotateZ(180deg) rotateX(-11deg);
+  -o-transform: rotateY(288deg) translateZ(75px) translateY(54.18px) rotateZ(180deg) rotateX(-11deg);
+  transform: rotateY(288deg) translateZ(75px) translateY(54.18px) rotateZ(180deg) rotateX(-11deg);
+}
+/* line 200, /Users/vicentemundim/Projects/dice-roller/app/assets/stylesheets/dice-roller.css.scss */
+.dice-roller .d20 .face.face-8 {
+  -webkit-transform: rotateY(216deg) translateZ(75px) translateY(54.18px) rotateZ(180deg) rotateX(-11deg);
+  -moz-transform: rotateY(216deg) translateZ(75px) translateY(54.18px) rotateZ(180deg) rotateX(-11deg);
+  -ms-transform: rotateY(216deg) translateZ(75px) translateY(54.18px) rotateZ(180deg) rotateX(-11deg);
+  -o-transform: rotateY(216deg) translateZ(75px) translateY(54.18px) rotateZ(180deg) rotateX(-11deg);
+  transform: rotateY(216deg) translateZ(75px) translateY(54.18px) rotateZ(180deg) rotateX(-11deg);
+}
+/* line 200, /Users/vicentemundim/Projects/dice-roller/app/assets/stylesheets/dice-roller.css.scss */
+.dice-roller .d20 .face.face-9 {
+  -webkit-transform: rotateY(144deg) translateZ(75px) translateY(54.18px) rotateZ(180deg) rotateX(-11deg);
+  -moz-transform: rotateY(144deg) translateZ(75px) translateY(54.18px) rotateZ(180deg) rotateX(-11deg);
+  -ms-transform: rotateY(144deg) translateZ(75px) translateY(54.18px) rotateZ(180deg) rotateX(-11deg);
+  -o-transform: rotateY(144deg) translateZ(75px) translateY(54.18px) rotateZ(180deg) rotateX(-11deg);
+  transform: rotateY(144deg) translateZ(75px) translateY(54.18px) rotateZ(180deg) rotateX(-11deg);
+}
+/* line 200, /Users/vicentemundim/Projects/dice-roller/app/assets/stylesheets/dice-roller.css.scss */
+.dice-roller .d20 .face.face-10 {
+  -webkit-transform: rotateY(72deg) translateZ(75px) translateY(54.18px) rotateZ(180deg) rotateX(-11deg);
+  -moz-transform: rotateY(72deg) translateZ(75px) translateY(54.18px) rotateZ(180deg) rotateX(-11deg);
+  -ms-transform: rotateY(72deg) translateZ(75px) translateY(54.18px) rotateZ(180deg) rotateX(-11deg);
+  -o-transform: rotateY(72deg) translateZ(75px) translateY(54.18px) rotateZ(180deg) rotateX(-11deg);
+  transform: rotateY(72deg) translateZ(75px) translateY(54.18px) rotateZ(180deg) rotateX(-11deg);
+}
+/* line 207, /Users/vicentemundim/Projects/dice-roller/app/assets/stylesheets/dice-roller.css.scss */
+.dice-roller .d20 .face.face-11 {
+  -webkit-transform: rotateY(252deg) translateZ(75px) translateY(54.18px) rotateX(-11deg);
+  -moz-transform: rotateY(252deg) translateZ(75px) translateY(54.18px) rotateX(-11deg);
+  -ms-transform: rotateY(252deg) translateZ(75px) translateY(54.18px) rotateX(-11deg);
+  -o-transform: rotateY(252deg) translateZ(75px) translateY(54.18px) rotateX(-11deg);
+  transform: rotateY(252deg) translateZ(75px) translateY(54.18px) rotateX(-11deg);
+}
+/* line 207, /Users/vicentemundim/Projects/dice-roller/app/assets/stylesheets/dice-roller.css.scss */
+.dice-roller .d20 .face.face-12 {
+  -webkit-transform: rotateY(324deg) translateZ(75px) translateY(54.18px) rotateX(-11deg);
+  -moz-transform: rotateY(324deg) translateZ(75px) translateY(54.18px) rotateX(-11deg);
+  -ms-transform: rotateY(324deg) translateZ(75px) translateY(54.18px) rotateX(-11deg);
+  -o-transform: rotateY(324deg) translateZ(75px) translateY(54.18px) rotateX(-11deg);
+  transform: rotateY(324deg) translateZ(75px) translateY(54.18px) rotateX(-11deg);
+}
+/* line 207, /Users/vicentemundim/Projects/dice-roller/app/assets/stylesheets/dice-roller.css.scss */
+.dice-roller .d20 .face.face-13 {
+  -webkit-transform: rotateY(396deg) translateZ(75px) translateY(54.18px) rotateX(-11deg);
+  -moz-transform: rotateY(396deg) translateZ(75px) translateY(54.18px) rotateX(-11deg);
+  -ms-transform: rotateY(396deg) translateZ(75px) translateY(54.18px) rotateX(-11deg);
+  -o-transform: rotateY(396deg) translateZ(75px) translateY(54.18px) rotateX(-11deg);
+  transform: rotateY(396deg) translateZ(75px) translateY(54.18px) rotateX(-11deg);
+}
+/* line 207, /Users/vicentemundim/Projects/dice-roller/app/assets/stylesheets/dice-roller.css.scss */
+.dice-roller .d20 .face.face-14 {
+  -webkit-transform: rotateY(468deg) translateZ(75px) translateY(54.18px) rotateX(-11deg);
+  -moz-transform: rotateY(468deg) translateZ(75px) translateY(54.18px) rotateX(-11deg);
+  -ms-transform: rotateY(468deg) translateZ(75px) translateY(54.18px) rotateX(-11deg);
+  -o-transform: rotateY(468deg) translateZ(75px) translateY(54.18px) rotateX(-11deg);
+  transform: rotateY(468deg) translateZ(75px) translateY(54.18px) rotateX(-11deg);
+}
+/* line 207, /Users/vicentemundim/Projects/dice-roller/app/assets/stylesheets/dice-roller.css.scss */
+.dice-roller .d20 .face.face-15 {
+  -webkit-transform: rotateY(540deg) translateZ(75px) translateY(54.18px) rotateX(-11deg);
+  -moz-transform: rotateY(540deg) translateZ(75px) translateY(54.18px) rotateX(-11deg);
+  -ms-transform: rotateY(540deg) translateZ(75px) translateY(54.18px) rotateX(-11deg);
+  -o-transform: rotateY(540deg) translateZ(75px) translateY(54.18px) rotateX(-11deg);
+  transform: rotateY(540deg) translateZ(75px) translateY(54.18px) rotateX(-11deg);
+}
+/* line 216, /Users/vicentemundim/Projects/dice-roller/app/assets/stylesheets/dice-roller.css.scss */
+.dice-roller .d20 .face {
+  border-bottom-color: rgba(30, 180, 20, 0.75);
+}
+/* line 219, /Users/vicentemundim/Projects/dice-roller/app/assets/stylesheets/dice-roller.css.scss */
+.dice-roller .d20 .face:before {
+  color: white;
+  text-shadow: 1px 1px 3px black;
+}
+/* line 224, /Users/vicentemundim/Projects/dice-roller/app/assets/stylesheets/dice-roller.css.scss */
+.dice-roller .d20 .face:after {
+  border-top-color: rgba(30, 180, 20, 0.75);
+}
+/* line 30, /Users/vicentemundim/Projects/dice-roller/app/assets/stylesheets/dice-roller.css.scss */
+.dice-roller .d20.reset {
+  -webkit-transition: -webkit-transform 0.1s ease-out;
+  -moz-transition: -moz-transform 0.1s ease-out;
+  -o-transition: -o-transform 0.1s ease-out;
+  transition: transform 0.1s ease-out;
+  -webkit-transform: rotateX(0);
+  -moz-transform: rotateX(0);
+  -ms-transform: rotateX(0);
+  -o-transform: rotateX(0);
+  transform: rotateX(0);
+}
+/* line 35, /Users/vicentemundim/Projects/dice-roller/app/assets/stylesheets/dice-roller.css.scss */
+.dice-roller .d20.rolling {
+  -webkit-animation: roll 1s linear;
+  -moz-animation: roll 1s linear;
+  -ms-animation: roll 1s linear;
+  -o-animation: roll 1s linear;
+  animation: roll 1s linear;
+}
+/* line 302, /Users/vicentemundim/Projects/dice-roller/app/assets/stylesheets/dice-roller.css.scss */
+.dice-roller.dice-roller-large {
+  width: 400px;
+  height: 400px;
+}
+/* line 306, /Users/vicentemundim/Projects/dice-roller/app/assets/stylesheets/dice-roller.css.scss */
+.dice-roller.dice-roller-large .d10 {
+  -webkit-transform: rotateX(-45deg);
+  -moz-transform: rotateX(-45deg);
+  -ms-transform: rotateX(-45deg);
+  -o-transform: rotateX(-45deg);
+  transform: rotateX(-45deg);
+}
+/* line 59, /Users/vicentemundim/Projects/dice-roller/app/assets/stylesheets/dice-roller.css.scss */
+.dice-roller.dice-roller-large .d10[data-face="1"] {
+  -webkit-transform: rotateX(-225deg) rotateY(-72deg);
+  -moz-transform: rotateX(-225deg) rotateY(-72deg);
+  -ms-transform: rotateX(-225deg) rotateY(-72deg);
+  -o-transform: rotateX(-225deg) rotateY(-72deg);
+  transform: rotateX(-225deg) rotateY(-72deg);
+}
+/* line 59, /Users/vicentemundim/Projects/dice-roller/app/assets/stylesheets/dice-roller.css.scss */
+.dice-roller.dice-roller-large .d10[data-face="2"] {
+  -webkit-transform: rotateX(-45deg) rotateY(72deg);
+  -moz-transform: rotateX(-45deg) rotateY(72deg);
+  -ms-transform: rotateX(-45deg) rotateY(72deg);
+  -o-transform: rotateX(-45deg) rotateY(72deg);
+  transform: rotateX(-45deg) rotateY(72deg);
+}
+/* line 59, /Users/vicentemundim/Projects/dice-roller/app/assets/stylesheets/dice-roller.css.scss */
+.dice-roller.dice-roller-large .d10[data-face="3"] {
+  -webkit-transform: rotateX(-225deg) rotateY(-144deg);
+  -moz-transform: rotateX(-225deg) rotateY(-144deg);
+  -ms-transform: rotateX(-225deg) rotateY(-144deg);
+  -o-transform: rotateX(-225deg) rotateY(-144deg);
+  transform: rotateX(-225deg) rotateY(-144deg);
+}
+/* line 59, /Users/vicentemundim/Projects/dice-roller/app/assets/stylesheets/dice-roller.css.scss */
+.dice-roller.dice-roller-large .d10[data-face="4"] {
+  -webkit-transform: rotateX(-45deg) rotateY(144deg);
+  -moz-transform: rotateX(-45deg) rotateY(144deg);
+  -ms-transform: rotateX(-45deg) rotateY(144deg);
+  -o-transform: rotateX(-45deg) rotateY(144deg);
+  transform: rotateX(-45deg) rotateY(144deg);
+}
+/* line 59, /Users/vicentemundim/Projects/dice-roller/app/assets/stylesheets/dice-roller.css.scss */
+.dice-roller.dice-roller-large .d10[data-face="5"] {
+  -webkit-transform: rotateX(-225deg) rotateY(-216deg);
+  -moz-transform: rotateX(-225deg) rotateY(-216deg);
+  -ms-transform: rotateX(-225deg) rotateY(-216deg);
+  -o-transform: rotateX(-225deg) rotateY(-216deg);
+  transform: rotateX(-225deg) rotateY(-216deg);
+}
+/* line 59, /Users/vicentemundim/Projects/dice-roller/app/assets/stylesheets/dice-roller.css.scss */
+.dice-roller.dice-roller-large .d10[data-face="6"] {
+  -webkit-transform: rotateX(-45deg) rotateY(216deg);
+  -moz-transform: rotateX(-45deg) rotateY(216deg);
+  -ms-transform: rotateX(-45deg) rotateY(216deg);
+  -o-transform: rotateX(-45deg) rotateY(216deg);
+  transform: rotateX(-45deg) rotateY(216deg);
+}
+/* line 59, /Users/vicentemundim/Projects/dice-roller/app/assets/stylesheets/dice-roller.css.scss */
+.dice-roller.dice-roller-large .d10[data-face="7"] {
+  -webkit-transform: rotateX(-225deg) rotateY(-288deg);
+  -moz-transform: rotateX(-225deg) rotateY(-288deg);
+  -ms-transform: rotateX(-225deg) rotateY(-288deg);
+  -o-transform: rotateX(-225deg) rotateY(-288deg);
+  transform: rotateX(-225deg) rotateY(-288deg);
+}
+/* line 59, /Users/vicentemundim/Projects/dice-roller/app/assets/stylesheets/dice-roller.css.scss */
+.dice-roller.dice-roller-large .d10[data-face="8"] {
+  -webkit-transform: rotateX(-45deg) rotateY(288deg);
+  -moz-transform: rotateX(-45deg) rotateY(288deg);
+  -ms-transform: rotateX(-45deg) rotateY(288deg);
+  -o-transform: rotateX(-45deg) rotateY(288deg);
+  transform: rotateX(-45deg) rotateY(288deg);
+}
+/* line 59, /Users/vicentemundim/Projects/dice-roller/app/assets/stylesheets/dice-roller.css.scss */
+.dice-roller.dice-roller-large .d10[data-face="9"] {
+  -webkit-transform: rotateX(-225deg) rotateY(-360deg);
+  -moz-transform: rotateX(-225deg) rotateY(-360deg);
+  -ms-transform: rotateX(-225deg) rotateY(-360deg);
+  -o-transform: rotateX(-225deg) rotateY(-360deg);
+  transform: rotateX(-225deg) rotateY(-360deg);
+}
+/* line 59, /Users/vicentemundim/Projects/dice-roller/app/assets/stylesheets/dice-roller.css.scss */
+.dice-roller.dice-roller-large .d10[data-face="10"] {
+  -webkit-transform: rotateX(-45deg) rotateY(360deg);
+  -moz-transform: rotateX(-45deg) rotateY(360deg);
+  -ms-transform: rotateX(-45deg) rotateY(360deg);
+  -o-transform: rotateX(-45deg) rotateY(360deg);
+  transform: rotateX(-45deg) rotateY(360deg);
+}
+/* line 70, /Users/vicentemundim/Projects/dice-roller/app/assets/stylesheets/dice-roller.css.scss */
+.dice-roller.dice-roller-large .d10 .face {
+  margin: 0 -104px;
+  border-left: 104px solid transparent;
+  border-right: 104px solid transparent;
+  border-bottom-width: 200px;
+}
+/* line 79, /Users/vicentemundim/Projects/dice-roller/app/assets/stylesheets/dice-roller.css.scss */
+.dice-roller.dice-roller-large .d10 .face:before {
+  top: 50px;
+  left: -104px;
+  font-size: 120px;
+  line-height: 200px;
+  width: 208px;
+  height: 200px;
+}
+/* line 88, /Users/vicentemundim/Projects/dice-roller/app/assets/stylesheets/dice-roller.css.scss */
+.dice-roller.dice-roller-large .d10 .face:after {
+  bottom: -248px;
+  left: -104px;
+  border-left: 104px solid transparent;
+  border-right: 104px solid transparent;
+  border-top-width: 48px;
+}
+/* line 97, /Users/vicentemundim/Projects/dice-roller/app/assets/stylesheets/dice-roller.css.scss */
+.dice-roller.dice-roller-large .d10 .face.face-0 {
+  -webkit-transform: rotateY(0deg) translateZ(68px) translateY(13.92px) rotateX(45deg);
+  -moz-transform: rotateY(0deg) translateZ(68px) translateY(13.92px) rotateX(45deg);
+  -ms-transform: rotateY(0deg) translateZ(68px) translateY(13.92px) rotateX(45deg);
+  -o-transform: rotateY(0deg) translateZ(68px) translateY(13.92px) rotateX(45deg);
+  transform: rotateY(0deg) translateZ(68px) translateY(13.92px) rotateX(45deg);
+}
+/* line 97, /Users/vicentemundim/Projects/dice-roller/app/assets/stylesheets/dice-roller.css.scss */
+.dice-roller.dice-roller-large .d10 .face.face-1 {
+  top: 200px;
+  -webkit-transform: rotateY(72deg) translateZ(-68px) translateY(-13.92px) rotateZ(180deg) rotateY(180deg) rotateX(45deg);
+  -moz-transform: rotateY(72deg) translateZ(-68px) translateY(-13.92px) rotateZ(180deg) rotateY(180deg) rotateX(45deg);
+  -ms-transform: rotateY(72deg) translateZ(-68px) translateY(-13.92px) rotateZ(180deg) rotateY(180deg) rotateX(45deg);
+  -o-transform: rotateY(72deg) translateZ(-68px) translateY(-13.92px) rotateZ(180deg) rotateY(180deg) rotateX(45deg);
+  transform: rotateY(72deg) translateZ(-68px) translateY(-13.92px) rotateZ(180deg) rotateY(180deg) rotateX(45deg);
+}
+/* line 97, /Users/vicentemundim/Projects/dice-roller/app/assets/stylesheets/dice-roller.css.scss */
+.dice-roller.dice-roller-large .d10 .face.face-2 {
+  -webkit-transform: rotateY(-72deg) translateZ(68px) translateY(13.92px) rotateX(45deg);
+  -moz-transform: rotateY(-72deg) translateZ(68px) translateY(13.92px) rotateX(45deg);
+  -ms-transform: rotateY(-72deg) translateZ(68px) translateY(13.92px) rotateX(45deg);
+  -o-transform: rotateY(-72deg) translateZ(68px) translateY(13.92px) rotateX(45deg);
+  transform: rotateY(-72deg) translateZ(68px) translateY(13.92px) rotateX(45deg);
+}
+/* line 97, /Users/vicentemundim/Projects/dice-roller/app/assets/stylesheets/dice-roller.css.scss */
+.dice-roller.dice-roller-large .d10 .face.face-3 {
+  top: 200px;
+  -webkit-transform: rotateY(144deg) translateZ(-68px) translateY(-13.92px) rotateZ(180deg) rotateY(180deg) rotateX(45deg);
+  -moz-transform: rotateY(144deg) translateZ(-68px) translateY(-13.92px) rotateZ(180deg) rotateY(180deg) rotateX(45deg);
+  -ms-transform: rotateY(144deg) translateZ(-68px) translateY(-13.92px) rotateZ(180deg) rotateY(180deg) rotateX(45deg);
+  -o-transform: rotateY(144deg) translateZ(-68px) translateY(-13.92px) rotateZ(180deg) rotateY(180deg) rotateX(45deg);
+  transform: rotateY(144deg) translateZ(-68px) translateY(-13.92px) rotateZ(180deg) rotateY(180deg) rotateX(45deg);
+}
+/* line 97, /Users/vicentemundim/Projects/dice-roller/app/assets/stylesheets/dice-roller.css.scss */
+.dice-roller.dice-roller-large .d10 .face.face-4 {
+  -webkit-transform: rotateY(-144deg) translateZ(68px) translateY(13.92px) rotateX(45deg);
+  -moz-transform: rotateY(-144deg) translateZ(68px) translateY(13.92px) rotateX(45deg);
+  -ms-transform: rotateY(-144deg) translateZ(68px) translateY(13.92px) rotateX(45deg);
+  -o-transform: rotateY(-144deg) translateZ(68px) translateY(13.92px) rotateX(45deg);
+  transform: rotateY(-144deg) translateZ(68px) translateY(13.92px) rotateX(45deg);
+}
+/* line 97, /Users/vicentemundim/Projects/dice-roller/app/assets/stylesheets/dice-roller.css.scss */
+.dice-roller.dice-roller-large .d10 .face.face-5 {
+  top: 200px;
+  -webkit-transform: rotateY(216deg) translateZ(-68px) translateY(-13.92px) rotateZ(180deg) rotateY(180deg) rotateX(45deg);
+  -moz-transform: rotateY(216deg) translateZ(-68px) translateY(-13.92px) rotateZ(180deg) rotateY(180deg) rotateX(45deg);
+  -ms-transform: rotateY(216deg) translateZ(-68px) translateY(-13.92px) rotateZ(180deg) rotateY(180deg) rotateX(45deg);
+  -o-transform: rotateY(216deg) translateZ(-68px) translateY(-13.92px) rotateZ(180deg) rotateY(180deg) rotateX(45deg);
+  transform: rotateY(216deg) translateZ(-68px) translateY(-13.92px) rotateZ(180deg) rotateY(180deg) rotateX(45deg);
+}
+/* line 97, /Users/vicentemundim/Projects/dice-roller/app/assets/stylesheets/dice-roller.css.scss */
+.dice-roller.dice-roller-large .d10 .face.face-6 {
+  -webkit-transform: rotateY(-216deg) translateZ(68px) translateY(13.92px) rotateX(45deg);
+  -moz-transform: rotateY(-216deg) translateZ(68px) translateY(13.92px) rotateX(45deg);
+  -ms-transform: rotateY(-216deg) translateZ(68px) translateY(13.92px) rotateX(45deg);
+  -o-transform: rotateY(-216deg) translateZ(68px) translateY(13.92px) rotateX(45deg);
+  transform: rotateY(-216deg) translateZ(68px) translateY(13.92px) rotateX(45deg);
+}
+/* line 97, /Users/vicentemundim/Projects/dice-roller/app/assets/stylesheets/dice-roller.css.scss */
+.dice-roller.dice-roller-large .d10 .face.face-7 {
+  top: 200px;
+  -webkit-transform: rotateY(288deg) translateZ(-68px) translateY(-13.92px) rotateZ(180deg) rotateY(180deg) rotateX(45deg);
+  -moz-transform: rotateY(288deg) translateZ(-68px) translateY(-13.92px) rotateZ(180deg) rotateY(180deg) rotateX(45deg);
+  -ms-transform: rotateY(288deg) translateZ(-68px) translateY(-13.92px) rotateZ(180deg) rotateY(180deg) rotateX(45deg);
+  -o-transform: rotateY(288deg) translateZ(-68px) translateY(-13.92px) rotateZ(180deg) rotateY(180deg) rotateX(45deg);
+  transform: rotateY(288deg) translateZ(-68px) translateY(-13.92px) rotateZ(180deg) rotateY(180deg) rotateX(45deg);
+}
+/* line 97, /Users/vicentemundim/Projects/dice-roller/app/assets/stylesheets/dice-roller.css.scss */
+.dice-roller.dice-roller-large .d10 .face.face-8 {
+  -webkit-transform: rotateY(-288deg) translateZ(68px) translateY(13.92px) rotateX(45deg);
+  -moz-transform: rotateY(-288deg) translateZ(68px) translateY(13.92px) rotateX(45deg);
+  -ms-transform: rotateY(-288deg) translateZ(68px) translateY(13.92px) rotateX(45deg);
+  -o-transform: rotateY(-288deg) translateZ(68px) translateY(13.92px) rotateX(45deg);
+  transform: rotateY(-288deg) translateZ(68px) translateY(13.92px) rotateX(45deg);
+}
+/* line 97, /Users/vicentemundim/Projects/dice-roller/app/assets/stylesheets/dice-roller.css.scss */
+.dice-roller.dice-roller-large .d10 .face.face-9 {
+  top: 200px;
+  -webkit-transform: rotateY(360deg) translateZ(-68px) translateY(-13.92px) rotateZ(180deg) rotateY(180deg) rotateX(45deg);
+  -moz-transform: rotateY(360deg) translateZ(-68px) translateY(-13.92px) rotateZ(180deg) rotateY(180deg) rotateX(45deg);
+  -ms-transform: rotateY(360deg) translateZ(-68px) translateY(-13.92px) rotateZ(180deg) rotateY(180deg) rotateX(45deg);
+  -o-transform: rotateY(360deg) translateZ(-68px) translateY(-13.92px) rotateZ(180deg) rotateY(180deg) rotateX(45deg);
+  transform: rotateY(360deg) translateZ(-68px) translateY(-13.92px) rotateZ(180deg) rotateY(180deg) rotateX(45deg);
+}
+/* line 310, /Users/vicentemundim/Projects/dice-roller/app/assets/stylesheets/dice-roller.css.scss */
+.dice-roller.dice-roller-large .d20 {
+  -webkit-transform: rotateX(-53deg);
+  -moz-transform: rotateX(-53deg);
+  -ms-transform: rotateX(-53deg);
+  -o-transform: rotateX(-53deg);
+  transform: rotateX(-53deg);
+}
+/* line 141, /Users/vicentemundim/Projects/dice-roller/app/assets/stylesheets/dice-roller.css.scss */
+.dice-roller.dice-roller-large .d20[data-face="1"] {
+  -webkit-transform: rotateX(-53deg) rotateY(0deg);
+  -moz-transform: rotateX(-53deg) rotateY(0deg);
+  -ms-transform: rotateX(-53deg) rotateY(0deg);
+  -o-transform: rotateX(-53deg) rotateY(0deg);
+  transform: rotateX(-53deg) rotateY(0deg);
+}
+/* line 141, /Users/vicentemundim/Projects/dice-roller/app/assets/stylesheets/dice-roller.css.scss */
+.dice-roller.dice-roller-large .d20[data-face="2"] {
+  -webkit-transform: rotateX(-53deg) rotateY(72deg);
+  -moz-transform: rotateX(-53deg) rotateY(72deg);
+  -ms-transform: rotateX(-53deg) rotateY(72deg);
+  -o-transform: rotateX(-53deg) rotateY(72deg);
+  transform: rotateX(-53deg) rotateY(72deg);
+}
+/* line 141, /Users/vicentemundim/Projects/dice-roller/app/assets/stylesheets/dice-roller.css.scss */
+.dice-roller.dice-roller-large .d20[data-face="3"] {
+  -webkit-transform: rotateX(-53deg) rotateY(144deg);
+  -moz-transform: rotateX(-53deg) rotateY(144deg);
+  -ms-transform: rotateX(-53deg) rotateY(144deg);
+  -o-transform: rotateX(-53deg) rotateY(144deg);
+  transform: rotateX(-53deg) rotateY(144deg);
+}
+/* line 141, /Users/vicentemundim/Projects/dice-roller/app/assets/stylesheets/dice-roller.css.scss */
+.dice-roller.dice-roller-large .d20[data-face="4"] {
+  -webkit-transform: rotateX(-53deg) rotateY(216deg);
+  -moz-transform: rotateX(-53deg) rotateY(216deg);
+  -ms-transform: rotateX(-53deg) rotateY(216deg);
+  -o-transform: rotateX(-53deg) rotateY(216deg);
+  transform: rotateX(-53deg) rotateY(216deg);
+}
+/* line 141, /Users/vicentemundim/Projects/dice-roller/app/assets/stylesheets/dice-roller.css.scss */
+.dice-roller.dice-roller-large .d20[data-face="5"] {
+  -webkit-transform: rotateX(-53deg) rotateY(288deg);
+  -moz-transform: rotateX(-53deg) rotateY(288deg);
+  -ms-transform: rotateX(-53deg) rotateY(288deg);
+  -o-transform: rotateX(-53deg) rotateY(288deg);
+  transform: rotateX(-53deg) rotateY(288deg);
+}
+/* line 148, /Users/vicentemundim/Projects/dice-roller/app/assets/stylesheets/dice-roller.css.scss */
+.dice-roller.dice-roller-large .d20[data-face="16"] {
+  -webkit-transform: rotateX(127deg) rotateY(-72deg);
+  -moz-transform: rotateX(127deg) rotateY(-72deg);
+  -ms-transform: rotateX(127deg) rotateY(-72deg);
+  -o-transform: rotateX(127deg) rotateY(-72deg);
+  transform: rotateX(127deg) rotateY(-72deg);
+}
+/* line 148, /Users/vicentemundim/Projects/dice-roller/app/assets/stylesheets/dice-roller.css.scss */
+.dice-roller.dice-roller-large .d20[data-face="17"] {
+  -webkit-transform: rotateX(127deg) rotateY(-144deg);
+  -moz-transform: rotateX(127deg) rotateY(-144deg);
+  -ms-transform: rotateX(127deg) rotateY(-144deg);
+  -o-transform: rotateX(127deg) rotateY(-144deg);
+  transform: rotateX(127deg) rotateY(-144deg);
+}
+/* line 148, /Users/vicentemundim/Projects/dice-roller/app/assets/stylesheets/dice-roller.css.scss */
+.dice-roller.dice-roller-large .d20[data-face="18"] {
+  -webkit-transform: rotateX(127deg) rotateY(-216deg);
+  -moz-transform: rotateX(127deg) rotateY(-216deg);
+  -ms-transform: rotateX(127deg) rotateY(-216deg);
+  -o-transform: rotateX(127deg) rotateY(-216deg);
+  transform: rotateX(127deg) rotateY(-216deg);
+}
+/* line 148, /Users/vicentemundim/Projects/dice-roller/app/assets/stylesheets/dice-roller.css.scss */
+.dice-roller.dice-roller-large .d20[data-face="19"] {
+  -webkit-transform: rotateX(127deg) rotateY(-288deg);
+  -moz-transform: rotateX(127deg) rotateY(-288deg);
+  -ms-transform: rotateX(127deg) rotateY(-288deg);
+  -o-transform: rotateX(127deg) rotateY(-288deg);
+  transform: rotateX(127deg) rotateY(-288deg);
+}
+/* line 148, /Users/vicentemundim/Projects/dice-roller/app/assets/stylesheets/dice-roller.css.scss */
+.dice-roller.dice-roller-large .d20[data-face="20"] {
+  -webkit-transform: rotateX(127deg) rotateY(-360deg);
+  -moz-transform: rotateX(127deg) rotateY(-360deg);
+  -ms-transform: rotateX(127deg) rotateY(-360deg);
+  -o-transform: rotateX(127deg) rotateY(-360deg);
+  transform: rotateX(127deg) rotateY(-360deg);
+}
+/* line 155, /Users/vicentemundim/Projects/dice-roller/app/assets/stylesheets/dice-roller.css.scss */
+.dice-roller.dice-roller-large .d20[data-face="6"] {
+  -webkit-transform: rotateX(11deg) rotateZ(180deg) rotateY(0deg);
+  -moz-transform: rotateX(11deg) rotateZ(180deg) rotateY(0deg);
+  -ms-transform: rotateX(11deg) rotateZ(180deg) rotateY(0deg);
+  -o-transform: rotateX(11deg) rotateZ(180deg) rotateY(0deg);
+  transform: rotateX(11deg) rotateZ(180deg) rotateY(0deg);
+}
+/* line 155, /Users/vicentemundim/Projects/dice-roller/app/assets/stylesheets/dice-roller.css.scss */
+.dice-roller.dice-roller-large .d20[data-face="7"] {
+  -webkit-transform: rotateX(11deg) rotateZ(180deg) rotateY(72deg);
+  -moz-transform: rotateX(11deg) rotateZ(180deg) rotateY(72deg);
+  -ms-transform: rotateX(11deg) rotateZ(180deg) rotateY(72deg);
+  -o-transform: rotateX(11deg) rotateZ(180deg) rotateY(72deg);
+  transform: rotateX(11deg) rotateZ(180deg) rotateY(72deg);
+}
+/* line 155, /Users/vicentemundim/Projects/dice-roller/app/assets/stylesheets/dice-roller.css.scss */
+.dice-roller.dice-roller-large .d20[data-face="8"] {
+  -webkit-transform: rotateX(11deg) rotateZ(180deg) rotateY(144deg);
+  -moz-transform: rotateX(11deg) rotateZ(180deg) rotateY(144deg);
+  -ms-transform: rotateX(11deg) rotateZ(180deg) rotateY(144deg);
+  -o-transform: rotateX(11deg) rotateZ(180deg) rotateY(144deg);
+  transform: rotateX(11deg) rotateZ(180deg) rotateY(144deg);
+}
+/* line 155, /Users/vicentemundim/Projects/dice-roller/app/assets/stylesheets/dice-roller.css.scss */
+.dice-roller.dice-roller-large .d20[data-face="9"] {
+  -webkit-transform: rotateX(11deg) rotateZ(180deg) rotateY(216deg);
+  -moz-transform: rotateX(11deg) rotateZ(180deg) rotateY(216deg);
+  -ms-transform: rotateX(11deg) rotateZ(180deg) rotateY(216deg);
+  -o-transform: rotateX(11deg) rotateZ(180deg) rotateY(216deg);
+  transform: rotateX(11deg) rotateZ(180deg) rotateY(216deg);
+}
+/* line 155, /Users/vicentemundim/Projects/dice-roller/app/assets/stylesheets/dice-roller.css.scss */
+.dice-roller.dice-roller-large .d20[data-face="10"] {
+  -webkit-transform: rotateX(11deg) rotateZ(180deg) rotateY(288deg);
+  -moz-transform: rotateX(11deg) rotateZ(180deg) rotateY(288deg);
+  -ms-transform: rotateX(11deg) rotateZ(180deg) rotateY(288deg);
+  -o-transform: rotateX(11deg) rotateZ(180deg) rotateY(288deg);
+  transform: rotateX(11deg) rotateZ(180deg) rotateY(288deg);
+}
+/* line 162, /Users/vicentemundim/Projects/dice-roller/app/assets/stylesheets/dice-roller.css.scss */
+.dice-roller.dice-roller-large .d20[data-face="11"] {
+  -webkit-transform: rotateX(11deg) rotateY(-252deg);
+  -moz-transform: rotateX(11deg) rotateY(-252deg);
+  -ms-transform: rotateX(11deg) rotateY(-252deg);
+  -o-transform: rotateX(11deg) rotateY(-252deg);
+  transform: rotateX(11deg) rotateY(-252deg);
+}
+/* line 162, /Users/vicentemundim/Projects/dice-roller/app/assets/stylesheets/dice-roller.css.scss */
+.dice-roller.dice-roller-large .d20[data-face="12"] {
+  -webkit-transform: rotateX(11deg) rotateY(-324deg);
+  -moz-transform: rotateX(11deg) rotateY(-324deg);
+  -ms-transform: rotateX(11deg) rotateY(-324deg);
+  -o-transform: rotateX(11deg) rotateY(-324deg);
+  transform: rotateX(11deg) rotateY(-324deg);
+}
+/* line 162, /Users/vicentemundim/Projects/dice-roller/app/assets/stylesheets/dice-roller.css.scss */
+.dice-roller.dice-roller-large .d20[data-face="13"] {
+  -webkit-transform: rotateX(11deg) rotateY(-396deg);
+  -moz-transform: rotateX(11deg) rotateY(-396deg);
+  -ms-transform: rotateX(11deg) rotateY(-396deg);
+  -o-transform: rotateX(11deg) rotateY(-396deg);
+  transform: rotateX(11deg) rotateY(-396deg);
+}
+/* line 162, /Users/vicentemundim/Projects/dice-roller/app/assets/stylesheets/dice-roller.css.scss */
+.dice-roller.dice-roller-large .d20[data-face="14"] {
+  -webkit-transform: rotateX(11deg) rotateY(-468deg);
+  -moz-transform: rotateX(11deg) rotateY(-468deg);
+  -ms-transform: rotateX(11deg) rotateY(-468deg);
+  -o-transform: rotateX(11deg) rotateY(-468deg);
+  transform: rotateX(11deg) rotateY(-468deg);
+}
+/* line 162, /Users/vicentemundim/Projects/dice-roller/app/assets/stylesheets/dice-roller.css.scss */
+.dice-roller.dice-roller-large .d20[data-face="15"] {
+  -webkit-transform: rotateX(11deg) rotateY(-540deg);
+  -moz-transform: rotateX(11deg) rotateY(-540deg);
+  -ms-transform: rotateX(11deg) rotateY(-540deg);
+  -o-transform: rotateX(11deg) rotateY(-540deg);
+  transform: rotateX(11deg) rotateY(-540deg);
+}
+/* line 168, /Users/vicentemundim/Projects/dice-roller/app/assets/stylesheets/dice-roller.css.scss */
+.dice-roller.dice-roller-large .d20 .face {
+  margin: 0 -100px;
+  border-left: 100px solid transparent;
+  border-right: 100px solid transparent;
+  border-bottom-width: 172px;
+}
+/* line 176, /Users/vicentemundim/Projects/dice-roller/app/assets/stylesheets/dice-roller.css.scss */
+.dice-roller.dice-roller-large .d20 .face:before {
+  top: 43px;
+  left: -200px;
+  font-size: 86px;
+  line-height: 154.8px;
+  width: 400px;
+  height: 172px;
+}
+/* line 186, /Users/vicentemundim/Projects/dice-roller/app/assets/stylesheets/dice-roller.css.scss */
+.dice-roller.dice-roller-large .d20 .face.face-1 {
+  -webkit-transform: rotateY(0deg) translateZ(67px) translateY(-25.8px) rotateX(53deg);
+  -moz-transform: rotateY(0deg) translateZ(67px) translateY(-25.8px) rotateX(53deg);
+  -ms-transform: rotateY(0deg) translateZ(67px) translateY(-25.8px) rotateX(53deg);
+  -o-transform: rotateY(0deg) translateZ(67px) translateY(-25.8px) rotateX(53deg);
+  transform: rotateY(0deg) translateZ(67px) translateY(-25.8px) rotateX(53deg);
+}
+/* line 186, /Users/vicentemundim/Projects/dice-roller/app/assets/stylesheets/dice-roller.css.scss */
+.dice-roller.dice-roller-large .d20 .face.face-2 {
+  -webkit-transform: rotateY(-72deg) translateZ(67px) translateY(-25.8px) rotateX(53deg);
+  -moz-transform: rotateY(-72deg) translateZ(67px) translateY(-25.8px) rotateX(53deg);
+  -ms-transform: rotateY(-72deg) translateZ(67px) translateY(-25.8px) rotateX(53deg);
+  -o-transform: rotateY(-72deg) translateZ(67px) translateY(-25.8px) rotateX(53deg);
+  transform: rotateY(-72deg) translateZ(67px) translateY(-25.8px) rotateX(53deg);
+}
+/* line 186, /Users/vicentemundim/Projects/dice-roller/app/assets/stylesheets/dice-roller.css.scss */
+.dice-roller.dice-roller-large .d20 .face.face-3 {
+  -webkit-transform: rotateY(-144deg) translateZ(67px) translateY(-25.8px) rotateX(53deg);
+  -moz-transform: rotateY(-144deg) translateZ(67px) translateY(-25.8px) rotateX(53deg);
+  -ms-transform: rotateY(-144deg) translateZ(67px) translateY(-25.8px) rotateX(53deg);
+  -o-transform: rotateY(-144deg) translateZ(67px) translateY(-25.8px) rotateX(53deg);
+  transform: rotateY(-144deg) translateZ(67px) translateY(-25.8px) rotateX(53deg);
+}
+/* line 186, /Users/vicentemundim/Projects/dice-roller/app/assets/stylesheets/dice-roller.css.scss */
+.dice-roller.dice-roller-large .d20 .face.face-4 {
+  -webkit-transform: rotateY(-216deg) translateZ(67px) translateY(-25.8px) rotateX(53deg);
+  -moz-transform: rotateY(-216deg) translateZ(67px) translateY(-25.8px) rotateX(53deg);
+  -ms-transform: rotateY(-216deg) translateZ(67px) translateY(-25.8px) rotateX(53deg);
+  -o-transform: rotateY(-216deg) translateZ(67px) translateY(-25.8px) rotateX(53deg);
+  transform: rotateY(-216deg) translateZ(67px) translateY(-25.8px) rotateX(53deg);
+}
+/* line 186, /Users/vicentemundim/Projects/dice-roller/app/assets/stylesheets/dice-roller.css.scss */
+.dice-roller.dice-roller-large .d20 .face.face-5 {
+  -webkit-transform: rotateY(-288deg) translateZ(67px) translateY(-25.8px) rotateX(53deg);
+  -moz-transform: rotateY(-288deg) translateZ(67px) translateY(-25.8px) rotateX(53deg);
+  -ms-transform: rotateY(-288deg) translateZ(67px) translateY(-25.8px) rotateX(53deg);
+  -o-transform: rotateY(-288deg) translateZ(67px) translateY(-25.8px) rotateX(53deg);
+  transform: rotateY(-288deg) translateZ(67px) translateY(-25.8px) rotateX(53deg);
+}
+/* line 193, /Users/vicentemundim/Projects/dice-roller/app/assets/stylesheets/dice-roller.css.scss */
+.dice-roller.dice-roller-large .d20 .face.face-16 {
+  -webkit-transform: rotateY(-108deg) translateZ(67px) translateY(242.52px) rotateZ(180deg) rotateX(53deg);
+  -moz-transform: rotateY(-108deg) translateZ(67px) translateY(242.52px) rotateZ(180deg) rotateX(53deg);
+  -ms-transform: rotateY(-108deg) translateZ(67px) translateY(242.52px) rotateZ(180deg) rotateX(53deg);
+  -o-transform: rotateY(-108deg) translateZ(67px) translateY(242.52px) rotateZ(180deg) rotateX(53deg);
+  transform: rotateY(-108deg) translateZ(67px) translateY(242.52px) rotateZ(180deg) rotateX(53deg);
+}
+/* line 193, /Users/vicentemundim/Projects/dice-roller/app/assets/stylesheets/dice-roller.css.scss */
+.dice-roller.dice-roller-large .d20 .face.face-17 {
+  -webkit-transform: rotateY(-36deg) translateZ(67px) translateY(242.52px) rotateZ(180deg) rotateX(53deg);
+  -moz-transform: rotateY(-36deg) translateZ(67px) translateY(242.52px) rotateZ(180deg) rotateX(53deg);
+  -ms-transform: rotateY(-36deg) translateZ(67px) translateY(242.52px) rotateZ(180deg) rotateX(53deg);
+  -o-transform: rotateY(-36deg) translateZ(67px) translateY(242.52px) rotateZ(180deg) rotateX(53deg);
+  transform: rotateY(-36deg) translateZ(67px) translateY(242.52px) rotateZ(180deg) rotateX(53deg);
+}
+/* line 193, /Users/vicentemundim/Projects/dice-roller/app/assets/stylesheets/dice-roller.css.scss */
+.dice-roller.dice-roller-large .d20 .face.face-18 {
+  -webkit-transform: rotateY(36deg) translateZ(67px) translateY(242.52px) rotateZ(180deg) rotateX(53deg);
+  -moz-transform: rotateY(36deg) translateZ(67px) translateY(242.52px) rotateZ(180deg) rotateX(53deg);
+  -ms-transform: rotateY(36deg) translateZ(67px) translateY(242.52px) rotateZ(180deg) rotateX(53deg);
+  -o-transform: rotateY(36deg) translateZ(67px) translateY(242.52px) rotateZ(180deg) rotateX(53deg);
+  transform: rotateY(36deg) translateZ(67px) translateY(242.52px) rotateZ(180deg) rotateX(53deg);
+}
+/* line 193, /Users/vicentemundim/Projects/dice-roller/app/assets/stylesheets/dice-roller.css.scss */
+.dice-roller.dice-roller-large .d20 .face.face-19 {
+  -webkit-transform: rotateY(108deg) translateZ(67px) translateY(242.52px) rotateZ(180deg) rotateX(53deg);
+  -moz-transform: rotateY(108deg) translateZ(67px) translateY(242.52px) rotateZ(180deg) rotateX(53deg);
+  -ms-transform: rotateY(108deg) translateZ(67px) translateY(242.52px) rotateZ(180deg) rotateX(53deg);
+  -o-transform: rotateY(108deg) translateZ(67px) translateY(242.52px) rotateZ(180deg) rotateX(53deg);
+  transform: rotateY(108deg) translateZ(67px) translateY(242.52px) rotateZ(180deg) rotateX(53deg);
+}
+/* line 193, /Users/vicentemundim/Projects/dice-roller/app/assets/stylesheets/dice-roller.css.scss */
+.dice-roller.dice-roller-large .d20 .face.face-20 {
+  -webkit-transform: rotateY(180deg) translateZ(67px) translateY(242.52px) rotateZ(180deg) rotateX(53deg);
+  -moz-transform: rotateY(180deg) translateZ(67px) translateY(242.52px) rotateZ(180deg) rotateX(53deg);
+  -ms-transform: rotateY(180deg) translateZ(67px) translateY(242.52px) rotateZ(180deg) rotateX(53deg);
+  -o-transform: rotateY(180deg) translateZ(67px) translateY(242.52px) rotateZ(180deg) rotateX(53deg);
+  transform: rotateY(180deg) translateZ(67px) translateY(242.52px) rotateZ(180deg) rotateX(53deg);
+}
+/* line 200, /Users/vicentemundim/Projects/dice-roller/app/assets/stylesheets/dice-roller.css.scss */
+.dice-roller.dice-roller-large .d20 .face.face-6 {
+  -webkit-transform: rotateY(360deg) translateZ(150px) translateY(108.36px) rotateZ(180deg) rotateX(-11deg);
+  -moz-transform: rotateY(360deg) translateZ(150px) translateY(108.36px) rotateZ(180deg) rotateX(-11deg);
+  -ms-transform: rotateY(360deg) translateZ(150px) translateY(108.36px) rotateZ(180deg) rotateX(-11deg);
+  -o-transform: rotateY(360deg) translateZ(150px) translateY(108.36px) rotateZ(180deg) rotateX(-11deg);
+  transform: rotateY(360deg) translateZ(150px) translateY(108.36px) rotateZ(180deg) rotateX(-11deg);
+}
+/* line 200, /Users/vicentemundim/Projects/dice-roller/app/assets/stylesheets/dice-roller.css.scss */
+.dice-roller.dice-roller-large .d20 .face.face-7 {
+  -webkit-transform: rotateY(288deg) translateZ(150px) translateY(108.36px) rotateZ(180deg) rotateX(-11deg);
+  -moz-transform: rotateY(288deg) translateZ(150px) translateY(108.36px) rotateZ(180deg) rotateX(-11deg);
+  -ms-transform: rotateY(288deg) translateZ(150px) translateY(108.36px) rotateZ(180deg) rotateX(-11deg);
+  -o-transform: rotateY(288deg) translateZ(150px) translateY(108.36px) rotateZ(180deg) rotateX(-11deg);
+  transform: rotateY(288deg) translateZ(150px) translateY(108.36px) rotateZ(180deg) rotateX(-11deg);
+}
+/* line 200, /Users/vicentemundim/Projects/dice-roller/app/assets/stylesheets/dice-roller.css.scss */
+.dice-roller.dice-roller-large .d20 .face.face-8 {
+  -webkit-transform: rotateY(216deg) translateZ(150px) translateY(108.36px) rotateZ(180deg) rotateX(-11deg);
+  -moz-transform: rotateY(216deg) translateZ(150px) translateY(108.36px) rotateZ(180deg) rotateX(-11deg);
+  -ms-transform: rotateY(216deg) translateZ(150px) translateY(108.36px) rotateZ(180deg) rotateX(-11deg);
+  -o-transform: rotateY(216deg) translateZ(150px) translateY(108.36px) rotateZ(180deg) rotateX(-11deg);
+  transform: rotateY(216deg) translateZ(150px) translateY(108.36px) rotateZ(180deg) rotateX(-11deg);
+}
+/* line 200, /Users/vicentemundim/Projects/dice-roller/app/assets/stylesheets/dice-roller.css.scss */
+.dice-roller.dice-roller-large .d20 .face.face-9 {
+  -webkit-transform: rotateY(144deg) translateZ(150px) translateY(108.36px) rotateZ(180deg) rotateX(-11deg);
+  -moz-transform: rotateY(144deg) translateZ(150px) translateY(108.36px) rotateZ(180deg) rotateX(-11deg);
+  -ms-transform: rotateY(144deg) translateZ(150px) translateY(108.36px) rotateZ(180deg) rotateX(-11deg);
+  -o-transform: rotateY(144deg) translateZ(150px) translateY(108.36px) rotateZ(180deg) rotateX(-11deg);
+  transform: rotateY(144deg) translateZ(150px) translateY(108.36px) rotateZ(180deg) rotateX(-11deg);
+}
+/* line 200, /Users/vicentemundim/Projects/dice-roller/app/assets/stylesheets/dice-roller.css.scss */
+.dice-roller.dice-roller-large .d20 .face.face-10 {
+  -webkit-transform: rotateY(72deg) translateZ(150px) translateY(108.36px) rotateZ(180deg) rotateX(-11deg);
+  -moz-transform: rotateY(72deg) translateZ(150px) translateY(108.36px) rotateZ(180deg) rotateX(-11deg);
+  -ms-transform: rotateY(72deg) translateZ(150px) translateY(108.36px) rotateZ(180deg) rotateX(-11deg);
+  -o-transform: rotateY(72deg) translateZ(150px) translateY(108.36px) rotateZ(180deg) rotateX(-11deg);
+  transform: rotateY(72deg) translateZ(150px) translateY(108.36px) rotateZ(180deg) rotateX(-11deg);
+}
+/* line 207, /Users/vicentemundim/Projects/dice-roller/app/assets/stylesheets/dice-roller.css.scss */
+.dice-roller.dice-roller-large .d20 .face.face-11 {
+  -webkit-transform: rotateY(252deg) translateZ(150px) translateY(108.36px) rotateX(-11deg);
+  -moz-transform: rotateY(252deg) translateZ(150px) translateY(108.36px) rotateX(-11deg);
+  -ms-transform: rotateY(252deg) translateZ(150px) translateY(108.36px) rotateX(-11deg);
+  -o-transform: rotateY(252deg) translateZ(150px) translateY(108.36px) rotateX(-11deg);
+  transform: rotateY(252deg) translateZ(150px) translateY(108.36px) rotateX(-11deg);
+}
+/* line 207, /Users/vicentemundim/Projects/dice-roller/app/assets/stylesheets/dice-roller.css.scss */
+.dice-roller.dice-roller-large .d20 .face.face-12 {
+  -webkit-transform: rotateY(324deg) translateZ(150px) translateY(108.36px) rotateX(-11deg);
+  -moz-transform: rotateY(324deg) translateZ(150px) translateY(108.36px) rotateX(-11deg);
+  -ms-transform: rotateY(324deg) translateZ(150px) translateY(108.36px) rotateX(-11deg);
+  -o-transform: rotateY(324deg) translateZ(150px) translateY(108.36px) rotateX(-11deg);
+  transform: rotateY(324deg) translateZ(150px) translateY(108.36px) rotateX(-11deg);
+}
+/* line 207, /Users/vicentemundim/Projects/dice-roller/app/assets/stylesheets/dice-roller.css.scss */
+.dice-roller.dice-roller-large .d20 .face.face-13 {
+  -webkit-transform: rotateY(396deg) translateZ(150px) translateY(108.36px) rotateX(-11deg);
+  -moz-transform: rotateY(396deg) translateZ(150px) translateY(108.36px) rotateX(-11deg);
+  -ms-transform: rotateY(396deg) translateZ(150px) translateY(108.36px) rotateX(-11deg);
+  -o-transform: rotateY(396deg) translateZ(150px) translateY(108.36px) rotateX(-11deg);
+  transform: rotateY(396deg) translateZ(150px) translateY(108.36px) rotateX(-11deg);
+}
+/* line 207, /Users/vicentemundim/Projects/dice-roller/app/assets/stylesheets/dice-roller.css.scss */
+.dice-roller.dice-roller-large .d20 .face.face-14 {
+  -webkit-transform: rotateY(468deg) translateZ(150px) translateY(108.36px) rotateX(-11deg);
+  -moz-transform: rotateY(468deg) translateZ(150px) translateY(108.36px) rotateX(-11deg);
+  -ms-transform: rotateY(468deg) translateZ(150px) translateY(108.36px) rotateX(-11deg);
+  -o-transform: rotateY(468deg) translateZ(150px) translateY(108.36px) rotateX(-11deg);
+  transform: rotateY(468deg) translateZ(150px) translateY(108.36px) rotateX(-11deg);
+}
+/* line 207, /Users/vicentemundim/Projects/dice-roller/app/assets/stylesheets/dice-roller.css.scss */
+.dice-roller.dice-roller-large .d20 .face.face-15 {
+  -webkit-transform: rotateY(540deg) translateZ(150px) translateY(108.36px) rotateX(-11deg);
+  -moz-transform: rotateY(540deg) translateZ(150px) translateY(108.36px) rotateX(-11deg);
+  -ms-transform: rotateY(540deg) translateZ(150px) translateY(108.36px) rotateX(-11deg);
+  -o-transform: rotateY(540deg) translateZ(150px) translateY(108.36px) rotateX(-11deg);
+  transform: rotateY(540deg) translateZ(150px) translateY(108.36px) rotateX(-11deg);
+}
+/* line 315, /Users/vicentemundim/Projects/dice-roller/app/assets/stylesheets/dice-roller.css.scss */
+.dice-roller.dice-roller-small {
+  width: 100px;
+  height: 100px;
+}
+/* line 319, /Users/vicentemundim/Projects/dice-roller/app/assets/stylesheets/dice-roller.css.scss */
+.dice-roller.dice-roller-small .d10 {
+  -webkit-transform: rotateX(-45deg);
+  -moz-transform: rotateX(-45deg);
+  -ms-transform: rotateX(-45deg);
+  -o-transform: rotateX(-45deg);
+  transform: rotateX(-45deg);
+}
+/* line 59, /Users/vicentemundim/Projects/dice-roller/app/assets/stylesheets/dice-roller.css.scss */
+.dice-roller.dice-roller-small .d10[data-face="1"] {
+  -webkit-transform: rotateX(-225deg) rotateY(-72deg);
+  -moz-transform: rotateX(-225deg) rotateY(-72deg);
+  -ms-transform: rotateX(-225deg) rotateY(-72deg);
+  -o-transform: rotateX(-225deg) rotateY(-72deg);
+  transform: rotateX(-225deg) rotateY(-72deg);
+}
+/* line 59, /Users/vicentemundim/Projects/dice-roller/app/assets/stylesheets/dice-roller.css.scss */
+.dice-roller.dice-roller-small .d10[data-face="2"] {
+  -webkit-transform: rotateX(-45deg) rotateY(72deg);
+  -moz-transform: rotateX(-45deg) rotateY(72deg);
+  -ms-transform: rotateX(-45deg) rotateY(72deg);
+  -o-transform: rotateX(-45deg) rotateY(72deg);
+  transform: rotateX(-45deg) rotateY(72deg);
+}
+/* line 59, /Users/vicentemundim/Projects/dice-roller/app/assets/stylesheets/dice-roller.css.scss */
+.dice-roller.dice-roller-small .d10[data-face="3"] {
+  -webkit-transform: rotateX(-225deg) rotateY(-144deg);
+  -moz-transform: rotateX(-225deg) rotateY(-144deg);
+  -ms-transform: rotateX(-225deg) rotateY(-144deg);
+  -o-transform: rotateX(-225deg) rotateY(-144deg);
+  transform: rotateX(-225deg) rotateY(-144deg);
+}
+/* line 59, /Users/vicentemundim/Projects/dice-roller/app/assets/stylesheets/dice-roller.css.scss */
+.dice-roller.dice-roller-small .d10[data-face="4"] {
+  -webkit-transform: rotateX(-45deg) rotateY(144deg);
+  -moz-transform: rotateX(-45deg) rotateY(144deg);
+  -ms-transform: rotateX(-45deg) rotateY(144deg);
+  -o-transform: rotateX(-45deg) rotateY(144deg);
+  transform: rotateX(-45deg) rotateY(144deg);
+}
+/* line 59, /Users/vicentemundim/Projects/dice-roller/app/assets/stylesheets/dice-roller.css.scss */
+.dice-roller.dice-roller-small .d10[data-face="5"] {
+  -webkit-transform: rotateX(-225deg) rotateY(-216deg);
+  -moz-transform: rotateX(-225deg) rotateY(-216deg);
+  -ms-transform: rotateX(-225deg) rotateY(-216deg);
+  -o-transform: rotateX(-225deg) rotateY(-216deg);
+  transform: rotateX(-225deg) rotateY(-216deg);
+}
+/* line 59, /Users/vicentemundim/Projects/dice-roller/app/assets/stylesheets/dice-roller.css.scss */
+.dice-roller.dice-roller-small .d10[data-face="6"] {
+  -webkit-transform: rotateX(-45deg) rotateY(216deg);
+  -moz-transform: rotateX(-45deg) rotateY(216deg);
+  -ms-transform: rotateX(-45deg) rotateY(216deg);
+  -o-transform: rotateX(-45deg) rotateY(216deg);
+  transform: rotateX(-45deg) rotateY(216deg);
+}
+/* line 59, /Users/vicentemundim/Projects/dice-roller/app/assets/stylesheets/dice-roller.css.scss */
+.dice-roller.dice-roller-small .d10[data-face="7"] {
+  -webkit-transform: rotateX(-225deg) rotateY(-288deg);
+  -moz-transform: rotateX(-225deg) rotateY(-288deg);
+  -ms-transform: rotateX(-225deg) rotateY(-288deg);
+  -o-transform: rotateX(-225deg) rotateY(-288deg);
+  transform: rotateX(-225deg) rotateY(-288deg);
+}
+/* line 59, /Users/vicentemundim/Projects/dice-roller/app/assets/stylesheets/dice-roller.css.scss */
+.dice-roller.dice-roller-small .d10[data-face="8"] {
+  -webkit-transform: rotateX(-45deg) rotateY(288deg);
+  -moz-transform: rotateX(-45deg) rotateY(288deg);
+  -ms-transform: rotateX(-45deg) rotateY(288deg);
+  -o-transform: rotateX(-45deg) rotateY(288deg);
+  transform: rotateX(-45deg) rotateY(288deg);
+}
+/* line 59, /Users/vicentemundim/Projects/dice-roller/app/assets/stylesheets/dice-roller.css.scss */
+.dice-roller.dice-roller-small .d10[data-face="9"] {
+  -webkit-transform: rotateX(-225deg) rotateY(-360deg);
+  -moz-transform: rotateX(-225deg) rotateY(-360deg);
+  -ms-transform: rotateX(-225deg) rotateY(-360deg);
+  -o-transform: rotateX(-225deg) rotateY(-360deg);
+  transform: rotateX(-225deg) rotateY(-360deg);
+}
+/* line 59, /Users/vicentemundim/Projects/dice-roller/app/assets/stylesheets/dice-roller.css.scss */
+.dice-roller.dice-roller-small .d10[data-face="10"] {
+  -webkit-transform: rotateX(-45deg) rotateY(360deg);
+  -moz-transform: rotateX(-45deg) rotateY(360deg);
+  -ms-transform: rotateX(-45deg) rotateY(360deg);
+  -o-transform: rotateX(-45deg) rotateY(360deg);
+  transform: rotateX(-45deg) rotateY(360deg);
+}
+/* line 70, /Users/vicentemundim/Projects/dice-roller/app/assets/stylesheets/dice-roller.css.scss */
+.dice-roller.dice-roller-small .d10 .face {
+  margin: 0 -26px;
+  border-left: 26px solid transparent;
+  border-right: 26px solid transparent;
+  border-bottom-width: 50px;
+}
+/* line 79, /Users/vicentemundim/Projects/dice-roller/app/assets/stylesheets/dice-roller.css.scss */
+.dice-roller.dice-roller-small .d10 .face:before {
+  top: 12.5px;
+  left: -26px;
+  font-size: 30px;
+  line-height: 50px;
+  width: 52px;
+  height: 50px;
+}
+/* line 88, /Users/vicentemundim/Projects/dice-roller/app/assets/stylesheets/dice-roller.css.scss */
+.dice-roller.dice-roller-small .d10 .face:after {
+  bottom: -62px;
+  left: -26px;
+  border-left: 26px solid transparent;
+  border-right: 26px solid transparent;
+  border-top-width: 12px;
+}
+/* line 97, /Users/vicentemundim/Projects/dice-roller/app/assets/stylesheets/dice-roller.css.scss */
+.dice-roller.dice-roller-small .d10 .face.face-0 {
+  -webkit-transform: rotateY(0deg) translateZ(17px) translateY(3.48px) rotateX(45deg);
+  -moz-transform: rotateY(0deg) translateZ(17px) translateY(3.48px) rotateX(45deg);
+  -ms-transform: rotateY(0deg) translateZ(17px) translateY(3.48px) rotateX(45deg);
+  -o-transform: rotateY(0deg) translateZ(17px) translateY(3.48px) rotateX(45deg);
+  transform: rotateY(0deg) translateZ(17px) translateY(3.48px) rotateX(45deg);
+}
+/* line 97, /Users/vicentemundim/Projects/dice-roller/app/assets/stylesheets/dice-roller.css.scss */
+.dice-roller.dice-roller-small .d10 .face.face-1 {
+  top: 50px;
+  -webkit-transform: rotateY(72deg) translateZ(-17px) translateY(-3.48px) rotateZ(180deg) rotateY(180deg) rotateX(45deg);
+  -moz-transform: rotateY(72deg) translateZ(-17px) translateY(-3.48px) rotateZ(180deg) rotateY(180deg) rotateX(45deg);
+  -ms-transform: rotateY(72deg) translateZ(-17px) translateY(-3.48px) rotateZ(180deg) rotateY(180deg) rotateX(45deg);
+  -o-transform: rotateY(72deg) translateZ(-17px) translateY(-3.48px) rotateZ(180deg) rotateY(180deg) rotateX(45deg);
+  transform: rotateY(72deg) translateZ(-17px) translateY(-3.48px) rotateZ(180deg) rotateY(180deg) rotateX(45deg);
+}
+/* line 97, /Users/vicentemundim/Projects/dice-roller/app/assets/stylesheets/dice-roller.css.scss */
+.dice-roller.dice-roller-small .d10 .face.face-2 {
+  -webkit-transform: rotateY(-72deg) translateZ(17px) translateY(3.48px) rotateX(45deg);
+  -moz-transform: rotateY(-72deg) translateZ(17px) translateY(3.48px) rotateX(45deg);
+  -ms-transform: rotateY(-72deg) translateZ(17px) translateY(3.48px) rotateX(45deg);
+  -o-transform: rotateY(-72deg) translateZ(17px) translateY(3.48px) rotateX(45deg);
+  transform: rotateY(-72deg) translateZ(17px) translateY(3.48px) rotateX(45deg);
+}
+/* line 97, /Users/vicentemundim/Projects/dice-roller/app/assets/stylesheets/dice-roller.css.scss */
+.dice-roller.dice-roller-small .d10 .face.face-3 {
+  top: 50px;
+  -webkit-transform: rotateY(144deg) translateZ(-17px) translateY(-3.48px) rotateZ(180deg) rotateY(180deg) rotateX(45deg);
+  -moz-transform: rotateY(144deg) translateZ(-17px) translateY(-3.48px) rotateZ(180deg) rotateY(180deg) rotateX(45deg);
+  -ms-transform: rotateY(144deg) translateZ(-17px) translateY(-3.48px) rotateZ(180deg) rotateY(180deg) rotateX(45deg);
+  -o-transform: rotateY(144deg) translateZ(-17px) translateY(-3.48px) rotateZ(180deg) rotateY(180deg) rotateX(45deg);
+  transform: rotateY(144deg) translateZ(-17px) translateY(-3.48px) rotateZ(180deg) rotateY(180deg) rotateX(45deg);
+}
+/* line 97, /Users/vicentemundim/Projects/dice-roller/app/assets/stylesheets/dice-roller.css.scss */
+.dice-roller.dice-roller-small .d10 .face.face-4 {
+  -webkit-transform: rotateY(-144deg) translateZ(17px) translateY(3.48px) rotateX(45deg);
+  -moz-transform: rotateY(-144deg) translateZ(17px) translateY(3.48px) rotateX(45deg);
+  -ms-transform: rotateY(-144deg) translateZ(17px) translateY(3.48px) rotateX(45deg);
+  -o-transform: rotateY(-144deg) translateZ(17px) translateY(3.48px) rotateX(45deg);
+  transform: rotateY(-144deg) translateZ(17px) translateY(3.48px) rotateX(45deg);
+}
+/* line 97, /Users/vicentemundim/Projects/dice-roller/app/assets/stylesheets/dice-roller.css.scss */
+.dice-roller.dice-roller-small .d10 .face.face-5 {
+  top: 50px;
+  -webkit-transform: rotateY(216deg) translateZ(-17px) translateY(-3.48px) rotateZ(180deg) rotateY(180deg) rotateX(45deg);
+  -moz-transform: rotateY(216deg) translateZ(-17px) translateY(-3.48px) rotateZ(180deg) rotateY(180deg) rotateX(45deg);
+  -ms-transform: rotateY(216deg) translateZ(-17px) translateY(-3.48px) rotateZ(180deg) rotateY(180deg) rotateX(45deg);
+  -o-transform: rotateY(216deg) translateZ(-17px) translateY(-3.48px) rotateZ(180deg) rotateY(180deg) rotateX(45deg);
+  transform: rotateY(216deg) translateZ(-17px) translateY(-3.48px) rotateZ(180deg) rotateY(180deg) rotateX(45deg);
+}
+/* line 97, /Users/vicentemundim/Projects/dice-roller/app/assets/stylesheets/dice-roller.css.scss */
+.dice-roller.dice-roller-small .d10 .face.face-6 {
+  -webkit-transform: rotateY(-216deg) translateZ(17px) translateY(3.48px) rotateX(45deg);
+  -moz-transform: rotateY(-216deg) translateZ(17px) translateY(3.48px) rotateX(45deg);
+  -ms-transform: rotateY(-216deg) translateZ(17px) translateY(3.48px) rotateX(45deg);
+  -o-transform: rotateY(-216deg) translateZ(17px) translateY(3.48px) rotateX(45deg);
+  transform: rotateY(-216deg) translateZ(17px) translateY(3.48px) rotateX(45deg);
+}
+/* line 97, /Users/vicentemundim/Projects/dice-roller/app/assets/stylesheets/dice-roller.css.scss */
+.dice-roller.dice-roller-small .d10 .face.face-7 {
+  top: 50px;
+  -webkit-transform: rotateY(288deg) translateZ(-17px) translateY(-3.48px) rotateZ(180deg) rotateY(180deg) rotateX(45deg);
+  -moz-transform: rotateY(288deg) translateZ(-17px) translateY(-3.48px) rotateZ(180deg) rotateY(180deg) rotateX(45deg);
+  -ms-transform: rotateY(288deg) translateZ(-17px) translateY(-3.48px) rotateZ(180deg) rotateY(180deg) rotateX(45deg);
+  -o-transform: rotateY(288deg) translateZ(-17px) translateY(-3.48px) rotateZ(180deg) rotateY(180deg) rotateX(45deg);
+  transform: rotateY(288deg) translateZ(-17px) translateY(-3.48px) rotateZ(180deg) rotateY(180deg) rotateX(45deg);
+}
+/* line 97, /Users/vicentemundim/Projects/dice-roller/app/assets/stylesheets/dice-roller.css.scss */
+.dice-roller.dice-roller-small .d10 .face.face-8 {
+  -webkit-transform: rotateY(-288deg) translateZ(17px) translateY(3.48px) rotateX(45deg);
+  -moz-transform: rotateY(-288deg) translateZ(17px) translateY(3.48px) rotateX(45deg);
+  -ms-transform: rotateY(-288deg) translateZ(17px) translateY(3.48px) rotateX(45deg);
+  -o-transform: rotateY(-288deg) translateZ(17px) translateY(3.48px) rotateX(45deg);
+  transform: rotateY(-288deg) translateZ(17px) translateY(3.48px) rotateX(45deg);
+}
+/* line 97, /Users/vicentemundim/Projects/dice-roller/app/assets/stylesheets/dice-roller.css.scss */
+.dice-roller.dice-roller-small .d10 .face.face-9 {
+  top: 50px;
+  -webkit-transform: rotateY(360deg) translateZ(-17px) translateY(-3.48px) rotateZ(180deg) rotateY(180deg) rotateX(45deg);
+  -moz-transform: rotateY(360deg) translateZ(-17px) translateY(-3.48px) rotateZ(180deg) rotateY(180deg) rotateX(45deg);
+  -ms-transform: rotateY(360deg) translateZ(-17px) translateY(-3.48px) rotateZ(180deg) rotateY(180deg) rotateX(45deg);
+  -o-transform: rotateY(360deg) translateZ(-17px) translateY(-3.48px) rotateZ(180deg) rotateY(180deg) rotateX(45deg);
+  transform: rotateY(360deg) translateZ(-17px) translateY(-3.48px) rotateZ(180deg) rotateY(180deg) rotateX(45deg);
+}
+/* line 323, /Users/vicentemundim/Projects/dice-roller/app/assets/stylesheets/dice-roller.css.scss */
+.dice-roller.dice-roller-small .d20 {
+  -webkit-transform: rotateX(-53deg);
+  -moz-transform: rotateX(-53deg);
+  -ms-transform: rotateX(-53deg);
+  -o-transform: rotateX(-53deg);
+  transform: rotateX(-53deg);
+}
+/* line 141, /Users/vicentemundim/Projects/dice-roller/app/assets/stylesheets/dice-roller.css.scss */
+.dice-roller.dice-roller-small .d20[data-face="1"] {
+  -webkit-transform: rotateX(-53deg) rotateY(0deg);
+  -moz-transform: rotateX(-53deg) rotateY(0deg);
+  -ms-transform: rotateX(-53deg) rotateY(0deg);
+  -o-transform: rotateX(-53deg) rotateY(0deg);
+  transform: rotateX(-53deg) rotateY(0deg);
+}
+/* line 141, /Users/vicentemundim/Projects/dice-roller/app/assets/stylesheets/dice-roller.css.scss */
+.dice-roller.dice-roller-small .d20[data-face="2"] {
+  -webkit-transform: rotateX(-53deg) rotateY(72deg);
+  -moz-transform: rotateX(-53deg) rotateY(72deg);
+  -ms-transform: rotateX(-53deg) rotateY(72deg);
+  -o-transform: rotateX(-53deg) rotateY(72deg);
+  transform: rotateX(-53deg) rotateY(72deg);
+}
+/* line 141, /Users/vicentemundim/Projects/dice-roller/app/assets/stylesheets/dice-roller.css.scss */
+.dice-roller.dice-roller-small .d20[data-face="3"] {
+  -webkit-transform: rotateX(-53deg) rotateY(144deg);
+  -moz-transform: rotateX(-53deg) rotateY(144deg);
+  -ms-transform: rotateX(-53deg) rotateY(144deg);
+  -o-transform: rotateX(-53deg) rotateY(144deg);
+  transform: rotateX(-53deg) rotateY(144deg);
+}
+/* line 141, /Users/vicentemundim/Projects/dice-roller/app/assets/stylesheets/dice-roller.css.scss */
+.dice-roller.dice-roller-small .d20[data-face="4"] {
+  -webkit-transform: rotateX(-53deg) rotateY(216deg);
+  -moz-transform: rotateX(-53deg) rotateY(216deg);
+  -ms-transform: rotateX(-53deg) rotateY(216deg);
+  -o-transform: rotateX(-53deg) rotateY(216deg);
+  transform: rotateX(-53deg) rotateY(216deg);
+}
+/* line 141, /Users/vicentemundim/Projects/dice-roller/app/assets/stylesheets/dice-roller.css.scss */
+.dice-roller.dice-roller-small .d20[data-face="5"] {
+  -webkit-transform: rotateX(-53deg) rotateY(288deg);
+  -moz-transform: rotateX(-53deg) rotateY(288deg);
+  -ms-transform: rotateX(-53deg) rotateY(288deg);
+  -o-transform: rotateX(-53deg) rotateY(288deg);
+  transform: rotateX(-53deg) rotateY(288deg);
+}
+/* line 148, /Users/vicentemundim/Projects/dice-roller/app/assets/stylesheets/dice-roller.css.scss */
+.dice-roller.dice-roller-small .d20[data-face="16"] {
+  -webkit-transform: rotateX(127deg) rotateY(-72deg);
+  -moz-transform: rotateX(127deg) rotateY(-72deg);
+  -ms-transform: rotateX(127deg) rotateY(-72deg);
+  -o-transform: rotateX(127deg) rotateY(-72deg);
+  transform: rotateX(127deg) rotateY(-72deg);
+}
+/* line 148, /Users/vicentemundim/Projects/dice-roller/app/assets/stylesheets/dice-roller.css.scss */
+.dice-roller.dice-roller-small .d20[data-face="17"] {
+  -webkit-transform: rotateX(127deg) rotateY(-144deg);
+  -moz-transform: rotateX(127deg) rotateY(-144deg);
+  -ms-transform: rotateX(127deg) rotateY(-144deg);
+  -o-transform: rotateX(127deg) rotateY(-144deg);
+  transform: rotateX(127deg) rotateY(-144deg);
+}
+/* line 148, /Users/vicentemundim/Projects/dice-roller/app/assets/stylesheets/dice-roller.css.scss */
+.dice-roller.dice-roller-small .d20[data-face="18"] {
+  -webkit-transform: rotateX(127deg) rotateY(-216deg);
+  -moz-transform: rotateX(127deg) rotateY(-216deg);
+  -ms-transform: rotateX(127deg) rotateY(-216deg);
+  -o-transform: rotateX(127deg) rotateY(-216deg);
+  transform: rotateX(127deg) rotateY(-216deg);
+}
+/* line 148, /Users/vicentemundim/Projects/dice-roller/app/assets/stylesheets/dice-roller.css.scss */
+.dice-roller.dice-roller-small .d20[data-face="19"] {
+  -webkit-transform: rotateX(127deg) rotateY(-288deg);
+  -moz-transform: rotateX(127deg) rotateY(-288deg);
+  -ms-transform: rotateX(127deg) rotateY(-288deg);
+  -o-transform: rotateX(127deg) rotateY(-288deg);
+  transform: rotateX(127deg) rotateY(-288deg);
+}
+/* line 148, /Users/vicentemundim/Projects/dice-roller/app/assets/stylesheets/dice-roller.css.scss */
+.dice-roller.dice-roller-small .d20[data-face="20"] {
+  -webkit-transform: rotateX(127deg) rotateY(-360deg);
+  -moz-transform: rotateX(127deg) rotateY(-360deg);
+  -ms-transform: rotateX(127deg) rotateY(-360deg);
+  -o-transform: rotateX(127deg) rotateY(-360deg);
+  transform: rotateX(127deg) rotateY(-360deg);
+}
+/* line 155, /Users/vicentemundim/Projects/dice-roller/app/assets/stylesheets/dice-roller.css.scss */
+.dice-roller.dice-roller-small .d20[data-face="6"] {
+  -webkit-transform: rotateX(11deg) rotateZ(180deg) rotateY(0deg);
+  -moz-transform: rotateX(11deg) rotateZ(180deg) rotateY(0deg);
+  -ms-transform: rotateX(11deg) rotateZ(180deg) rotateY(0deg);
+  -o-transform: rotateX(11deg) rotateZ(180deg) rotateY(0deg);
+  transform: rotateX(11deg) rotateZ(180deg) rotateY(0deg);
+}
+/* line 155, /Users/vicentemundim/Projects/dice-roller/app/assets/stylesheets/dice-roller.css.scss */
+.dice-roller.dice-roller-small .d20[data-face="7"] {
+  -webkit-transform: rotateX(11deg) rotateZ(180deg) rotateY(72deg);
+  -moz-transform: rotateX(11deg) rotateZ(180deg) rotateY(72deg);
+  -ms-transform: rotateX(11deg) rotateZ(180deg) rotateY(72deg);
+  -o-transform: rotateX(11deg) rotateZ(180deg) rotateY(72deg);
+  transform: rotateX(11deg) rotateZ(180deg) rotateY(72deg);
+}
+/* line 155, /Users/vicentemundim/Projects/dice-roller/app/assets/stylesheets/dice-roller.css.scss */
+.dice-roller.dice-roller-small .d20[data-face="8"] {
+  -webkit-transform: rotateX(11deg) rotateZ(180deg) rotateY(144deg);
+  -moz-transform: rotateX(11deg) rotateZ(180deg) rotateY(144deg);
+  -ms-transform: rotateX(11deg) rotateZ(180deg) rotateY(144deg);
+  -o-transform: rotateX(11deg) rotateZ(180deg) rotateY(144deg);
+  transform: rotateX(11deg) rotateZ(180deg) rotateY(144deg);
+}
+/* line 155, /Users/vicentemundim/Projects/dice-roller/app/assets/stylesheets/dice-roller.css.scss */
+.dice-roller.dice-roller-small .d20[data-face="9"] {
+  -webkit-transform: rotateX(11deg) rotateZ(180deg) rotateY(216deg);
+  -moz-transform: rotateX(11deg) rotateZ(180deg) rotateY(216deg);
+  -ms-transform: rotateX(11deg) rotateZ(180deg) rotateY(216deg);
+  -o-transform: rotateX(11deg) rotateZ(180deg) rotateY(216deg);
+  transform: rotateX(11deg) rotateZ(180deg) rotateY(216deg);
+}
+/* line 155, /Users/vicentemundim/Projects/dice-roller/app/assets/stylesheets/dice-roller.css.scss */
+.dice-roller.dice-roller-small .d20[data-face="10"] {
+  -webkit-transform: rotateX(11deg) rotateZ(180deg) rotateY(288deg);
+  -moz-transform: rotateX(11deg) rotateZ(180deg) rotateY(288deg);
+  -ms-transform: rotateX(11deg) rotateZ(180deg) rotateY(288deg);
+  -o-transform: rotateX(11deg) rotateZ(180deg) rotateY(288deg);
+  transform: rotateX(11deg) rotateZ(180deg) rotateY(288deg);
+}
+/* line 162, /Users/vicentemundim/Projects/dice-roller/app/assets/stylesheets/dice-roller.css.scss */
+.dice-roller.dice-roller-small .d20[data-face="11"] {
+  -webkit-transform: rotateX(11deg) rotateY(-252deg);
+  -moz-transform: rotateX(11deg) rotateY(-252deg);
+  -ms-transform: rotateX(11deg) rotateY(-252deg);
+  -o-transform: rotateX(11deg) rotateY(-252deg);
+  transform: rotateX(11deg) rotateY(-252deg);
+}
+/* line 162, /Users/vicentemundim/Projects/dice-roller/app/assets/stylesheets/dice-roller.css.scss */
+.dice-roller.dice-roller-small .d20[data-face="12"] {
+  -webkit-transform: rotateX(11deg) rotateY(-324deg);
+  -moz-transform: rotateX(11deg) rotateY(-324deg);
+  -ms-transform: rotateX(11deg) rotateY(-324deg);
+  -o-transform: rotateX(11deg) rotateY(-324deg);
+  transform: rotateX(11deg) rotateY(-324deg);
+}
+/* line 162, /Users/vicentemundim/Projects/dice-roller/app/assets/stylesheets/dice-roller.css.scss */
+.dice-roller.dice-roller-small .d20[data-face="13"] {
+  -webkit-transform: rotateX(11deg) rotateY(-396deg);
+  -moz-transform: rotateX(11deg) rotateY(-396deg);
+  -ms-transform: rotateX(11deg) rotateY(-396deg);
+  -o-transform: rotateX(11deg) rotateY(-396deg);
+  transform: rotateX(11deg) rotateY(-396deg);
+}
+/* line 162, /Users/vicentemundim/Projects/dice-roller/app/assets/stylesheets/dice-roller.css.scss */
+.dice-roller.dice-roller-small .d20[data-face="14"] {
+  -webkit-transform: rotateX(11deg) rotateY(-468deg);
+  -moz-transform: rotateX(11deg) rotateY(-468deg);
+  -ms-transform: rotateX(11deg) rotateY(-468deg);
+  -o-transform: rotateX(11deg) rotateY(-468deg);
+  transform: rotateX(11deg) rotateY(-468deg);
+}
+/* line 162, /Users/vicentemundim/Projects/dice-roller/app/assets/stylesheets/dice-roller.css.scss */
+.dice-roller.dice-roller-small .d20[data-face="15"] {
+  -webkit-transform: rotateX(11deg) rotateY(-540deg);
+  -moz-transform: rotateX(11deg) rotateY(-540deg);
+  -ms-transform: rotateX(11deg) rotateY(-540deg);
+  -o-transform: rotateX(11deg) rotateY(-540deg);
+  transform: rotateX(11deg) rotateY(-540deg);
+}
+/* line 168, /Users/vicentemundim/Projects/dice-roller/app/assets/stylesheets/dice-roller.css.scss */
+.dice-roller.dice-roller-small .d20 .face {
+  margin: 0 -25px;
+  border-left: 25px solid transparent;
+  border-right: 25px solid transparent;
+  border-bottom-width: 43px;
+}
+/* line 176, /Users/vicentemundim/Projects/dice-roller/app/assets/stylesheets/dice-roller.css.scss */
+.dice-roller.dice-roller-small .d20 .face:before {
+  top: 10.75px;
+  left: -50px;
+  font-size: 21.5px;
+  line-height: 38.7px;
+  width: 100px;
+  height: 43px;
+}
+/* line 186, /Users/vicentemundim/Projects/dice-roller/app/assets/stylesheets/dice-roller.css.scss */
+.dice-roller.dice-roller-small .d20 .face.face-1 {
+  -webkit-transform: rotateY(0deg) translateZ(16.75px) translateY(-6.45px) rotateX(53deg);
+  -moz-transform: rotateY(0deg) translateZ(16.75px) translateY(-6.45px) rotateX(53deg);
+  -ms-transform: rotateY(0deg) translateZ(16.75px) translateY(-6.45px) rotateX(53deg);
+  -o-transform: rotateY(0deg) translateZ(16.75px) translateY(-6.45px) rotateX(53deg);
+  transform: rotateY(0deg) translateZ(16.75px) translateY(-6.45px) rotateX(53deg);
+}
+/* line 186, /Users/vicentemundim/Projects/dice-roller/app/assets/stylesheets/dice-roller.css.scss */
+.dice-roller.dice-roller-small .d20 .face.face-2 {
+  -webkit-transform: rotateY(-72deg) translateZ(16.75px) translateY(-6.45px) rotateX(53deg);
+  -moz-transform: rotateY(-72deg) translateZ(16.75px) translateY(-6.45px) rotateX(53deg);
+  -ms-transform: rotateY(-72deg) translateZ(16.75px) translateY(-6.45px) rotateX(53deg);
+  -o-transform: rotateY(-72deg) translateZ(16.75px) translateY(-6.45px) rotateX(53deg);
+  transform: rotateY(-72deg) translateZ(16.75px) translateY(-6.45px) rotateX(53deg);
+}
+/* line 186, /Users/vicentemundim/Projects/dice-roller/app/assets/stylesheets/dice-roller.css.scss */
+.dice-roller.dice-roller-small .d20 .face.face-3 {
+  -webkit-transform: rotateY(-144deg) translateZ(16.75px) translateY(-6.45px) rotateX(53deg);
+  -moz-transform: rotateY(-144deg) translateZ(16.75px) translateY(-6.45px) rotateX(53deg);
+  -ms-transform: rotateY(-144deg) translateZ(16.75px) translateY(-6.45px) rotateX(53deg);
+  -o-transform: rotateY(-144deg) translateZ(16.75px) translateY(-6.45px) rotateX(53deg);
+  transform: rotateY(-144deg) translateZ(16.75px) translateY(-6.45px) rotateX(53deg);
+}
+/* line 186, /Users/vicentemundim/Projects/dice-roller/app/assets/stylesheets/dice-roller.css.scss */
+.dice-roller.dice-roller-small .d20 .face.face-4 {
+  -webkit-transform: rotateY(-216deg) translateZ(16.75px) translateY(-6.45px) rotateX(53deg);
+  -moz-transform: rotateY(-216deg) translateZ(16.75px) translateY(-6.45px) rotateX(53deg);
+  -ms-transform: rotateY(-216deg) translateZ(16.75px) translateY(-6.45px) rotateX(53deg);
+  -o-transform: rotateY(-216deg) translateZ(16.75px) translateY(-6.45px) rotateX(53deg);
+  transform: rotateY(-216deg) translateZ(16.75px) translateY(-6.45px) rotateX(53deg);
+}
+/* line 186, /Users/vicentemundim/Projects/dice-roller/app/assets/stylesheets/dice-roller.css.scss */
+.dice-roller.dice-roller-small .d20 .face.face-5 {
+  -webkit-transform: rotateY(-288deg) translateZ(16.75px) translateY(-6.45px) rotateX(53deg);
+  -moz-transform: rotateY(-288deg) translateZ(16.75px) translateY(-6.45px) rotateX(53deg);
+  -ms-transform: rotateY(-288deg) translateZ(16.75px) translateY(-6.45px) rotateX(53deg);
+  -o-transform: rotateY(-288deg) translateZ(16.75px) translateY(-6.45px) rotateX(53deg);
+  transform: rotateY(-288deg) translateZ(16.75px) translateY(-6.45px) rotateX(53deg);
+}
+/* line 193, /Users/vicentemundim/Projects/dice-roller/app/assets/stylesheets/dice-roller.css.scss */
+.dice-roller.dice-roller-small .d20 .face.face-16 {
+  -webkit-transform: rotateY(-108deg) translateZ(16.75px) translateY(60.63px) rotateZ(180deg) rotateX(53deg);
+  -moz-transform: rotateY(-108deg) translateZ(16.75px) translateY(60.63px) rotateZ(180deg) rotateX(53deg);
+  -ms-transform: rotateY(-108deg) translateZ(16.75px) translateY(60.63px) rotateZ(180deg) rotateX(53deg);
+  -o-transform: rotateY(-108deg) translateZ(16.75px) translateY(60.63px) rotateZ(180deg) rotateX(53deg);
+  transform: rotateY(-108deg) translateZ(16.75px) translateY(60.63px) rotateZ(180deg) rotateX(53deg);
+}
+/* line 193, /Users/vicentemundim/Projects/dice-roller/app/assets/stylesheets/dice-roller.css.scss */
+.dice-roller.dice-roller-small .d20 .face.face-17 {
+  -webkit-transform: rotateY(-36deg) translateZ(16.75px) translateY(60.63px) rotateZ(180deg) rotateX(53deg);
+  -moz-transform: rotateY(-36deg) translateZ(16.75px) translateY(60.63px) rotateZ(180deg) rotateX(53deg);
+  -ms-transform: rotateY(-36deg) translateZ(16.75px) translateY(60.63px) rotateZ(180deg) rotateX(53deg);
+  -o-transform: rotateY(-36deg) translateZ(16.75px) translateY(60.63px) rotateZ(180deg) rotateX(53deg);
+  transform: rotateY(-36deg) translateZ(16.75px) translateY(60.63px) rotateZ(180deg) rotateX(53deg);
+}
+/* line 193, /Users/vicentemundim/Projects/dice-roller/app/assets/stylesheets/dice-roller.css.scss */
+.dice-roller.dice-roller-small .d20 .face.face-18 {
+  -webkit-transform: rotateY(36deg) translateZ(16.75px) translateY(60.63px) rotateZ(180deg) rotateX(53deg);
+  -moz-transform: rotateY(36deg) translateZ(16.75px) translateY(60.63px) rotateZ(180deg) rotateX(53deg);
+  -ms-transform: rotateY(36deg) translateZ(16.75px) translateY(60.63px) rotateZ(180deg) rotateX(53deg);
+  -o-transform: rotateY(36deg) translateZ(16.75px) translateY(60.63px) rotateZ(180deg) rotateX(53deg);
+  transform: rotateY(36deg) translateZ(16.75px) translateY(60.63px) rotateZ(180deg) rotateX(53deg);
+}
+/* line 193, /Users/vicentemundim/Projects/dice-roller/app/assets/stylesheets/dice-roller.css.scss */
+.dice-roller.dice-roller-small .d20 .face.face-19 {
+  -webkit-transform: rotateY(108deg) translateZ(16.75px) translateY(60.63px) rotateZ(180deg) rotateX(53deg);
+  -moz-transform: rotateY(108deg) translateZ(16.75px) translateY(60.63px) rotateZ(180deg) rotateX(53deg);
+  -ms-transform: rotateY(108deg) translateZ(16.75px) translateY(60.63px) rotateZ(180deg) rotateX(53deg);
+  -o-transform: rotateY(108deg) translateZ(16.75px) translateY(60.63px) rotateZ(180deg) rotateX(53deg);
+  transform: rotateY(108deg) translateZ(16.75px) translateY(60.63px) rotateZ(180deg) rotateX(53deg);
+}
+/* line 193, /Users/vicentemundim/Projects/dice-roller/app/assets/stylesheets/dice-roller.css.scss */
+.dice-roller.dice-roller-small .d20 .face.face-20 {
+  -webkit-transform: rotateY(180deg) translateZ(16.75px) translateY(60.63px) rotateZ(180deg) rotateX(53deg);
+  -moz-transform: rotateY(180deg) translateZ(16.75px) translateY(60.63px) rotateZ(180deg) rotateX(53deg);
+  -ms-transform: rotateY(180deg) translateZ(16.75px) translateY(60.63px) rotateZ(180deg) rotateX(53deg);
+  -o-transform: rotateY(180deg) translateZ(16.75px) translateY(60.63px) rotateZ(180deg) rotateX(53deg);
+  transform: rotateY(180deg) translateZ(16.75px) translateY(60.63px) rotateZ(180deg) rotateX(53deg);
+}
+/* line 200, /Users/vicentemundim/Projects/dice-roller/app/assets/stylesheets/dice-roller.css.scss */
+.dice-roller.dice-roller-small .d20 .face.face-6 {
+  -webkit-transform: rotateY(360deg) translateZ(37.5px) translateY(27.09px) rotateZ(180deg) rotateX(-11deg);
+  -moz-transform: rotateY(360deg) translateZ(37.5px) translateY(27.09px) rotateZ(180deg) rotateX(-11deg);
+  -ms-transform: rotateY(360deg) translateZ(37.5px) translateY(27.09px) rotateZ(180deg) rotateX(-11deg);
+  -o-transform: rotateY(360deg) translateZ(37.5px) translateY(27.09px) rotateZ(180deg) rotateX(-11deg);
+  transform: rotateY(360deg) translateZ(37.5px) translateY(27.09px) rotateZ(180deg) rotateX(-11deg);
+}
+/* line 200, /Users/vicentemundim/Projects/dice-roller/app/assets/stylesheets/dice-roller.css.scss */
+.dice-roller.dice-roller-small .d20 .face.face-7 {
+  -webkit-transform: rotateY(288deg) translateZ(37.5px) translateY(27.09px) rotateZ(180deg) rotateX(-11deg);
+  -moz-transform: rotateY(288deg) translateZ(37.5px) translateY(27.09px) rotateZ(180deg) rotateX(-11deg);
+  -ms-transform: rotateY(288deg) translateZ(37.5px) translateY(27.09px) rotateZ(180deg) rotateX(-11deg);
+  -o-transform: rotateY(288deg) translateZ(37.5px) translateY(27.09px) rotateZ(180deg) rotateX(-11deg);
+  transform: rotateY(288deg) translateZ(37.5px) translateY(27.09px) rotateZ(180deg) rotateX(-11deg);
+}
+/* line 200, /Users/vicentemundim/Projects/dice-roller/app/assets/stylesheets/dice-roller.css.scss */
+.dice-roller.dice-roller-small .d20 .face.face-8 {
+  -webkit-transform: rotateY(216deg) translateZ(37.5px) translateY(27.09px) rotateZ(180deg) rotateX(-11deg);
+  -moz-transform: rotateY(216deg) translateZ(37.5px) translateY(27.09px) rotateZ(180deg) rotateX(-11deg);
+  -ms-transform: rotateY(216deg) translateZ(37.5px) translateY(27.09px) rotateZ(180deg) rotateX(-11deg);
+  -o-transform: rotateY(216deg) translateZ(37.5px) translateY(27.09px) rotateZ(180deg) rotateX(-11deg);
+  transform: rotateY(216deg) translateZ(37.5px) translateY(27.09px) rotateZ(180deg) rotateX(-11deg);
+}
+/* line 200, /Users/vicentemundim/Projects/dice-roller/app/assets/stylesheets/dice-roller.css.scss */
+.dice-roller.dice-roller-small .d20 .face.face-9 {
+  -webkit-transform: rotateY(144deg) translateZ(37.5px) translateY(27.09px) rotateZ(180deg) rotateX(-11deg);
+  -moz-transform: rotateY(144deg) translateZ(37.5px) translateY(27.09px) rotateZ(180deg) rotateX(-11deg);
+  -ms-transform: rotateY(144deg) translateZ(37.5px) translateY(27.09px) rotateZ(180deg) rotateX(-11deg);
+  -o-transform: rotateY(144deg) translateZ(37.5px) translateY(27.09px) rotateZ(180deg) rotateX(-11deg);
+  transform: rotateY(144deg) translateZ(37.5px) translateY(27.09px) rotateZ(180deg) rotateX(-11deg);
+}
+/* line 200, /Users/vicentemundim/Projects/dice-roller/app/assets/stylesheets/dice-roller.css.scss */
+.dice-roller.dice-roller-small .d20 .face.face-10 {
+  -webkit-transform: rotateY(72deg) translateZ(37.5px) translateY(27.09px) rotateZ(180deg) rotateX(-11deg);
+  -moz-transform: rotateY(72deg) translateZ(37.5px) translateY(27.09px) rotateZ(180deg) rotateX(-11deg);
+  -ms-transform: rotateY(72deg) translateZ(37.5px) translateY(27.09px) rotateZ(180deg) rotateX(-11deg);
+  -o-transform: rotateY(72deg) translateZ(37.5px) translateY(27.09px) rotateZ(180deg) rotateX(-11deg);
+  transform: rotateY(72deg) translateZ(37.5px) translateY(27.09px) rotateZ(180deg) rotateX(-11deg);
+}
+/* line 207, /Users/vicentemundim/Projects/dice-roller/app/assets/stylesheets/dice-roller.css.scss */
+.dice-roller.dice-roller-small .d20 .face.face-11 {
+  -webkit-transform: rotateY(252deg) translateZ(37.5px) translateY(27.09px) rotateX(-11deg);
+  -moz-transform: rotateY(252deg) translateZ(37.5px) translateY(27.09px) rotateX(-11deg);
+  -ms-transform: rotateY(252deg) translateZ(37.5px) translateY(27.09px) rotateX(-11deg);
+  -o-transform: rotateY(252deg) translateZ(37.5px) translateY(27.09px) rotateX(-11deg);
+  transform: rotateY(252deg) translateZ(37.5px) translateY(27.09px) rotateX(-11deg);
+}
+/* line 207, /Users/vicentemundim/Projects/dice-roller/app/assets/stylesheets/dice-roller.css.scss */
+.dice-roller.dice-roller-small .d20 .face.face-12 {
+  -webkit-transform: rotateY(324deg) translateZ(37.5px) translateY(27.09px) rotateX(-11deg);
+  -moz-transform: rotateY(324deg) translateZ(37.5px) translateY(27.09px) rotateX(-11deg);
+  -ms-transform: rotateY(324deg) translateZ(37.5px) translateY(27.09px) rotateX(-11deg);
+  -o-transform: rotateY(324deg) translateZ(37.5px) translateY(27.09px) rotateX(-11deg);
+  transform: rotateY(324deg) translateZ(37.5px) translateY(27.09px) rotateX(-11deg);
+}
+/* line 207, /Users/vicentemundim/Projects/dice-roller/app/assets/stylesheets/dice-roller.css.scss */
+.dice-roller.dice-roller-small .d20 .face.face-13 {
+  -webkit-transform: rotateY(396deg) translateZ(37.5px) translateY(27.09px) rotateX(-11deg);
+  -moz-transform: rotateY(396deg) translateZ(37.5px) translateY(27.09px) rotateX(-11deg);
+  -ms-transform: rotateY(396deg) translateZ(37.5px) translateY(27.09px) rotateX(-11deg);
+  -o-transform: rotateY(396deg) translateZ(37.5px) translateY(27.09px) rotateX(-11deg);
+  transform: rotateY(396deg) translateZ(37.5px) translateY(27.09px) rotateX(-11deg);
+}
+/* line 207, /Users/vicentemundim/Projects/dice-roller/app/assets/stylesheets/dice-roller.css.scss */
+.dice-roller.dice-roller-small .d20 .face.face-14 {
+  -webkit-transform: rotateY(468deg) translateZ(37.5px) translateY(27.09px) rotateX(-11deg);
+  -moz-transform: rotateY(468deg) translateZ(37.5px) translateY(27.09px) rotateX(-11deg);
+  -ms-transform: rotateY(468deg) translateZ(37.5px) translateY(27.09px) rotateX(-11deg);
+  -o-transform: rotateY(468deg) translateZ(37.5px) translateY(27.09px) rotateX(-11deg);
+  transform: rotateY(468deg) translateZ(37.5px) translateY(27.09px) rotateX(-11deg);
+}
+/* line 207, /Users/vicentemundim/Projects/dice-roller/app/assets/stylesheets/dice-roller.css.scss */
+.dice-roller.dice-roller-small .d20 .face.face-15 {
+  -webkit-transform: rotateY(540deg) translateZ(37.5px) translateY(27.09px) rotateX(-11deg);
+  -moz-transform: rotateY(540deg) translateZ(37.5px) translateY(27.09px) rotateX(-11deg);
+  -ms-transform: rotateY(540deg) translateZ(37.5px) translateY(27.09px) rotateX(-11deg);
+  -o-transform: rotateY(540deg) translateZ(37.5px) translateY(27.09px) rotateX(-11deg);
+  transform: rotateY(540deg) translateZ(37.5px) translateY(27.09px) rotateX(-11deg);
+}
+/* line 328, /Users/vicentemundim/Projects/dice-roller/app/assets/stylesheets/dice-roller.css.scss */
+.dice-roller.dice-roller-mini {
+  width: 50px;
+  height: 50px;
+}
+/* line 332, /Users/vicentemundim/Projects/dice-roller/app/assets/stylesheets/dice-roller.css.scss */
+.dice-roller.dice-roller-mini .d10 {
+  -webkit-transform: rotateX(-45deg);
+  -moz-transform: rotateX(-45deg);
+  -ms-transform: rotateX(-45deg);
+  -o-transform: rotateX(-45deg);
+  transform: rotateX(-45deg);
+}
+/* line 59, /Users/vicentemundim/Projects/dice-roller/app/assets/stylesheets/dice-roller.css.scss */
+.dice-roller.dice-roller-mini .d10[data-face="1"] {
+  -webkit-transform: rotateX(-225deg) rotateY(-72deg);
+  -moz-transform: rotateX(-225deg) rotateY(-72deg);
+  -ms-transform: rotateX(-225deg) rotateY(-72deg);
+  -o-transform: rotateX(-225deg) rotateY(-72deg);
+  transform: rotateX(-225deg) rotateY(-72deg);
+}
+/* line 59, /Users/vicentemundim/Projects/dice-roller/app/assets/stylesheets/dice-roller.css.scss */
+.dice-roller.dice-roller-mini .d10[data-face="2"] {
+  -webkit-transform: rotateX(-45deg) rotateY(72deg);
+  -moz-transform: rotateX(-45deg) rotateY(72deg);
+  -ms-transform: rotateX(-45deg) rotateY(72deg);
+  -o-transform: rotateX(-45deg) rotateY(72deg);
+  transform: rotateX(-45deg) rotateY(72deg);
+}
+/* line 59, /Users/vicentemundim/Projects/dice-roller/app/assets/stylesheets/dice-roller.css.scss */
+.dice-roller.dice-roller-mini .d10[data-face="3"] {
+  -webkit-transform: rotateX(-225deg) rotateY(-144deg);
+  -moz-transform: rotateX(-225deg) rotateY(-144deg);
+  -ms-transform: rotateX(-225deg) rotateY(-144deg);
+  -o-transform: rotateX(-225deg) rotateY(-144deg);
+  transform: rotateX(-225deg) rotateY(-144deg);
+}
+/* line 59, /Users/vicentemundim/Projects/dice-roller/app/assets/stylesheets/dice-roller.css.scss */
+.dice-roller.dice-roller-mini .d10[data-face="4"] {
+  -webkit-transform: rotateX(-45deg) rotateY(144deg);
+  -moz-transform: rotateX(-45deg) rotateY(144deg);
+  -ms-transform: rotateX(-45deg) rotateY(144deg);
+  -o-transform: rotateX(-45deg) rotateY(144deg);
+  transform: rotateX(-45deg) rotateY(144deg);
+}
+/* line 59, /Users/vicentemundim/Projects/dice-roller/app/assets/stylesheets/dice-roller.css.scss */
+.dice-roller.dice-roller-mini .d10[data-face="5"] {
+  -webkit-transform: rotateX(-225deg) rotateY(-216deg);
+  -moz-transform: rotateX(-225deg) rotateY(-216deg);
+  -ms-transform: rotateX(-225deg) rotateY(-216deg);
+  -o-transform: rotateX(-225deg) rotateY(-216deg);
+  transform: rotateX(-225deg) rotateY(-216deg);
+}
+/* line 59, /Users/vicentemundim/Projects/dice-roller/app/assets/stylesheets/dice-roller.css.scss */
+.dice-roller.dice-roller-mini .d10[data-face="6"] {
+  -webkit-transform: rotateX(-45deg) rotateY(216deg);
+  -moz-transform: rotateX(-45deg) rotateY(216deg);
+  -ms-transform: rotateX(-45deg) rotateY(216deg);
+  -o-transform: rotateX(-45deg) rotateY(216deg);
+  transform: rotateX(-45deg) rotateY(216deg);
+}
+/* line 59, /Users/vicentemundim/Projects/dice-roller/app/assets/stylesheets/dice-roller.css.scss */
+.dice-roller.dice-roller-mini .d10[data-face="7"] {
+  -webkit-transform: rotateX(-225deg) rotateY(-288deg);
+  -moz-transform: rotateX(-225deg) rotateY(-288deg);
+  -ms-transform: rotateX(-225deg) rotateY(-288deg);
+  -o-transform: rotateX(-225deg) rotateY(-288deg);
+  transform: rotateX(-225deg) rotateY(-288deg);
+}
+/* line 59, /Users/vicentemundim/Projects/dice-roller/app/assets/stylesheets/dice-roller.css.scss */
+.dice-roller.dice-roller-mini .d10[data-face="8"] {
+  -webkit-transform: rotateX(-45deg) rotateY(288deg);
+  -moz-transform: rotateX(-45deg) rotateY(288deg);
+  -ms-transform: rotateX(-45deg) rotateY(288deg);
+  -o-transform: rotateX(-45deg) rotateY(288deg);
+  transform: rotateX(-45deg) rotateY(288deg);
+}
+/* line 59, /Users/vicentemundim/Projects/dice-roller/app/assets/stylesheets/dice-roller.css.scss */
+.dice-roller.dice-roller-mini .d10[data-face="9"] {
+  -webkit-transform: rotateX(-225deg) rotateY(-360deg);
+  -moz-transform: rotateX(-225deg) rotateY(-360deg);
+  -ms-transform: rotateX(-225deg) rotateY(-360deg);
+  -o-transform: rotateX(-225deg) rotateY(-360deg);
+  transform: rotateX(-225deg) rotateY(-360deg);
+}
+/* line 59, /Users/vicentemundim/Projects/dice-roller/app/assets/stylesheets/dice-roller.css.scss */
+.dice-roller.dice-roller-mini .d10[data-face="10"] {
+  -webkit-transform: rotateX(-45deg) rotateY(360deg);
+  -moz-transform: rotateX(-45deg) rotateY(360deg);
+  -ms-transform: rotateX(-45deg) rotateY(360deg);
+  -o-transform: rotateX(-45deg) rotateY(360deg);
+  transform: rotateX(-45deg) rotateY(360deg);
+}
+/* line 70, /Users/vicentemundim/Projects/dice-roller/app/assets/stylesheets/dice-roller.css.scss */
+.dice-roller.dice-roller-mini .d10 .face {
+  margin: 0 -13px;
+  border-left: 13px solid transparent;
+  border-right: 13px solid transparent;
+  border-bottom-width: 25px;
+}
+/* line 79, /Users/vicentemundim/Projects/dice-roller/app/assets/stylesheets/dice-roller.css.scss */
+.dice-roller.dice-roller-mini .d10 .face:before {
+  top: 6.25px;
+  left: -13px;
+  font-size: 15px;
+  line-height: 25px;
+  width: 26px;
+  height: 25px;
+}
+/* line 88, /Users/vicentemundim/Projects/dice-roller/app/assets/stylesheets/dice-roller.css.scss */
+.dice-roller.dice-roller-mini .d10 .face:after {
+  bottom: -31px;
+  left: -13px;
+  border-left: 13px solid transparent;
+  border-right: 13px solid transparent;
+  border-top-width: 6px;
+}
+/* line 97, /Users/vicentemundim/Projects/dice-roller/app/assets/stylesheets/dice-roller.css.scss */
+.dice-roller.dice-roller-mini .d10 .face.face-0 {
+  -webkit-transform: rotateY(0deg) translateZ(8.5px) translateY(1.74px) rotateX(45deg);
+  -moz-transform: rotateY(0deg) translateZ(8.5px) translateY(1.74px) rotateX(45deg);
+  -ms-transform: rotateY(0deg) translateZ(8.5px) translateY(1.74px) rotateX(45deg);
+  -o-transform: rotateY(0deg) translateZ(8.5px) translateY(1.74px) rotateX(45deg);
+  transform: rotateY(0deg) translateZ(8.5px) translateY(1.74px) rotateX(45deg);
+}
+/* line 97, /Users/vicentemundim/Projects/dice-roller/app/assets/stylesheets/dice-roller.css.scss */
+.dice-roller.dice-roller-mini .d10 .face.face-1 {
+  top: 25px;
+  -webkit-transform: rotateY(72deg) translateZ(-8.5px) translateY(-1.74px) rotateZ(180deg) rotateY(180deg) rotateX(45deg);
+  -moz-transform: rotateY(72deg) translateZ(-8.5px) translateY(-1.74px) rotateZ(180deg) rotateY(180deg) rotateX(45deg);
+  -ms-transform: rotateY(72deg) translateZ(-8.5px) translateY(-1.74px) rotateZ(180deg) rotateY(180deg) rotateX(45deg);
+  -o-transform: rotateY(72deg) translateZ(-8.5px) translateY(-1.74px) rotateZ(180deg) rotateY(180deg) rotateX(45deg);
+  transform: rotateY(72deg) translateZ(-8.5px) translateY(-1.74px) rotateZ(180deg) rotateY(180deg) rotateX(45deg);
+}
+/* line 97, /Users/vicentemundim/Projects/dice-roller/app/assets/stylesheets/dice-roller.css.scss */
+.dice-roller.dice-roller-mini .d10 .face.face-2 {
+  -webkit-transform: rotateY(-72deg) translateZ(8.5px) translateY(1.74px) rotateX(45deg);
+  -moz-transform: rotateY(-72deg) translateZ(8.5px) translateY(1.74px) rotateX(45deg);
+  -ms-transform: rotateY(-72deg) translateZ(8.5px) translateY(1.74px) rotateX(45deg);
+  -o-transform: rotateY(-72deg) translateZ(8.5px) translateY(1.74px) rotateX(45deg);
+  transform: rotateY(-72deg) translateZ(8.5px) translateY(1.74px) rotateX(45deg);
+}
+/* line 97, /Users/vicentemundim/Projects/dice-roller/app/assets/stylesheets/dice-roller.css.scss */
+.dice-roller.dice-roller-mini .d10 .face.face-3 {
+  top: 25px;
+  -webkit-transform: rotateY(144deg) translateZ(-8.5px) translateY(-1.74px) rotateZ(180deg) rotateY(180deg) rotateX(45deg);
+  -moz-transform: rotateY(144deg) translateZ(-8.5px) translateY(-1.74px) rotateZ(180deg) rotateY(180deg) rotateX(45deg);
+  -ms-transform: rotateY(144deg) translateZ(-8.5px) translateY(-1.74px) rotateZ(180deg) rotateY(180deg) rotateX(45deg);
+  -o-transform: rotateY(144deg) translateZ(-8.5px) translateY(-1.74px) rotateZ(180deg) rotateY(180deg) rotateX(45deg);
+  transform: rotateY(144deg) translateZ(-8.5px) translateY(-1.74px) rotateZ(180deg) rotateY(180deg) rotateX(45deg);
+}
+/* line 97, /Users/vicentemundim/Projects/dice-roller/app/assets/stylesheets/dice-roller.css.scss */
+.dice-roller.dice-roller-mini .d10 .face.face-4 {
+  -webkit-transform: rotateY(-144deg) translateZ(8.5px) translateY(1.74px) rotateX(45deg);
+  -moz-transform: rotateY(-144deg) translateZ(8.5px) translateY(1.74px) rotateX(45deg);
+  -ms-transform: rotateY(-144deg) translateZ(8.5px) translateY(1.74px) rotateX(45deg);
+  -o-transform: rotateY(-144deg) translateZ(8.5px) translateY(1.74px) rotateX(45deg);
+  transform: rotateY(-144deg) translateZ(8.5px) translateY(1.74px) rotateX(45deg);
+}
+/* line 97, /Users/vicentemundim/Projects/dice-roller/app/assets/stylesheets/dice-roller.css.scss */
+.dice-roller.dice-roller-mini .d10 .face.face-5 {
+  top: 25px;
+  -webkit-transform: rotateY(216deg) translateZ(-8.5px) translateY(-1.74px) rotateZ(180deg) rotateY(180deg) rotateX(45deg);
+  -moz-transform: rotateY(216deg) translateZ(-8.5px) translateY(-1.74px) rotateZ(180deg) rotateY(180deg) rotateX(45deg);
+  -ms-transform: rotateY(216deg) translateZ(-8.5px) translateY(-1.74px) rotateZ(180deg) rotateY(180deg) rotateX(45deg);
+  -o-transform: rotateY(216deg) translateZ(-8.5px) translateY(-1.74px) rotateZ(180deg) rotateY(180deg) rotateX(45deg);
+  transform: rotateY(216deg) translateZ(-8.5px) translateY(-1.74px) rotateZ(180deg) rotateY(180deg) rotateX(45deg);
+}
+/* line 97, /Users/vicentemundim/Projects/dice-roller/app/assets/stylesheets/dice-roller.css.scss */
+.dice-roller.dice-roller-mini .d10 .face.face-6 {
+  -webkit-transform: rotateY(-216deg) translateZ(8.5px) translateY(1.74px) rotateX(45deg);
+  -moz-transform: rotateY(-216deg) translateZ(8.5px) translateY(1.74px) rotateX(45deg);
+  -ms-transform: rotateY(-216deg) translateZ(8.5px) translateY(1.74px) rotateX(45deg);
+  -o-transform: rotateY(-216deg) translateZ(8.5px) translateY(1.74px) rotateX(45deg);
+  transform: rotateY(-216deg) translateZ(8.5px) translateY(1.74px) rotateX(45deg);
+}
+/* line 97, /Users/vicentemundim/Projects/dice-roller/app/assets/stylesheets/dice-roller.css.scss */
+.dice-roller.dice-roller-mini .d10 .face.face-7 {
+  top: 25px;
+  -webkit-transform: rotateY(288deg) translateZ(-8.5px) translateY(-1.74px) rotateZ(180deg) rotateY(180deg) rotateX(45deg);
+  -moz-transform: rotateY(288deg) translateZ(-8.5px) translateY(-1.74px) rotateZ(180deg) rotateY(180deg) rotateX(45deg);
+  -ms-transform: rotateY(288deg) translateZ(-8.5px) translateY(-1.74px) rotateZ(180deg) rotateY(180deg) rotateX(45deg);
+  -o-transform: rotateY(288deg) translateZ(-8.5px) translateY(-1.74px) rotateZ(180deg) rotateY(180deg) rotateX(45deg);
+  transform: rotateY(288deg) translateZ(-8.5px) translateY(-1.74px) rotateZ(180deg) rotateY(180deg) rotateX(45deg);
+}
+/* line 97, /Users/vicentemundim/Projects/dice-roller/app/assets/stylesheets/dice-roller.css.scss */
+.dice-roller.dice-roller-mini .d10 .face.face-8 {
+  -webkit-transform: rotateY(-288deg) translateZ(8.5px) translateY(1.74px) rotateX(45deg);
+  -moz-transform: rotateY(-288deg) translateZ(8.5px) translateY(1.74px) rotateX(45deg);
+  -ms-transform: rotateY(-288deg) translateZ(8.5px) translateY(1.74px) rotateX(45deg);
+  -o-transform: rotateY(-288deg) translateZ(8.5px) translateY(1.74px) rotateX(45deg);
+  transform: rotateY(-288deg) translateZ(8.5px) translateY(1.74px) rotateX(45deg);
+}
+/* line 97, /Users/vicentemundim/Projects/dice-roller/app/assets/stylesheets/dice-roller.css.scss */
+.dice-roller.dice-roller-mini .d10 .face.face-9 {
+  top: 25px;
+  -webkit-transform: rotateY(360deg) translateZ(-8.5px) translateY(-1.74px) rotateZ(180deg) rotateY(180deg) rotateX(45deg);
+  -moz-transform: rotateY(360deg) translateZ(-8.5px) translateY(-1.74px) rotateZ(180deg) rotateY(180deg) rotateX(45deg);
+  -ms-transform: rotateY(360deg) translateZ(-8.5px) translateY(-1.74px) rotateZ(180deg) rotateY(180deg) rotateX(45deg);
+  -o-transform: rotateY(360deg) translateZ(-8.5px) translateY(-1.74px) rotateZ(180deg) rotateY(180deg) rotateX(45deg);
+  transform: rotateY(360deg) translateZ(-8.5px) translateY(-1.74px) rotateZ(180deg) rotateY(180deg) rotateX(45deg);
+}
+/* line 336, /Users/vicentemundim/Projects/dice-roller/app/assets/stylesheets/dice-roller.css.scss */
+.dice-roller.dice-roller-mini .d20 {
+  -webkit-transform: rotateX(-53deg);
+  -moz-transform: rotateX(-53deg);
+  -ms-transform: rotateX(-53deg);
+  -o-transform: rotateX(-53deg);
+  transform: rotateX(-53deg);
+}
+/* line 141, /Users/vicentemundim/Projects/dice-roller/app/assets/stylesheets/dice-roller.css.scss */
+.dice-roller.dice-roller-mini .d20[data-face="1"] {
+  -webkit-transform: rotateX(-53deg) rotateY(0deg);
+  -moz-transform: rotateX(-53deg) rotateY(0deg);
+  -ms-transform: rotateX(-53deg) rotateY(0deg);
+  -o-transform: rotateX(-53deg) rotateY(0deg);
+  transform: rotateX(-53deg) rotateY(0deg);
+}
+/* line 141, /Users/vicentemundim/Projects/dice-roller/app/assets/stylesheets/dice-roller.css.scss */
+.dice-roller.dice-roller-mini .d20[data-face="2"] {
+  -webkit-transform: rotateX(-53deg) rotateY(72deg);
+  -moz-transform: rotateX(-53deg) rotateY(72deg);
+  -ms-transform: rotateX(-53deg) rotateY(72deg);
+  -o-transform: rotateX(-53deg) rotateY(72deg);
+  transform: rotateX(-53deg) rotateY(72deg);
+}
+/* line 141, /Users/vicentemundim/Projects/dice-roller/app/assets/stylesheets/dice-roller.css.scss */
+.dice-roller.dice-roller-mini .d20[data-face="3"] {
+  -webkit-transform: rotateX(-53deg) rotateY(144deg);
+  -moz-transform: rotateX(-53deg) rotateY(144deg);
+  -ms-transform: rotateX(-53deg) rotateY(144deg);
+  -o-transform: rotateX(-53deg) rotateY(144deg);
+  transform: rotateX(-53deg) rotateY(144deg);
+}
+/* line 141, /Users/vicentemundim/Projects/dice-roller/app/assets/stylesheets/dice-roller.css.scss */
+.dice-roller.dice-roller-mini .d20[data-face="4"] {
+  -webkit-transform: rotateX(-53deg) rotateY(216deg);
+  -moz-transform: rotateX(-53deg) rotateY(216deg);
+  -ms-transform: rotateX(-53deg) rotateY(216deg);
+  -o-transform: rotateX(-53deg) rotateY(216deg);
+  transform: rotateX(-53deg) rotateY(216deg);
+}
+/* line 141, /Users/vicentemundim/Projects/dice-roller/app/assets/stylesheets/dice-roller.css.scss */
+.dice-roller.dice-roller-mini .d20[data-face="5"] {
+  -webkit-transform: rotateX(-53deg) rotateY(288deg);
+  -moz-transform: rotateX(-53deg) rotateY(288deg);
+  -ms-transform: rotateX(-53deg) rotateY(288deg);
+  -o-transform: rotateX(-53deg) rotateY(288deg);
+  transform: rotateX(-53deg) rotateY(288deg);
+}
+/* line 148, /Users/vicentemundim/Projects/dice-roller/app/assets/stylesheets/dice-roller.css.scss */
+.dice-roller.dice-roller-mini .d20[data-face="16"] {
+  -webkit-transform: rotateX(127deg) rotateY(-72deg);
+  -moz-transform: rotateX(127deg) rotateY(-72deg);
+  -ms-transform: rotateX(127deg) rotateY(-72deg);
+  -o-transform: rotateX(127deg) rotateY(-72deg);
+  transform: rotateX(127deg) rotateY(-72deg);
+}
+/* line 148, /Users/vicentemundim/Projects/dice-roller/app/assets/stylesheets/dice-roller.css.scss */
+.dice-roller.dice-roller-mini .d20[data-face="17"] {
+  -webkit-transform: rotateX(127deg) rotateY(-144deg);
+  -moz-transform: rotateX(127deg) rotateY(-144deg);
+  -ms-transform: rotateX(127deg) rotateY(-144deg);
+  -o-transform: rotateX(127deg) rotateY(-144deg);
+  transform: rotateX(127deg) rotateY(-144deg);
+}
+/* line 148, /Users/vicentemundim/Projects/dice-roller/app/assets/stylesheets/dice-roller.css.scss */
+.dice-roller.dice-roller-mini .d20[data-face="18"] {
+  -webkit-transform: rotateX(127deg) rotateY(-216deg);
+  -moz-transform: rotateX(127deg) rotateY(-216deg);
+  -ms-transform: rotateX(127deg) rotateY(-216deg);
+  -o-transform: rotateX(127deg) rotateY(-216deg);
+  transform: rotateX(127deg) rotateY(-216deg);
+}
+/* line 148, /Users/vicentemundim/Projects/dice-roller/app/assets/stylesheets/dice-roller.css.scss */
+.dice-roller.dice-roller-mini .d20[data-face="19"] {
+  -webkit-transform: rotateX(127deg) rotateY(-288deg);
+  -moz-transform: rotateX(127deg) rotateY(-288deg);
+  -ms-transform: rotateX(127deg) rotateY(-288deg);
+  -o-transform: rotateX(127deg) rotateY(-288deg);
+  transform: rotateX(127deg) rotateY(-288deg);
+}
+/* line 148, /Users/vicentemundim/Projects/dice-roller/app/assets/stylesheets/dice-roller.css.scss */
+.dice-roller.dice-roller-mini .d20[data-face="20"] {
+  -webkit-transform: rotateX(127deg) rotateY(-360deg);
+  -moz-transform: rotateX(127deg) rotateY(-360deg);
+  -ms-transform: rotateX(127deg) rotateY(-360deg);
+  -o-transform: rotateX(127deg) rotateY(-360deg);
+  transform: rotateX(127deg) rotateY(-360deg);
+}
+/* line 155, /Users/vicentemundim/Projects/dice-roller/app/assets/stylesheets/dice-roller.css.scss */
+.dice-roller.dice-roller-mini .d20[data-face="6"] {
+  -webkit-transform: rotateX(11deg) rotateZ(180deg) rotateY(0deg);
+  -moz-transform: rotateX(11deg) rotateZ(180deg) rotateY(0deg);
+  -ms-transform: rotateX(11deg) rotateZ(180deg) rotateY(0deg);
+  -o-transform: rotateX(11deg) rotateZ(180deg) rotateY(0deg);
+  transform: rotateX(11deg) rotateZ(180deg) rotateY(0deg);
+}
+/* line 155, /Users/vicentemundim/Projects/dice-roller/app/assets/stylesheets/dice-roller.css.scss */
+.dice-roller.dice-roller-mini .d20[data-face="7"] {
+  -webkit-transform: rotateX(11deg) rotateZ(180deg) rotateY(72deg);
+  -moz-transform: rotateX(11deg) rotateZ(180deg) rotateY(72deg);
+  -ms-transform: rotateX(11deg) rotateZ(180deg) rotateY(72deg);
+  -o-transform: rotateX(11deg) rotateZ(180deg) rotateY(72deg);
+  transform: rotateX(11deg) rotateZ(180deg) rotateY(72deg);
+}
+/* line 155, /Users/vicentemundim/Projects/dice-roller/app/assets/stylesheets/dice-roller.css.scss */
+.dice-roller.dice-roller-mini .d20[data-face="8"] {
+  -webkit-transform: rotateX(11deg) rotateZ(180deg) rotateY(144deg);
+  -moz-transform: rotateX(11deg) rotateZ(180deg) rotateY(144deg);
+  -ms-transform: rotateX(11deg) rotateZ(180deg) rotateY(144deg);
+  -o-transform: rotateX(11deg) rotateZ(180deg) rotateY(144deg);
+  transform: rotateX(11deg) rotateZ(180deg) rotateY(144deg);
+}
+/* line 155, /Users/vicentemundim/Projects/dice-roller/app/assets/stylesheets/dice-roller.css.scss */
+.dice-roller.dice-roller-mini .d20[data-face="9"] {
+  -webkit-transform: rotateX(11deg) rotateZ(180deg) rotateY(216deg);
+  -moz-transform: rotateX(11deg) rotateZ(180deg) rotateY(216deg);
+  -ms-transform: rotateX(11deg) rotateZ(180deg) rotateY(216deg);
+  -o-transform: rotateX(11deg) rotateZ(180deg) rotateY(216deg);
+  transform: rotateX(11deg) rotateZ(180deg) rotateY(216deg);
+}
+/* line 155, /Users/vicentemundim/Projects/dice-roller/app/assets/stylesheets/dice-roller.css.scss */
+.dice-roller.dice-roller-mini .d20[data-face="10"] {
+  -webkit-transform: rotateX(11deg) rotateZ(180deg) rotateY(288deg);
+  -moz-transform: rotateX(11deg) rotateZ(180deg) rotateY(288deg);
+  -ms-transform: rotateX(11deg) rotateZ(180deg) rotateY(288deg);
+  -o-transform: rotateX(11deg) rotateZ(180deg) rotateY(288deg);
+  transform: rotateX(11deg) rotateZ(180deg) rotateY(288deg);
+}
+/* line 162, /Users/vicentemundim/Projects/dice-roller/app/assets/stylesheets/dice-roller.css.scss */
+.dice-roller.dice-roller-mini .d20[data-face="11"] {
+  -webkit-transform: rotateX(11deg) rotateY(-252deg);
+  -moz-transform: rotateX(11deg) rotateY(-252deg);
+  -ms-transform: rotateX(11deg) rotateY(-252deg);
+  -o-transform: rotateX(11deg) rotateY(-252deg);
+  transform: rotateX(11deg) rotateY(-252deg);
+}
+/* line 162, /Users/vicentemundim/Projects/dice-roller/app/assets/stylesheets/dice-roller.css.scss */
+.dice-roller.dice-roller-mini .d20[data-face="12"] {
+  -webkit-transform: rotateX(11deg) rotateY(-324deg);
+  -moz-transform: rotateX(11deg) rotateY(-324deg);
+  -ms-transform: rotateX(11deg) rotateY(-324deg);
+  -o-transform: rotateX(11deg) rotateY(-324deg);
+  transform: rotateX(11deg) rotateY(-324deg);
+}
+/* line 162, /Users/vicentemundim/Projects/dice-roller/app/assets/stylesheets/dice-roller.css.scss */
+.dice-roller.dice-roller-mini .d20[data-face="13"] {
+  -webkit-transform: rotateX(11deg) rotateY(-396deg);
+  -moz-transform: rotateX(11deg) rotateY(-396deg);
+  -ms-transform: rotateX(11deg) rotateY(-396deg);
+  -o-transform: rotateX(11deg) rotateY(-396deg);
+  transform: rotateX(11deg) rotateY(-396deg);
+}
+/* line 162, /Users/vicentemundim/Projects/dice-roller/app/assets/stylesheets/dice-roller.css.scss */
+.dice-roller.dice-roller-mini .d20[data-face="14"] {
+  -webkit-transform: rotateX(11deg) rotateY(-468deg);
+  -moz-transform: rotateX(11deg) rotateY(-468deg);
+  -ms-transform: rotateX(11deg) rotateY(-468deg);
+  -o-transform: rotateX(11deg) rotateY(-468deg);
+  transform: rotateX(11deg) rotateY(-468deg);
+}
+/* line 162, /Users/vicentemundim/Projects/dice-roller/app/assets/stylesheets/dice-roller.css.scss */
+.dice-roller.dice-roller-mini .d20[data-face="15"] {
+  -webkit-transform: rotateX(11deg) rotateY(-540deg);
+  -moz-transform: rotateX(11deg) rotateY(-540deg);
+  -ms-transform: rotateX(11deg) rotateY(-540deg);
+  -o-transform: rotateX(11deg) rotateY(-540deg);
+  transform: rotateX(11deg) rotateY(-540deg);
+}
+/* line 168, /Users/vicentemundim/Projects/dice-roller/app/assets/stylesheets/dice-roller.css.scss */
+.dice-roller.dice-roller-mini .d20 .face {
+  margin: 0 -12.5px;
+  border-left: 12.5px solid transparent;
+  border-right: 12.5px solid transparent;
+  border-bottom-width: 21.5px;
+}
+/* line 176, /Users/vicentemundim/Projects/dice-roller/app/assets/stylesheets/dice-roller.css.scss */
+.dice-roller.dice-roller-mini .d20 .face:before {
+  top: 5.375px;
+  left: -25px;
+  font-size: 10.75px;
+  line-height: 19.35px;
+  width: 50px;
+  height: 21.5px;
+}
+/* line 186, /Users/vicentemundim/Projects/dice-roller/app/assets/stylesheets/dice-roller.css.scss */
+.dice-roller.dice-roller-mini .d20 .face.face-1 {
+  -webkit-transform: rotateY(0deg) translateZ(8.375px) translateY(-3.225px) rotateX(53deg);
+  -moz-transform: rotateY(0deg) translateZ(8.375px) translateY(-3.225px) rotateX(53deg);
+  -ms-transform: rotateY(0deg) translateZ(8.375px) translateY(-3.225px) rotateX(53deg);
+  -o-transform: rotateY(0deg) translateZ(8.375px) translateY(-3.225px) rotateX(53deg);
+  transform: rotateY(0deg) translateZ(8.375px) translateY(-3.225px) rotateX(53deg);
+}
+/* line 186, /Users/vicentemundim/Projects/dice-roller/app/assets/stylesheets/dice-roller.css.scss */
+.dice-roller.dice-roller-mini .d20 .face.face-2 {
+  -webkit-transform: rotateY(-72deg) translateZ(8.375px) translateY(-3.225px) rotateX(53deg);
+  -moz-transform: rotateY(-72deg) translateZ(8.375px) translateY(-3.225px) rotateX(53deg);
+  -ms-transform: rotateY(-72deg) translateZ(8.375px) translateY(-3.225px) rotateX(53deg);
+  -o-transform: rotateY(-72deg) translateZ(8.375px) translateY(-3.225px) rotateX(53deg);
+  transform: rotateY(-72deg) translateZ(8.375px) translateY(-3.225px) rotateX(53deg);
+}
+/* line 186, /Users/vicentemundim/Projects/dice-roller/app/assets/stylesheets/dice-roller.css.scss */
+.dice-roller.dice-roller-mini .d20 .face.face-3 {
+  -webkit-transform: rotateY(-144deg) translateZ(8.375px) translateY(-3.225px) rotateX(53deg);
+  -moz-transform: rotateY(-144deg) translateZ(8.375px) translateY(-3.225px) rotateX(53deg);
+  -ms-transform: rotateY(-144deg) translateZ(8.375px) translateY(-3.225px) rotateX(53deg);
+  -o-transform: rotateY(-144deg) translateZ(8.375px) translateY(-3.225px) rotateX(53deg);
+  transform: rotateY(-144deg) translateZ(8.375px) translateY(-3.225px) rotateX(53deg);
+}
+/* line 186, /Users/vicentemundim/Projects/dice-roller/app/assets/stylesheets/dice-roller.css.scss */
+.dice-roller.dice-roller-mini .d20 .face.face-4 {
+  -webkit-transform: rotateY(-216deg) translateZ(8.375px) translateY(-3.225px) rotateX(53deg);
+  -moz-transform: rotateY(-216deg) translateZ(8.375px) translateY(-3.225px) rotateX(53deg);
+  -ms-transform: rotateY(-216deg) translateZ(8.375px) translateY(-3.225px) rotateX(53deg);
+  -o-transform: rotateY(-216deg) translateZ(8.375px) translateY(-3.225px) rotateX(53deg);
+  transform: rotateY(-216deg) translateZ(8.375px) translateY(-3.225px) rotateX(53deg);
+}
+/* line 186, /Users/vicentemundim/Projects/dice-roller/app/assets/stylesheets/dice-roller.css.scss */
+.dice-roller.dice-roller-mini .d20 .face.face-5 {
+  -webkit-transform: rotateY(-288deg) translateZ(8.375px) translateY(-3.225px) rotateX(53deg);
+  -moz-transform: rotateY(-288deg) translateZ(8.375px) translateY(-3.225px) rotateX(53deg);
+  -ms-transform: rotateY(-288deg) translateZ(8.375px) translateY(-3.225px) rotateX(53deg);
+  -o-transform: rotateY(-288deg) translateZ(8.375px) translateY(-3.225px) rotateX(53deg);
+  transform: rotateY(-288deg) translateZ(8.375px) translateY(-3.225px) rotateX(53deg);
+}
+/* line 193, /Users/vicentemundim/Projects/dice-roller/app/assets/stylesheets/dice-roller.css.scss */
+.dice-roller.dice-roller-mini .d20 .face.face-16 {
+  -webkit-transform: rotateY(-108deg) translateZ(8.375px) translateY(30.315px) rotateZ(180deg) rotateX(53deg);
+  -moz-transform: rotateY(-108deg) translateZ(8.375px) translateY(30.315px) rotateZ(180deg) rotateX(53deg);
+  -ms-transform: rotateY(-108deg) translateZ(8.375px) translateY(30.315px) rotateZ(180deg) rotateX(53deg);
+  -o-transform: rotateY(-108deg) translateZ(8.375px) translateY(30.315px) rotateZ(180deg) rotateX(53deg);
+  transform: rotateY(-108deg) translateZ(8.375px) translateY(30.315px) rotateZ(180deg) rotateX(53deg);
+}
+/* line 193, /Users/vicentemundim/Projects/dice-roller/app/assets/stylesheets/dice-roller.css.scss */
+.dice-roller.dice-roller-mini .d20 .face.face-17 {
+  -webkit-transform: rotateY(-36deg) translateZ(8.375px) translateY(30.315px) rotateZ(180deg) rotateX(53deg);
+  -moz-transform: rotateY(-36deg) translateZ(8.375px) translateY(30.315px) rotateZ(180deg) rotateX(53deg);
+  -ms-transform: rotateY(-36deg) translateZ(8.375px) translateY(30.315px) rotateZ(180deg) rotateX(53deg);
+  -o-transform: rotateY(-36deg) translateZ(8.375px) translateY(30.315px) rotateZ(180deg) rotateX(53deg);
+  transform: rotateY(-36deg) translateZ(8.375px) translateY(30.315px) rotateZ(180deg) rotateX(53deg);
+}
+/* line 193, /Users/vicentemundim/Projects/dice-roller/app/assets/stylesheets/dice-roller.css.scss */
+.dice-roller.dice-roller-mini .d20 .face.face-18 {
+  -webkit-transform: rotateY(36deg) translateZ(8.375px) translateY(30.315px) rotateZ(180deg) rotateX(53deg);
+  -moz-transform: rotateY(36deg) translateZ(8.375px) translateY(30.315px) rotateZ(180deg) rotateX(53deg);
+  -ms-transform: rotateY(36deg) translateZ(8.375px) translateY(30.315px) rotateZ(180deg) rotateX(53deg);
+  -o-transform: rotateY(36deg) translateZ(8.375px) translateY(30.315px) rotateZ(180deg) rotateX(53deg);
+  transform: rotateY(36deg) translateZ(8.375px) translateY(30.315px) rotateZ(180deg) rotateX(53deg);
+}
+/* line 193, /Users/vicentemundim/Projects/dice-roller/app/assets/stylesheets/dice-roller.css.scss */
+.dice-roller.dice-roller-mini .d20 .face.face-19 {
+  -webkit-transform: rotateY(108deg) translateZ(8.375px) translateY(30.315px) rotateZ(180deg) rotateX(53deg);
+  -moz-transform: rotateY(108deg) translateZ(8.375px) translateY(30.315px) rotateZ(180deg) rotateX(53deg);
+  -ms-transform: rotateY(108deg) translateZ(8.375px) translateY(30.315px) rotateZ(180deg) rotateX(53deg);
+  -o-transform: rotateY(108deg) translateZ(8.375px) translateY(30.315px) rotateZ(180deg) rotateX(53deg);
+  transform: rotateY(108deg) translateZ(8.375px) translateY(30.315px) rotateZ(180deg) rotateX(53deg);
+}
+/* line 193, /Users/vicentemundim/Projects/dice-roller/app/assets/stylesheets/dice-roller.css.scss */
+.dice-roller.dice-roller-mini .d20 .face.face-20 {
+  -webkit-transform: rotateY(180deg) translateZ(8.375px) translateY(30.315px) rotateZ(180deg) rotateX(53deg);
+  -moz-transform: rotateY(180deg) translateZ(8.375px) translateY(30.315px) rotateZ(180deg) rotateX(53deg);
+  -ms-transform: rotateY(180deg) translateZ(8.375px) translateY(30.315px) rotateZ(180deg) rotateX(53deg);
+  -o-transform: rotateY(180deg) translateZ(8.375px) translateY(30.315px) rotateZ(180deg) rotateX(53deg);
+  transform: rotateY(180deg) translateZ(8.375px) translateY(30.315px) rotateZ(180deg) rotateX(53deg);
+}
+/* line 200, /Users/vicentemundim/Projects/dice-roller/app/assets/stylesheets/dice-roller.css.scss */
+.dice-roller.dice-roller-mini .d20 .face.face-6 {
+  -webkit-transform: rotateY(360deg) translateZ(18.75px) translateY(13.545px) rotateZ(180deg) rotateX(-11deg);
+  -moz-transform: rotateY(360deg) translateZ(18.75px) translateY(13.545px) rotateZ(180deg) rotateX(-11deg);
+  -ms-transform: rotateY(360deg) translateZ(18.75px) translateY(13.545px) rotateZ(180deg) rotateX(-11deg);
+  -o-transform: rotateY(360deg) translateZ(18.75px) translateY(13.545px) rotateZ(180deg) rotateX(-11deg);
+  transform: rotateY(360deg) translateZ(18.75px) translateY(13.545px) rotateZ(180deg) rotateX(-11deg);
+}
+/* line 200, /Users/vicentemundim/Projects/dice-roller/app/assets/stylesheets/dice-roller.css.scss */
+.dice-roller.dice-roller-mini .d20 .face.face-7 {
+  -webkit-transform: rotateY(288deg) translateZ(18.75px) translateY(13.545px) rotateZ(180deg) rotateX(-11deg);
+  -moz-transform: rotateY(288deg) translateZ(18.75px) translateY(13.545px) rotateZ(180deg) rotateX(-11deg);
+  -ms-transform: rotateY(288deg) translateZ(18.75px) translateY(13.545px) rotateZ(180deg) rotateX(-11deg);
+  -o-transform: rotateY(288deg) translateZ(18.75px) translateY(13.545px) rotateZ(180deg) rotateX(-11deg);
+  transform: rotateY(288deg) translateZ(18.75px) translateY(13.545px) rotateZ(180deg) rotateX(-11deg);
+}
+/* line 200, /Users/vicentemundim/Projects/dice-roller/app/assets/stylesheets/dice-roller.css.scss */
+.dice-roller.dice-roller-mini .d20 .face.face-8 {
+  -webkit-transform: rotateY(216deg) translateZ(18.75px) translateY(13.545px) rotateZ(180deg) rotateX(-11deg);
+  -moz-transform: rotateY(216deg) translateZ(18.75px) translateY(13.545px) rotateZ(180deg) rotateX(-11deg);
+  -ms-transform: rotateY(216deg) translateZ(18.75px) translateY(13.545px) rotateZ(180deg) rotateX(-11deg);
+  -o-transform: rotateY(216deg) translateZ(18.75px) translateY(13.545px) rotateZ(180deg) rotateX(-11deg);
+  transform: rotateY(216deg) translateZ(18.75px) translateY(13.545px) rotateZ(180deg) rotateX(-11deg);
+}
+/* line 200, /Users/vicentemundim/Projects/dice-roller/app/assets/stylesheets/dice-roller.css.scss */
+.dice-roller.dice-roller-mini .d20 .face.face-9 {
+  -webkit-transform: rotateY(144deg) translateZ(18.75px) translateY(13.545px) rotateZ(180deg) rotateX(-11deg);
+  -moz-transform: rotateY(144deg) translateZ(18.75px) translateY(13.545px) rotateZ(180deg) rotateX(-11deg);
+  -ms-transform: rotateY(144deg) translateZ(18.75px) translateY(13.545px) rotateZ(180deg) rotateX(-11deg);
+  -o-transform: rotateY(144deg) translateZ(18.75px) translateY(13.545px) rotateZ(180deg) rotateX(-11deg);
+  transform: rotateY(144deg) translateZ(18.75px) translateY(13.545px) rotateZ(180deg) rotateX(-11deg);
+}
+/* line 200, /Users/vicentemundim/Projects/dice-roller/app/assets/stylesheets/dice-roller.css.scss */
+.dice-roller.dice-roller-mini .d20 .face.face-10 {
+  -webkit-transform: rotateY(72deg) translateZ(18.75px) translateY(13.545px) rotateZ(180deg) rotateX(-11deg);
+  -moz-transform: rotateY(72deg) translateZ(18.75px) translateY(13.545px) rotateZ(180deg) rotateX(-11deg);
+  -ms-transform: rotateY(72deg) translateZ(18.75px) translateY(13.545px) rotateZ(180deg) rotateX(-11deg);
+  -o-transform: rotateY(72deg) translateZ(18.75px) translateY(13.545px) rotateZ(180deg) rotateX(-11deg);
+  transform: rotateY(72deg) translateZ(18.75px) translateY(13.545px) rotateZ(180deg) rotateX(-11deg);
+}
+/* line 207, /Users/vicentemundim/Projects/dice-roller/app/assets/stylesheets/dice-roller.css.scss */
+.dice-roller.dice-roller-mini .d20 .face.face-11 {
+  -webkit-transform: rotateY(252deg) translateZ(18.75px) translateY(13.545px) rotateX(-11deg);
+  -moz-transform: rotateY(252deg) translateZ(18.75px) translateY(13.545px) rotateX(-11deg);
+  -ms-transform: rotateY(252deg) translateZ(18.75px) translateY(13.545px) rotateX(-11deg);
+  -o-transform: rotateY(252deg) translateZ(18.75px) translateY(13.545px) rotateX(-11deg);
+  transform: rotateY(252deg) translateZ(18.75px) translateY(13.545px) rotateX(-11deg);
+}
+/* line 207, /Users/vicentemundim/Projects/dice-roller/app/assets/stylesheets/dice-roller.css.scss */
+.dice-roller.dice-roller-mini .d20 .face.face-12 {
+  -webkit-transform: rotateY(324deg) translateZ(18.75px) translateY(13.545px) rotateX(-11deg);
+  -moz-transform: rotateY(324deg) translateZ(18.75px) translateY(13.545px) rotateX(-11deg);
+  -ms-transform: rotateY(324deg) translateZ(18.75px) translateY(13.545px) rotateX(-11deg);
+  -o-transform: rotateY(324deg) translateZ(18.75px) translateY(13.545px) rotateX(-11deg);
+  transform: rotateY(324deg) translateZ(18.75px) translateY(13.545px) rotateX(-11deg);
+}
+/* line 207, /Users/vicentemundim/Projects/dice-roller/app/assets/stylesheets/dice-roller.css.scss */
+.dice-roller.dice-roller-mini .d20 .face.face-13 {
+  -webkit-transform: rotateY(396deg) translateZ(18.75px) translateY(13.545px) rotateX(-11deg);
+  -moz-transform: rotateY(396deg) translateZ(18.75px) translateY(13.545px) rotateX(-11deg);
+  -ms-transform: rotateY(396deg) translateZ(18.75px) translateY(13.545px) rotateX(-11deg);
+  -o-transform: rotateY(396deg) translateZ(18.75px) translateY(13.545px) rotateX(-11deg);
+  transform: rotateY(396deg) translateZ(18.75px) translateY(13.545px) rotateX(-11deg);
+}
+/* line 207, /Users/vicentemundim/Projects/dice-roller/app/assets/stylesheets/dice-roller.css.scss */
+.dice-roller.dice-roller-mini .d20 .face.face-14 {
+  -webkit-transform: rotateY(468deg) translateZ(18.75px) translateY(13.545px) rotateX(-11deg);
+  -moz-transform: rotateY(468deg) translateZ(18.75px) translateY(13.545px) rotateX(-11deg);
+  -ms-transform: rotateY(468deg) translateZ(18.75px) translateY(13.545px) rotateX(-11deg);
+  -o-transform: rotateY(468deg) translateZ(18.75px) translateY(13.545px) rotateX(-11deg);
+  transform: rotateY(468deg) translateZ(18.75px) translateY(13.545px) rotateX(-11deg);
+}
+/* line 207, /Users/vicentemundim/Projects/dice-roller/app/assets/stylesheets/dice-roller.css.scss */
+.dice-roller.dice-roller-mini .d20 .face.face-15 {
+  -webkit-transform: rotateY(540deg) translateZ(18.75px) translateY(13.545px) rotateX(-11deg);
+  -moz-transform: rotateY(540deg) translateZ(18.75px) translateY(13.545px) rotateX(-11deg);
+  -ms-transform: rotateY(540deg) translateZ(18.75px) translateY(13.545px) rotateX(-11deg);
+  -o-transform: rotateY(540deg) translateZ(18.75px) translateY(13.545px) rotateX(-11deg);
+  transform: rotateY(540deg) translateZ(18.75px) translateY(13.545px) rotateX(-11deg);
+}
+/* line 216, /Users/vicentemundim/Projects/dice-roller/app/assets/stylesheets/dice-roller.css.scss */
+.dice-roller.dice-roller-red .face {
+  border-bottom-color: rgba(226, 60, 26, 0.75);
+}
+/* line 219, /Users/vicentemundim/Projects/dice-roller/app/assets/stylesheets/dice-roller.css.scss */
+.dice-roller.dice-roller-red .face:before {
+  color: white;
+  text-shadow: 1px 1px 3px black;
+}
+/* line 224, /Users/vicentemundim/Projects/dice-roller/app/assets/stylesheets/dice-roller.css.scss */
+.dice-roller.dice-roller-red .face:after {
+  border-top-color: rgba(226, 60, 26, 0.75);
+}
+/* line 216, /Users/vicentemundim/Projects/dice-roller/app/assets/stylesheets/dice-roller.css.scss */
+.dice-roller.dice-roller-yellow .face {
+  border-bottom-color: rgba(216, 218, 25, 0.75);
+}
+/* line 219, /Users/vicentemundim/Projects/dice-roller/app/assets/stylesheets/dice-roller.css.scss */
+.dice-roller.dice-roller-yellow .face:before {
+  color: white;
+  text-shadow: 1px 1px 3px black;
+}
+/* line 224, /Users/vicentemundim/Projects/dice-roller/app/assets/stylesheets/dice-roller.css.scss */
+.dice-roller.dice-roller-yellow .face:after {
+  border-top-color: rgba(216, 218, 25, 0.75);
+}
+/* line 216, /Users/vicentemundim/Projects/dice-roller/app/assets/stylesheets/dice-roller.css.scss */
+.dice-roller.dice-roller-blue .face {
+  border-bottom-color: rgba(35, 70, 171, 0.75);
+}
+/* line 219, /Users/vicentemundim/Projects/dice-roller/app/assets/stylesheets/dice-roller.css.scss */
+.dice-roller.dice-roller-blue .face:before {
+  color: white;
+  text-shadow: 1px 1px 3px black;
+}
+/* line 224, /Users/vicentemundim/Projects/dice-roller/app/assets/stylesheets/dice-roller.css.scss */
+.dice-roller.dice-roller-blue .face:after {
+  border-top-color: rgba(35, 70, 171, 0.75);
+}
+/* line 216, /Users/vicentemundim/Projects/dice-roller/app/assets/stylesheets/dice-roller.css.scss */
+.dice-roller.dice-roller-black .face {
+  border-bottom-color: rgba(30, 30, 30, 0.75);
+}
+/* line 219, /Users/vicentemundim/Projects/dice-roller/app/assets/stylesheets/dice-roller.css.scss */
+.dice-roller.dice-roller-black .face:before {
+  color: white;
+  text-shadow: 1px 1px 3px black;
+}
+/* line 224, /Users/vicentemundim/Projects/dice-roller/app/assets/stylesheets/dice-roller.css.scss */
+.dice-roller.dice-roller-black .face:after {
+  border-top-color: rgba(30, 30, 30, 0.75);
+}
+/* line 216, /Users/vicentemundim/Projects/dice-roller/app/assets/stylesheets/dice-roller.css.scss */
+.dice-roller.dice-roller-white .face {
+  border-bottom-color: rgba(255, 255, 255, 0.75);
+}
+/* line 219, /Users/vicentemundim/Projects/dice-roller/app/assets/stylesheets/dice-roller.css.scss */
+.dice-roller.dice-roller-white .face:before {
+  color: #333333;
+  text-shadow: 1px 1px 3px white;
+}
+/* line 224, /Users/vicentemundim/Projects/dice-roller/app/assets/stylesheets/dice-roller.css.scss */
+.dice-roller.dice-roller-white .face:after {
+  border-top-color: rgba(255, 255, 255, 0.75);
+}

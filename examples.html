@@ -1,0 +1,91 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Dice-roller by vicentemundim</title>
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
+    <link rel="stylesheet" href="stylesheets/example.css">
+    <link rel="stylesheet" href="stylesheets/dice-roller.css">
+    <script src="javascripts/respond.js"></script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <!--[if lt IE 8]>
+    <link rel="stylesheet" href="stylesheets/ie.css">
+    <![endif]-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+
+  </head>
+  <body>
+      <div id="header">
+        <nav>
+          <li class="fork"><a href="https://github.com/vicentemundim/dice-roller">View On GitHub</a></li>
+          <li class="title"><a href="examples.html">Examples</a></li>
+          <li class="title"><a href="index.html">Docs</a></li>
+        </nav>
+      </div><!-- end header -->
+
+    <div class="wrapper">
+      <section>
+        <div id="title">
+          <h1>Dice-roller</h1>
+          <p>A javascript dice roller component made in AngularJS.</p>
+          <hr>
+          <span class="credits left">Project maintained by <a href="https://github.com/vicentemundim">vicentemundim</a></span>
+          <span class="credits right">Hosted on GitHub Pages &mdash; Theme by <a href="https://twitter.com/michigangraham">mattgraham</a></span>
+        </div>
+      </section>
+    </div>
+
+    <div ng-app="exampleApp">
+      <div ng-controller="D10Ctrl">
+        <button ng-click="dice.roll()">Roll</button>
+        <button ng-click="toggle()">{{disabledLabel}}</button>
+
+        <dice-roller sides="10"></dice-roller>
+        <dice-roller sides="10" class="dice-roller-large"></dice-roller>
+      </div>
+
+      <div ng-controller="OtherD10Ctrl">
+        <button ng-click="dice.roll()">Roll</button>
+        <button ng-click="toggle()">{{disabledLabel}}</button>
+
+        <dice-roller sides="10" name="other-d10" class="dice-roller-yellow dice-roller-small"></dice-roller>
+        <dice-roller sides="10" name="other-d10" class="dice-roller-white dice-roller-mini"></dice-roller>
+      </div>
+
+      <div ng-controller="D20Ctrl">
+        <button ng-click="dice.roll()">Roll</button>
+        <button ng-click="toggle()">{{disabledLabel}}</button>
+
+        <dice-roller sides="20" class="dice-roller-red"></dice-roller>
+        <dice-roller sides="20" class="dice-roller-red dice-roller-large"></dice-roller>
+      </div>
+
+      <div ng-controller="OtherD20Ctrl">
+        <button ng-click="dice.roll()">Roll</button>
+        <button ng-click="toggle()">{{disabledLabel}}</button>
+
+        <dice-roller sides="20" name="other-d20" class="dice-roller-blue dice-roller-small"></dice-roller>
+        <dice-roller sides="20" name="other-d20" class="dice-roller-black dice-roller-mini"></dice-roller>
+      </div>
+
+      <div ng-controller="D10GroupCtrl" class="group">
+        <button ng-click="roll()">Roll</button>
+        <button ng-click="toggle()">{{disabledLabel}}</button>
+        <h3>Group Total: {{diceGroup.total}}</h3>
+
+        <dice-group-roller sides="10" name="d10-group" dices="4" discard="2" class="dice-roller-blue dice-roller-small"></dice-group-roller>
+      </div>
+    </div>
+    <!--[if !IE]><script>fixScale(document);</script><![endif]-->
+
+
+    <script src="javascripts/dependencies.js"></script>
+    <script src="javascripts/dice-roller.js"></script>
+    <script src="javascripts/example.js"></script>
+    <script src="javascripts/respond.js"></script>
+  </body>
+</html>

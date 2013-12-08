@@ -1,0 +1,34 @@
+/* line 2, /Users/vicentemundim/Projects/dice-roller/spec/dummy/app/assets/stylesheets/example.css.scss */
+body.example-body {
+  background: #333;
+}
+
+/* line 6, /Users/vicentemundim/Projects/dice-roller/spec/dummy/app/assets/stylesheets/example.css.scss */
+button {
+  display: block;
+  margin: auto;
+  width: 100px;
+  font-size: 20px;
+  border-radius: 4px;
+  background-color: #fafafa;
+  cursor: pointer;
+}
+
+/* line 17, /Users/vicentemundim/Projects/dice-roller/spec/dummy/app/assets/stylesheets/example.css.scss */
+[ng-controller] {
+  display: inline-block;
+  vertical-align: top;
+  margin: 0 30px;
+  padding: 20px;
+}
+
+/* line 25, /Users/vicentemundim/Projects/dice-roller/spec/dummy/app/assets/stylesheets/example.css.scss */
+.group {
+  background: #666;
+  width: 220px;
+}
+
+/* line 30, /Users/vicentemundim/Projects/dice-roller/spec/dummy/app/assets/stylesheets/example.css.scss */
+h3 {
+  text-align: center;
+}
