@@ -9,38 +9,5 @@
  * compiled file, but it's generally better to create a new file per style scope.
  *
  *= require dice-roller
- *= require_self
- *= require_tree .
+ *= require example
  */
-
-body.example-body {
-  background: #333;
-}
-
-button {
-  display: block;
-  margin: auto;
-  width: 100px;
-  font-size: 20px;
-
-  border-radius: 4px;
-  background-color: #fafafa;
-  cursor: pointer;
-}
-
-[ng-controller] {
-  display: inline-block;
-  vertical-align: top;
-
-  margin: 0 30px;
-  padding: 20px;
-}
-
-.group {
-  background: #666;
-  width: 220px
-}
-
-h3 {
-  text-align: center;
-}
