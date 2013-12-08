@@ -8,7 +8,7 @@
       scope: true,
       template:
         "<div class='dice-roller' ng-click='dice.roll()'>" +
-          "<div class='dice {{dieClass}}' ng-class='{rolling: dice.rolling}' data-face='{{dice.face}}'>" +
+          "<div class='dice {{dieClass}}' ng-class='{ rolling: dice.rolling, disabled: dice.disabled }' data-face='{{dice.face}}'>" +
             "<figure ng-repeat='face in faces' class='face face-{{face}}'></figure>" +
           "</div>" +
         "</div>",

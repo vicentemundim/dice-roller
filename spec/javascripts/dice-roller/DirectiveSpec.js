@@ -77,7 +77,7 @@ describe("dice-roller directive", function() {
   })
 
   describe("when dice is rolling", function() {
-    it("updates adds a rolling class to the dice", function() {
+    it("adds a rolling class to the dice", function() {
       diceRoller = createDie(10)
 
       dice.rolling = true
@@ -87,6 +87,20 @@ describe("dice-roller directive", function() {
       dice.rolling = false
       scope.$digest()
       expect(diceRoller.find('.d10').attr('class')).not.toMatch("rolling")
+    })
+  })
+
+  describe("when dice is disabled", function() {
+    it("adds a disabled class to the dice", function() {
+      diceRoller = createDie(10)
+
+      dice.disabled = true
+      scope.$digest()
+      expect(diceRoller.find('.d10').attr('class')).toMatch("disabled")
+
+      dice.disabled = false
+      scope.$digest()
+      expect(diceRoller.find('.d10').attr('class')).not.toMatch("disabled")
     })
   })
 

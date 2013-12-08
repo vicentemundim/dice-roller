@@ -11,7 +11,7 @@
       roll: function () {
         var self = this
 
-        if (!this.rolling) {
+        if (!this.disabled && !this.rolling) {
           this.rolling = true
 
           $timeout(function () {

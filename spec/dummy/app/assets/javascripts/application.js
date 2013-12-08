@@ -27,6 +27,13 @@ exampleApp.controller('D10Ctrl', function ($scope, DiceRollerManager) {
   d10Scope = $scope
   d10 = $scope.dice = dice
 
+  $scope.disabledLabel = $scope.dice.disabled ? 'Enable' : 'Disable'
+
+  $scope.toggle = function () {
+    $scope.dice.disabled = !$scope.dice.disabled
+    $scope.disabledLabel = $scope.dice.disabled ? 'Enable' : 'Disable'
+  }
+
   $scope.$watch('dice.rolling', function (value, oldValue) {
     console.log('rolling changed: ', value, oldValue)
   })
@@ -41,6 +48,13 @@ exampleApp.controller('OtherD10Ctrl', function ($scope, DiceRollerManager) {
 
   otherD10Scope = $scope
   otherD10 = $scope.dice = dice
+
+  $scope.disabledLabel = $scope.dice.disabled ? 'Enable' : 'Disable'
+
+  $scope.toggle = function () {
+    $scope.dice.disabled = !$scope.dice.disabled
+    $scope.disabledLabel = $scope.dice.disabled ? 'Enable' : 'Disable'
+  }
 
   $scope.$watch('dice.rolling', function (value, oldValue) {
     console.log('other d10 rolling changed: ', value, oldValue)
@@ -57,6 +71,13 @@ exampleApp.controller('D20Ctrl', function ($scope, DiceRollerManager) {
   d20Scope = $scope
   d20 = $scope.dice = dice
 
+  $scope.disabledLabel = $scope.dice.disabled ? 'Enable' : 'Disable'
+
+  $scope.toggle = function () {
+    $scope.dice.disabled = !$scope.dice.disabled
+    $scope.disabledLabel = $scope.dice.disabled ? 'Enable' : 'Disable'
+  }
+
   $scope.$watch('dice.rolling', function (value, oldValue) {
     console.log('d20 rolling changed: ', value, oldValue)
   })
@@ -71,6 +92,13 @@ exampleApp.controller('OtherD20Ctrl', function ($scope, DiceRollerManager) {
 
   otherD20Scope = $scope
   otherD20 = $scope.dice = dice
+
+  $scope.disabledLabel = $scope.dice.disabled ? 'Enable' : 'Disable'
+
+  $scope.toggle = function () {
+    $scope.dice.disabled = !$scope.dice.disabled
+    $scope.disabledLabel = $scope.dice.disabled ? 'Enable' : 'Disable'
+  }
 
   $scope.$watch('dice.rolling', function (value, oldValue) {
     console.log('other d20 rolling changed: ', value, oldValue)

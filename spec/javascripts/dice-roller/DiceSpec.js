@@ -110,6 +110,24 @@ describe("dice-roller dice", function() {
           expect(dice.randomizeFace.calls.count()).toEqual(1)
         })
       })
+
+      describe("when it is disabled", function() {
+        beforeEach(function() {
+          // when dice is disabled it will not create a timeout,
+          // so in order to effectively test it we always make sure that we have
+          // one timeout set
+          $timeout(function () {}, 0)
+        })
+
+        it("won't roll", function () {
+          dice.disabled = true
+          dice.roll()
+
+          $timeout.flush()
+
+          expect(dice.face).toBeUndefined()
+        })
+      })
     })
 
     describe("randomizeFace", function () {
